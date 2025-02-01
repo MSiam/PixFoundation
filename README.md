@@ -1,4 +1,4 @@
-# PixFoundation: Are we Heading in the Right Direction with Pixel-level MLLMs?
+# PixFoundation: Are We Heading in the Right Direction with Pixel-level Vision Foundation Models?
 [Project Webpage](), [Paper]()
 
 Official implementation of our work on PixFoundation direction, Code coming soon...
