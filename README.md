@@ -17,7 +17,7 @@ PixMMVP and PixCV-Bench augment recent benchmarks with referring expression anno
 
 
 ## When does grounding emerge in MLLMs?
-Our finding is that grounding can emerge coinciding with output text that describes the object of interest in terms of color, location or state and not necessarily the exact output text of this object. We persistently find it mostly emerges int he last 40% of the output text in MLLMs not trained with pixel-level grounding supervision (e.g., Llava 1.5 & Cambrian-1). We also show a histogram of the concept categories of the output text that coincides with the best segmentation emerging
+Our finding is that grounding can emerge coinciding with output text that describes the object of interest in terms of color, location or state and not necessarily the exact output text of this object. We persistently find it mostly emerges in the last 40% of the output text in MLLMs not trained with pixel-level grounding supervision (e.g., Llava 1.5 & Cambrian-1). We also show a histogram of the concept categories of the output text that coincides with the best segmentation emerging
 in such MLLMs.
 
 <div align="center">
