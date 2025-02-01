@@ -25,7 +25,7 @@ in such MLLMs. Note the minion example, shows a case where the ground-truth mask
 </div>
 
 <div align="center">
-<img src="https://github.com/MSiam/PixFoundation/blob/693bfd82d5c1f6f95b6adf9eac8e3725637a6bb4/imgs/emerging_text.png" width="70%" height="70%">
+<img src="https://github.com/MSiam/PixFoundation/blob/0a9a03ad929ff55cb42ef6a7c3352626d2486ffe/imgs/emerging_text.png" width="70%" height="70%">
 </div>
 
 <div align="center">
