@@ -25,7 +25,7 @@ in such MLLMs.
 </div>
 
 <div align="center">
-<img src="https://github.com/MSiam/PixFoundation/blob/693bfd82d5c1f6f95b6adf9eac8e3725637a6bb4/imgs/emerging_text.png" width="40%" height="70%"><br><br>
+<img src="https://github.com/MSiam/PixFoundation/blob/693bfd82d5c1f6f95b6adf9eac8e3725637a6bb4/imgs/emerging_text.png" width="70%" height="70%">
 </div>
 
 <div align="center">
