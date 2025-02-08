@@ -1,5 +1,5 @@
 # PixFoundation: Are We Heading in the Right Direction with Pixel-level Vision Foundation Models?
-[Project Webpage](), [Paper]()
+[Project Webpage](), [Paper](https://arxiv.org/abs/2502.04192)
 
 Official implementation of our work on PixFoundation direction. Code coming soon...
 
