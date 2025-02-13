@@ -4,7 +4,7 @@
 Official implementation of our work on PixFoundation direction. Code coming soon...
 
 <div align="center">
-<img src="https://github.com/MSiam/PixFoundation/blob/693bfd82d5c1f6f95b6adf9eac8e3725637a6bb4/imgs/ICML25PixFoundation.drawio.png" width="70%" height="70%"><br><br>
+<img src="https://github.com/MSiam/PixFoundation/blob/1f9a5711ed7a3f87338bcb7d8b8381bd79d38431/imgs/ICML25PixFoundation.drawio.png" width="70%" height="70%"><br><br>
 </div>
 
 
@@ -21,7 +21,7 @@ Our finding is that grounding can emerge coinciding with output text that descri
 * Minor fix where the examples with ground-truth mask allbackground are discarded in the "When" analysis.
 
 <div align="center">
-<img src="https://github.com/MSiam/PixFoundation/blob/693bfd82d5c1f6f95b6adf9eac8e3725637a6bb4/imgs/histograms_new.png" width="70%" height="70%"><br><br>
+<img src="https://github.com/MSiam/PixFoundation/blob/1f9a5711ed7a3f87338bcb7d8b8381bd79d38431/imgs/histograms_new.png" width="70%" height="70%"><br><br>
 </div>
 
 <div align="center">
