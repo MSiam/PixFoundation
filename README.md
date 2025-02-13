@@ -17,11 +17,11 @@ PixMMVP and PixCV-Bench augment recent benchmarks with referring expression anno
 
 
 ## When does grounding emerge in MLLMs?
-Our finding is that grounding can emerge coinciding with output text that describes the object of interest in terms of color, location or state and not necessarily the exact output text of this object. We persistently find it mostly emerges in the last 40% of the output text in MLLMs not trained with pixel-level grounding supervision (e.g., Llava 1.5 & Cambrian-1). We also show a histogram of the concept categories of the output text that coincides with the best segmentation emerging
-in such MLLMs. Note the minion example, shows a case where the ground-truth mask is all background, yet it shows the failure in grounding that resulted in the failure in answering the question. In the oracle selection when multiple masks provide the exact same IoU we default to the last occurring one, yet this only occurs in few cases when the ground-truth is all background.
+Our finding is that grounding can emerge coinciding with output text that describes the object of interest in terms of color, location or state and not necessarily the exact output text of this object. We persistently find the most frequent emergence occurs in the last 40-60% of the output text in MLLMs not trained with pixel-level grounding supervision (e.g., Llava 1.5 & Cambrian-1). We also show a histogram of the concept categories of the output text that coincides with the best segmentation emerging in such MLLMs.
+* Minor fix where the examples with ground-truth mask allbackground are discarded in the "When" analysis.
 
 <div align="center">
-<img src="https://github.com/MSiam/PixFoundation/blob/693bfd82d5c1f6f95b6adf9eac8e3725637a6bb4/imgs/histograms.png" width="70%" height="70%"><br><br>
+<img src="https://github.com/MSiam/PixFoundation/blob/693bfd82d5c1f6f95b6adf9eac8e3725637a6bb4/imgs/histograms_new.png" width="70%" height="70%"><br><br>
 </div>
 
 <div align="center">
@@ -35,10 +35,6 @@ in such MLLMs. Note the minion example, shows a case where the ground-truth mask
 
 <div align="center">
 <img src="https://github.com/MSiam/PixFoundation/blob/3703c3c23144294f7be4e6e5d013b935a14f14f7/imgs/example3.png" width="40%" height="70%">
-<img src="https://github.com/MSiam/PixFoundation/blob/3703c3c23144294f7be4e6e5d013b935a14f14f7/imgs/example5.png" width="40%" height="70%"><br><br>
-</div>
-
-<div align="center">
 <img src="https://github.com/MSiam/PixFoundation/blob/3703c3c23144294f7be4e6e5d013b935a14f14f7/imgs/example4.png" width="40%" height="70%"><br><br>
 </div>
 
