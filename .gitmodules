@@ -1,0 +1,18 @@
+[submodule "LLava-Grounding"]
+	path = LLava-Grounding
+	url = https://github.com/MSiam/LLaVA-Grounding.git
+[submodule "LISA"]
+	path = LISA
+	url = https://github.com/MSiam/LISA.git
+[submodule "OMG-Seg"]
+	path = OMG-Seg
+	url = https://github.com/MSiam/OMG-Seg.git
+[submodule "groundingLMM"]
+	path = groundingLMM
+	url = https://github.com/mbzuai-oryx/groundingLMM.git
+[submodule "groundLMM"]
+	path = groundLMM
+	url = https://github.com/MSiam/groundLMM.git
+[submodule "cambrian"]
+	path = cambrian
+	url = https://github.com/cambrian-mllm/cambrian.git
