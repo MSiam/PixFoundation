@@ -16,11 +16,15 @@ PixMMVP and PixCV-Bench augment recent benchmarks with referring expression anno
 </div>
 
 ### Dataset Setup
-[Data]()
+[Data](https://github.com/MSiam/PixFoundation/blob/master/Data.md)
 
 ### PixMMVP Evaluation
 
 #### Installation
+* Clone the repository recursively to include the submodules
+```
+git clone --recursive https://github.com/MSiam/PixFoundation
+```
 * Follow installation setup for each model within conda environment/s
 * Setup detectron2 for the IoU evaluation
 
@@ -29,6 +33,11 @@ PixMMVP and PixCV-Bench augment recent benchmarks with referring expression anno
 ```
 bash pixmmvp/scripts/run_all.sh
 ```
+
+* Instructions for the automatic baseline
+[AutoBaseline](https://github.com/MSiam/PixFoundation/blob/master/autobaseline.md)
+
+* PixCV-Bench evaluation code coming soon
 
 ## When does grounding emerge in MLLMs?
 Our finding is that grounding can emerge coinciding with output text that describes the object of interest in terms of color, location or state and not necessarily the exact output text of this object. We persistently find the most frequent emergence occurs in the last 40-60% of the output text in MLLMs not trained with pixel-level grounding supervision (e.g., Llava 1.5 & Cambrian-1). We also show a histogram of the concept categories of the output text that coincides with the best segmentation emerging in such MLLMs.
@@ -65,3 +74,26 @@ I am here listing some of the barriers that are enforced on me by the very fact 
 * Last but definitely not the least, I am fully aware that someone has hacked my email and google drive access a couple of times that was confirmed by incidents occurring to my data and emails. I have tried so many times to protect my accounts with the limited knowledge and time dedicated for this. However, I have no guarantee that the same did not happen to my personal workstation that I am running all these experiments on. Nonetheless, I will provide all the codes and outputs that I ensured its reproducibility and I hope they are useful to the community. I sure hope people still have pride in Science as we normally know it, that they will not mess with other people's experiments. 
 
 While you might not believe some of this, but the very fact that I am one of the least promoted female researchers in the field or I am not promoted at all actually, should testify on this problem. In fact I am now almost unemployed even with the amount of publications that I have, so I think this should be sufficient for that last message. Look at any female researcher with publications in top venues in AI and how they are treated especially if the are faculty and the amount of support. This discrepancy, whether they like it or not, is getting me to stand out and I do not want to stand out I would like to be treated normally as everyone else.
+
+# Acknowledgements
+These repositories were used as part of our work:
+* [OMG-Llava](https://github.com/lxtGH/OMG-Seg)
+* [GLAMM](https://github.com/mbzuai-oryx/groundingLMM)
+* [LISA](https://github.com/dvlab-research/LISA)
+* [Llava-G](https://github.com/UX-Decoder/LLaVA-Grounding)
+* [Llava](https://github.com/haotian-liu/LLaVA)
+* [Emerging Grounding](https://groundlmm.github.io/)
+* [Cambrian](https://github.com/cambrian-mllm/cambrian)
+* [Eyes Wide Shut](https://github.com/tsb0601/MMVP)
+
+# References
+Please cite my paper if you find it useful in your research
+
+```
+@article{siam2025pixfoundation,
+  title={PixFoundation: Are We Heading in the Right Direction with Pixel-level Vision Foundation Models?},
+  author={Siam, Mennatullah},
+  journal={arXiv preprint arXiv:2502.04192},
+  year={2025}
+}
+```
