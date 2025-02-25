@@ -48,7 +48,7 @@ Our finding is that grounding can emerge coinciding with output text that descri
 </div>
 
 <div align="center">
-<img src="https://github.com/MSiam/PixFoundation/blob/0a9a03ad929ff55cb42ef6a7c3352626d2486ffe/imgs/emerging_text.png" width="70%" height="70%">
+<img src="https://github.com/MSiam/PixFoundation/blob/55686df651a7ceaf43f649eaa4e8a47c14aae91b/imgs/emerging_text.png" width="70%" height="70%">
 </div>
 
 <div align="center">
