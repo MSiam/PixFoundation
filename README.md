@@ -33,10 +33,8 @@ git clone --recursive https://github.com/MSiam/PixFoundation
 ```
 bash pixmmvp/scripts/run_all.sh
 ```
-
-* Instructions for the automatic baseline
-[AutoBaseline](https://github.com/MSiam/PixFoundation/blob/master/autobaseline.md)
-
+* Each of the pixel-level MLLMs inference code is based on their respective gradio demo codes not customized for a certain task.
+* Instructions for the automatic baseline [AutoBaseline](https://github.com/MSiam/PixFoundation/blob/master/autobaseline.md)
 * PixCV-Bench evaluation code coming soon
 
 ## When does grounding emerge in MLLMs?
