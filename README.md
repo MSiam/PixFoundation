@@ -15,6 +15,20 @@ PixMMVP and PixCV-Bench augment recent benchmarks with referring expression anno
 <img src="https://github.com/MSiam/PixFoundation/blob/693bfd82d5c1f6f95b6adf9eac8e3725637a6bb4/imgs/dataset.png" width="70%" height="70%"><br><br>
 </div>
 
+### Dataset Setup
+[Data]()
+
+### PixMMVP Evaluation
+
+#### Installation
+* Follow installation setup for each model within conda environment/s
+* Setup detectron2 for the IoU evaluation
+
+#### Evaluation
+* Run evaluation script after modifying it to the models needed, it includes two examples:
+```
+bash pixmmvp/scripts/run_all.sh
+```
 
 ## When does grounding emerge in MLLMs?
 Our finding is that grounding can emerge coinciding with output text that describes the object of interest in terms of color, location or state and not necessarily the exact output text of this object. We persistently find the most frequent emergence occurs in the last 40-60% of the output text in MLLMs not trained with pixel-level grounding supervision (e.g., Llava 1.5 & Cambrian-1). We also show a histogram of the concept categories of the output text that coincides with the best segmentation emerging in such MLLMs.

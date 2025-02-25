@@ -1,0 +1,1439 @@
+,Id,file,Objects
+0,0,CV-Bench/ADE20K/validation/images/ADE_val_00000248.jpg,organ
+1,1,CV-Bench/ADE20K/validation/images/ADE_val_00001168.jpg,cushion
+2,2,CV-Bench/ADE20K/validation/images/ADE_val_00001170.jpg,lamp
+3,3,CV-Bench/ADE20K/validation/images/ADE_val_00001171.jpg,"curtain, drape, drapery, mantle, pall"
+4,4,CV-Bench/ADE20K/validation/images/ADE_val_00001179.jpg,"painting, picture"
+5,5,CV-Bench/ADE20K/validation/images/ADE_val_00001183.jpg,bed
+6,6,CV-Bench/ADE20K/validation/images/ADE_val_00001194.jpg,wall
+7,7,CV-Bench/ADE20K/validation/images/ADE_val_00001195.jpg,"television receiver, television, television set, tv, tv set, idiot box, boob tube, telly, goggle box"
+8,8,CV-Bench/ADE20K/validation/images/ADE_val_00000245.jpg,chest
+9,9,CV-Bench/ADE20K/validation/images/ADE_val_00000250.jpg,wall
+10,10,CV-Bench/ADE20K/validation/images/ADE_val_00001245.jpg,"windowpane, window"
+11,11,CV-Bench/ADE20K/validation/images/ADE_val_00001255.jpg,"hat, chapeau, lid"
+12,12,CV-Bench/ADE20K/validation/images/ADE_val_00001257.jpg,"curtain, drape, drapery, mantle, pall"
+13,13,CV-Bench/ADE20K/validation/images/ADE_val_00000312.jpg,lamp
+14,14,CV-Bench/ADE20K/validation/images/ADE_val_00000313.jpg,"windowpane, window"
+15,15,CV-Bench/ADE20K/validation/images/ADE_val_00000949.jpg,"candlestick, candle holder"
+16,16,CV-Bench/ADE20K/validation/images/ADE_val_00001312.jpg,"glass, drinking glass"
+17,17,CV-Bench/ADE20K/validation/images/ADE_val_00001320.jpg,"painting, picture"
+18,18,CV-Bench/ADE20K/validation/images/ADE_val_00001376.jpg,armchair
+19,19,CV-Bench/ADE20K/validation/images/ADE_val_00001378.jpg,"switch, electric switch, electrical switch"
+20,20,CV-Bench/ADE20K/validation/images/ADE_val_00001380.jpg,buckets
+21,21,CV-Bench/ADE20K/validation/images/ADE_val_00000423.jpg,"blind, screen"
+22,22,CV-Bench/ADE20K/validation/images/ADE_val_00000430.jpg,wall
+23,23,CV-Bench/ADE20K/validation/images/ADE_val_00000431.jpg,"curtain, drape, drapery, mantle, pall"
+24,24,CV-Bench/ADE20K/validation/images/ADE_val_00000433.jpg,pillow
+25,25,CV-Bench/ADE20K/validation/images/ADE_val_00001429.jpg,"booklet, brochure, folder, leaflet, pamphlet"
+26,26,CV-Bench/ADE20K/validation/images/ADE_val_00000458.jpg,wall
+27,27,CV-Bench/ADE20K/validation/images/ADE_val_00000468.jpg,"switch, electric switch, electrical switch"
+28,28,CV-Bench/ADE20K/validation/images/ADE_val_00000470.jpg,"blind, screen"
+29,29,CV-Bench/ADE20K/validation/images/ADE_val_00000471.jpg,"stove, kitchen stove, range, kitchen range, cooking stove"
+30,30,CV-Bench/ADE20K/validation/images/ADE_val_00000473.jpg,"dishwasher, dish washer, dishwashing machine"
+31,31,CV-Bench/ADE20K/validation/images/ADE_val_00000478.jpg,"windowpane, window"
+32,32,CV-Bench/ADE20K/validation/images/ADE_val_00000484.jpg,"pot, flowerpot"
+33,33,CV-Bench/ADE20K/validation/images/ADE_val_00001481.jpg,"painting, picture"
+34,34,CV-Bench/ADE20K/validation/images/ADE_val_00001482.jpg,"basket, handbasket"
+35,35,CV-Bench/ADE20K/validation/images/ADE_val_00000510.jpg,"fireplace, hearth, open fireplace"
+36,36,CV-Bench/ADE20K/validation/images/ADE_val_00000512.jpg,"fireplace, hearth, open fireplace"
+37,37,CV-Bench/ADE20K/validation/images/ADE_val_00000523.jpg,armchair
+38,38,CV-Bench/ADE20K/validation/images/ADE_val_00000530.jpg,"rug, carpet, carpeting"
+39,39,CV-Bench/ADE20K/validation/images/ADE_val_00001510.jpg,cushion
+40,40,CV-Bench/ADE20K/validation/images/ADE_val_00001519.jpg,book
+41,41,CV-Bench/ADE20K/validation/images/ADE_val_00001523.jpg,tureen
+42,42,CV-Bench/ADE20K/validation/images/ADE_val_00001528.jpg,stool
+43,43,CV-Bench/ADE20K/validation/images/ADE_val_00000450.jpg,"pitcher, ewer"
+44,44,CV-Bench/ADE20K/validation/images/ADE_val_00001968.jpg,"blanket, cover"
+45,45,CV-Bench/ADE20K/validation/images/ADE_val_00000639.jpg,"basket, handbasket"
+46,46,CV-Bench/ADE20K/validation/images/ADE_val_00000697.jpg,vase
+47,47,CV-Bench/ADE20K/validation/images/ADE_val_00000698.jpg,"coffee table, cocktail table"
+48,48,CV-Bench/ADE20K/validation/images/ADE_val_00001698.jpg,bottle
+49,49,CV-Bench/ADE20K/validation/images/ADE_val_00001699.jpg,wall
+50,50,CV-Bench/ADE20K/validation/images/ADE_val_00000709.jpg,wall
+51,51,CV-Bench/ADE20K/validation/images/ADE_val_00001453.jpg,"partition, divider"
+52,52,CV-Bench/ADE20K/validation/images/ADE_val_00001715.jpg,"curtain, drape, drapery, mantle, pall"
+53,53,CV-Bench/ADE20K/validation/images/ADE_val_00000898.jpg,iron
+54,54,CV-Bench/ADE20K/validation/images/ADE_val_00000921.jpg,door
+55,55,CV-Bench/ADE20K/validation/images/ADE_val_00000925.jpg,"windowpane, window"
+56,56,CV-Bench/ADE20K/validation/images/ADE_val_00001931.jpg,pillow
+57,57,CV-Bench/ADE20K/validation/images/ADE_val_00001343.jpg,"person, individual, someone, somebody, mortal, soul"
+58,58,CV-Bench/ADE20K/validation/images/ADE_val_00000498.jpg,"signboard, sign"
+59,59,CV-Bench/ADE20K/validation/images/ADE_val_00001537.jpg,"person, individual, someone, somebody, mortal, soul"
+60,60,CV-Bench/ADE20K/validation/images/ADE_val_00001737.jpg,"person, individual, someone, somebody, mortal, soul"
+61,61,CV-Bench/ADE20K/validation/images/ADE_val_00000916.jpg,door
+62,62,CV-Bench/ADE20K/validation/images/ADE_val_00001916.jpg,flag
+63,63,CV-Bench/ADE20K/validation/images/ADE_val_00000113.jpg,sky
+64,64,CV-Bench/ADE20K/validation/images/ADE_val_00001940.jpg,bench
+65,65,CV-Bench/ADE20K/validation/images/ADE_val_00000194.jpg,sky
+66,66,CV-Bench/ADE20K/validation/images/ADE_val_00000222.jpg,"footbridge, overcrossing, pedestrian bridge"
+67,67,CV-Bench/ADE20K/validation/images/ADE_val_00000260.jpg,pole
+68,68,CV-Bench/ADE20K/validation/images/ADE_val_00000561.jpg,"screen, silver screen, projection screen"
+69,69,CV-Bench/ADE20K/validation/images/ADE_val_00000948.jpg,"backpack, back pack, knapsack, packsack, rucksack, haversack"
+70,70,CV-Bench/ADE20K/validation/images/ADE_val_00001290.jpg,"person, individual, someone, somebody, mortal, soul"
+71,71,CV-Bench/ADE20K/validation/images/ADE_val_00001326.jpg,"rock, stone"
+72,72,CV-Bench/ADE20K/validation/images/ADE_val_00000337.jpg,"person, individual, someone, somebody, mortal, soul"
+73,73,CV-Bench/ADE20K/validation/images/ADE_val_00001349.jpg,field
+74,74,CV-Bench/ADE20K/validation/images/ADE_val_00000562.jpg,"person, individual, someone, somebody, mortal, soul"
+75,75,CV-Bench/ADE20K/validation/images/ADE_val_00000492.jpg,lake
+76,76,CV-Bench/ADE20K/validation/images/ADE_val_00000557.jpg,"person, individual, someone, somebody, mortal, soul"
+77,77,CV-Bench/ADE20K/validation/images/ADE_val_00001557.jpg,path
+78,78,CV-Bench/ADE20K/validation/images/ADE_val_00000702.jpg,"animal, animate being, beast, brute, creature, fauna"
+79,79,CV-Bench/ADE20K/validation/images/ADE_val_00001734.jpg,"person, individual, someone, somebody, mortal, soul"
+80,80,CV-Bench/ADE20K/validation/images/ADE_val_00001922.jpg,field
+81,81,CV-Bench/ADE20K/validation/images/ADE_val_00001563.jpg,"stairs, steps"
+82,82,CV-Bench/ADE20K/validation/images/ADE_val_00001115.jpg,"chest of drawers, chest, bureau, dresser"
+83,83,CV-Bench/ADE20K/validation/images/ADE_val_00001198.jpg,ashtray
+84,84,CV-Bench/ADE20K/validation/images/ADE_val_00000223.jpg,shelf
+85,85,CV-Bench/ADE20K/validation/images/ADE_val_00000565.jpg,door
+86,86,CV-Bench/ADE20K/validation/images/ADE_val_00000300.jpg,"windowpane, window"
+87,87,CV-Bench/ADE20K/validation/images/ADE_val_00000954.jpg,hanger
+88,88,CV-Bench/ADE20K/validation/images/ADE_val_00001564.jpg,"microphone, mike"
+89,89,CV-Bench/ADE20K/validation/images/ADE_val_00001727.jpg,"curtain, drape, drapery, mantle, pall"
+90,90,CV-Bench/ADE20K/validation/images/ADE_val_00001635.jpg,"column, pillar"
+91,91,CV-Bench/ADE20K/validation/images/ADE_val_00001063.jpg,lamp
+92,92,CV-Bench/ADE20K/validation/images/ADE_val_00000197.jpg,tunnel
+93,93,CV-Bench/ADE20K/validation/images/ADE_val_00000198.jpg,mat
+94,94,CV-Bench/ADE20K/validation/images/ADE_val_00000230.jpg,chair
+95,95,CV-Bench/ADE20K/validation/images/ADE_val_00000360.jpg,"fence, fencing"
+96,96,CV-Bench/ADE20K/validation/images/ADE_val_00000448.jpg,"pot, flowerpot"
+97,97,CV-Bench/ADE20K/validation/images/ADE_val_00001446.jpg,wall
+98,98,CV-Bench/ADE20K/validation/images/ADE_val_00001535.jpg,"person, individual, someone, somebody, mortal, soul"
+99,99,CV-Bench/ADE20K/validation/images/ADE_val_00000034.jpg,"painting, picture"
+100,100,CV-Bench/ADE20K/validation/images/ADE_val_00001928.jpg,seat
+101,101,CV-Bench/ADE20K/validation/images/ADE_val_00001720.jpg,van
+102,102,CV-Bench/ADE20K/validation/images/ADE_val_00000727.jpg,tree
+103,103,CV-Bench/ADE20K/validation/images/ADE_val_00001772.jpg,"fence, fencing"
+104,104,CV-Bench/ADE20K/validation/images/ADE_val_00001880.jpg,"streetlight, street lamp"
+105,105,CV-Bench/ADE20K/validation/images/ADE_val_00000885.jpg,"fluorescent, fluorescent fixture"
+106,106,CV-Bench/ADE20K/validation/images/ADE_val_00000902.jpg,"grandstand, covered stand"
+107,107,CV-Bench/ADE20K/validation/images/ADE_val_00000906.jpg,wall
+108,108,CV-Bench/ADE20K/validation/images/ADE_val_00000998.jpg,net
+109,109,CV-Bench/ADE20K/validation/images/ADE_val_00000005.jpg,"fluorescent, fluorescent fixture"
+110,110,CV-Bench/ADE20K/validation/images/ADE_val_00001186.jpg,wall
+111,111,CV-Bench/ADE20K/validation/images/ADE_val_00000216.jpg,bag
+112,112,CV-Bench/ADE20K/validation/images/ADE_val_00000225.jpg,seat
+113,113,CV-Bench/ADE20K/validation/images/ADE_val_00001225.jpg,"person, individual, someone, somebody, mortal, soul"
+114,114,CV-Bench/ADE20K/validation/images/ADE_val_00001327.jpg,wall
+115,115,CV-Bench/ADE20K/validation/images/ADE_val_00001875.jpg,bag
+116,116,CV-Bench/ADE20K/validation/images/ADE_val_00000575.jpg,"bannister, banister, balustrade, balusters, handrail"
+117,117,CV-Bench/ADE20K/validation/images/ADE_val_00001073.jpg,cat
+118,118,CV-Bench/ADE20K/validation/images/ADE_val_00000580.jpg,scarf
+119,119,CV-Bench/ADE20K/validation/images/ADE_val_00000581.jpg,"building, edifice"
+120,120,CV-Bench/ADE20K/validation/images/ADE_val_00000590.jpg,"mountain, mount"
+121,121,CV-Bench/ADE20K/validation/images/ADE_val_00000600.jpg,"person, individual, someone, somebody, mortal, soul"
+122,122,CV-Bench/ADE20K/validation/images/ADE_val_00000602.jpg,"railing, rail"
+123,123,CV-Bench/ADE20K/validation/images/ADE_val_00001074.jpg,"painting, picture"
+124,124,CV-Bench/ADE20K/validation/images/ADE_val_00000611.jpg,"person, individual, someone, somebody, mortal, soul"
+125,125,CV-Bench/ADE20K/validation/images/ADE_val_00000618.jpg,lamp
+126,126,CV-Bench/ADE20K/validation/images/ADE_val_00000623.jpg,"person, individual, someone, somebody, mortal, soul"
+127,127,CV-Bench/ADE20K/validation/images/ADE_val_00000979.jpg,"mountain, mount"
+128,128,CV-Bench/ADE20K/validation/images/ADE_val_00000981.jpg,wall
+129,129,CV-Bench/ADE20K/validation/images/ADE_val_00001566.jpg,"antenna, aerial, transmitting aerial"
+130,130,CV-Bench/ADE20K/validation/images/ADE_val_00001569.jpg,"ashcan, trash can, garbage can, wastebin, ash bin, ash-bin, ashbin, dustbin, trash barrel, trash bin"
+131,131,CV-Bench/ADE20K/validation/images/ADE_val_00001574.jpg,"sofa, couch, lounge"
+132,132,CV-Bench/ADE20K/validation/images/ADE_val_00001584.jpg,"billboard, hoarding"
+133,133,CV-Bench/ADE20K/validation/images/ADE_val_00001588.jpg,pen
+134,134,CV-Bench/ADE20K/validation/images/ADE_val_00001595.jpg,"road, route"
+135,135,CV-Bench/ADE20K/validation/images/ADE_val_00001612.jpg,"column, pillar"
+136,136,CV-Bench/ADE20K/validation/images/ADE_val_00001613.jpg,sky
+137,137,CV-Bench/ADE20K/validation/images/ADE_val_00000084.jpg,"curtain, drape, drapery, mantle, pall"
+138,138,CV-Bench/ADE20K/validation/images/ADE_val_00001634.jpg,door
+139,139,CV-Bench/ADE20K/validation/images/ADE_val_00000654.jpg,canopy
+140,140,CV-Bench/ADE20K/validation/images/ADE_val_00000656.jpg,"building, edifice"
+141,141,CV-Bench/ADE20K/validation/images/ADE_val_00000660.jpg,"building, edifice"
+142,142,CV-Bench/ADE20K/validation/images/ADE_val_00000662.jpg,wall
+143,143,CV-Bench/ADE20K/validation/images/ADE_val_00000085.jpg,wall
+144,144,CV-Bench/ADE20K/validation/images/ADE_val_00001663.jpg,"sofa, couch, lounge"
+145,145,CV-Bench/ADE20K/validation/images/ADE_val_00000664.jpg,"building, edifice"
+146,146,CV-Bench/ADE20K/validation/images/ADE_val_00000666.jpg,"person, individual, someone, somebody, mortal, soul"
+147,147,CV-Bench/ADE20K/validation/images/ADE_val_00000668.jpg,sky
+148,148,CV-Bench/ADE20K/validation/images/ADE_val_00001668.jpg,sky
+149,149,CV-Bench/ADE20K/validation/images/ADE_val_00001671.jpg,"traffic light, traffic signal, stoplight"
+150,150,CV-Bench/ADE20K/validation/images/ADE_val_00000086.jpg,armchair
+151,151,CV-Bench/ADE20K/validation/images/ADE_val_00001679.jpg,"windowpane, window"
+152,152,CV-Bench/ADE20K/validation/images/ADE_val_00000683.jpg,bench
+153,153,CV-Bench/ADE20K/validation/images/ADE_val_00000686.jpg,"footbridge, overcrossing, pedestrian bridge"
+154,154,CV-Bench/ADE20K/validation/images/ADE_val_00000090.jpg,"screen door, screen"
+155,155,CV-Bench/ADE20K/validation/images/ADE_val_00001014.jpg,"road, route"
+156,156,CV-Bench/ADE20K/validation/images/ADE_val_00000023.jpg,sky
+157,157,CV-Bench/ADE20K/validation/images/ADE_val_00000028.jpg,"person, individual, someone, somebody, mortal, soul"
+158,158,CV-Bench/ADE20K/validation/images/ADE_val_00000031.jpg,"car, auto, automobile, machine, motorcar"
+159,159,CV-Bench/ADE20K/validation/images/ADE_val_00001031.jpg,"streetlight, street lamp"
+160,160,CV-Bench/ADE20K/validation/images/ADE_val_00000061.jpg,"column, pillar"
+161,161,CV-Bench/ADE20K/validation/images/ADE_val_00000062.jpg,"pot, flowerpot"
+162,162,CV-Bench/ADE20K/validation/images/ADE_val_00000094.jpg,sink
+163,163,CV-Bench/ADE20K/validation/images/ADE_val_00000202.jpg,"car, auto, automobile, machine, motorcar"
+164,164,CV-Bench/ADE20K/validation/images/ADE_val_00000203.jpg,clock
+165,165,CV-Bench/ADE20K/validation/images/ADE_val_00000205.jpg,"plant, flora, plant life"
+166,166,CV-Bench/ADE20K/validation/images/ADE_val_00000102.jpg,countertop
+167,167,CV-Bench/ADE20K/validation/images/ADE_val_00000211.jpg,"sidewalk, pavement"
+168,168,CV-Bench/ADE20K/validation/images/ADE_val_00001203.jpg,"road, route"
+169,169,CV-Bench/ADE20K/validation/images/ADE_val_00001209.jpg,"sidewalk, pavement"
+170,170,CV-Bench/ADE20K/validation/images/ADE_val_00001221.jpg,"road, route"
+171,171,CV-Bench/ADE20K/validation/images/ADE_val_00001222.jpg,"person, individual, someone, somebody, mortal, soul"
+172,172,CV-Bench/ADE20K/validation/images/ADE_val_00000103.jpg,mirror
+173,173,CV-Bench/ADE20K/validation/images/ADE_val_00001234.jpg,"building, edifice"
+174,174,CV-Bench/ADE20K/validation/images/ADE_val_00001242.jpg,"hen, biddy"
+175,175,CV-Bench/ADE20K/validation/images/ADE_val_00000249.jpg,clock
+176,176,CV-Bench/ADE20K/validation/images/ADE_val_00001287.jpg,covered bridge
+177,177,CV-Bench/ADE20K/validation/images/ADE_val_00001293.jpg,house
+178,178,CV-Bench/ADE20K/validation/images/ADE_val_00001951.jpg,door
+179,179,CV-Bench/ADE20K/validation/images/ADE_val_00000367.jpg,sky
+180,180,CV-Bench/ADE20K/validation/images/ADE_val_00001076.jpg,"windowpane, window"
+181,181,CV-Bench/ADE20K/validation/images/ADE_val_00000383.jpg,sky
+182,182,CV-Bench/ADE20K/validation/images/ADE_val_00001385.jpg,"car, auto, automobile, machine, motorcar"
+183,183,CV-Bench/ADE20K/validation/images/ADE_val_00001393.jpg,"road, route"
+184,184,CV-Bench/ADE20K/validation/images/ADE_val_00000408.jpg,"road, route"
+185,185,CV-Bench/ADE20K/validation/images/ADE_val_00000426.jpg,sky
+186,186,CV-Bench/ADE20K/validation/images/ADE_val_00000435.jpg,"sidewalk, pavement"
+187,187,CV-Bench/ADE20K/validation/images/ADE_val_00000438.jpg,"bannister, banister, balustrade, balusters, handrail"
+188,188,CV-Bench/ADE20K/validation/images/ADE_val_00001449.jpg,"fireplug, fire hydrant, plug"
+189,189,CV-Bench/ADE20K/validation/images/ADE_val_00001079.jpg,sconce
+190,190,CV-Bench/ADE20K/validation/images/ADE_val_00001499.jpg,"fence, fencing"
+191,191,CV-Bench/ADE20K/validation/images/ADE_val_00000502.jpg,"stairs, steps"
+192,192,CV-Bench/ADE20K/validation/images/ADE_val_00000503.jpg,"beacon, lighthouse, beacon light, pharos"
+193,193,CV-Bench/ADE20K/validation/images/ADE_val_00001532.jpg,"road, route"
+194,194,CV-Bench/ADE20K/validation/images/ADE_val_00000543.jpg,"building, edifice"
+195,195,CV-Bench/ADE20K/validation/images/ADE_val_00001543.jpg,"rock, stone"
+196,196,CV-Bench/ADE20K/validation/images/ADE_val_00001551.jpg,path
+197,197,CV-Bench/ADE20K/validation/images/ADE_val_00001085.jpg,"doorframe, doorcase"
+198,198,CV-Bench/ADE20K/validation/images/ADE_val_00001556.jpg,"mountain, mount"
+199,199,CV-Bench/ADE20K/validation/images/ADE_val_00000638.jpg,"building, edifice"
+200,200,CV-Bench/ADE20K/validation/images/ADE_val_00000642.jpg,"building, edifice"
+201,201,CV-Bench/ADE20K/validation/images/ADE_val_00000706.jpg,"sidewalk, pavement"
+202,202,CV-Bench/ADE20K/validation/images/ADE_val_00001088.jpg,mirror
+203,203,CV-Bench/ADE20K/validation/images/ADE_val_00001710.jpg,statue
+204,204,CV-Bench/ADE20K/validation/images/ADE_val_00001718.jpg,"car, auto, automobile, machine, motorcar"
+205,205,CV-Bench/ADE20K/validation/images/ADE_val_00001735.jpg,"air conditioner, air conditioning"
+206,206,CV-Bench/ADE20K/validation/images/ADE_val_00000739.jpg,field
+207,207,CV-Bench/ADE20K/validation/images/ADE_val_00001096.jpg,"bucket, pail"
+208,208,CV-Bench/ADE20K/validation/images/ADE_val_00001748.jpg,"building, edifice"
+209,209,CV-Bench/ADE20K/validation/images/ADE_val_00001752.jpg,"footbridge, overcrossing, pedestrian bridge"
+210,210,CV-Bench/ADE20K/validation/images/ADE_val_00000767.jpg,"building, edifice"
+211,211,CV-Bench/ADE20K/validation/images/ADE_val_00001763.jpg,"sidewalk, pavement"
+212,212,CV-Bench/ADE20K/validation/images/ADE_val_00000776.jpg,sky
+213,213,CV-Bench/ADE20K/validation/images/ADE_val_00000778.jpg,"ashcan, trash can, garbage can, wastebin, ash bin, ash-bin, ashbin, dustbin, trash barrel, trash bin"
+214,214,CV-Bench/ADE20K/validation/images/ADE_val_00000785.jpg,"person, individual, someone, somebody, mortal, soul"
+215,215,CV-Bench/ADE20K/validation/images/ADE_val_00000792.jpg,sky
+216,216,CV-Bench/ADE20K/validation/images/ADE_val_00000798.jpg,tree
+217,217,CV-Bench/ADE20K/validation/images/ADE_val_00000802.jpg,"streetlight, street lamp"
+218,218,CV-Bench/ADE20K/validation/images/ADE_val_00000803.jpg,"curb, curbing, kerb"
+219,219,CV-Bench/ADE20K/validation/images/ADE_val_00000804.jpg,"road, route"
+220,220,CV-Bench/ADE20K/validation/images/ADE_val_00000805.jpg,"streetlight, street lamp"
+221,221,CV-Bench/ADE20K/validation/images/ADE_val_00000806.jpg,"car, auto, automobile, machine, motorcar"
+222,222,CV-Bench/ADE20K/validation/images/ADE_val_00001107.jpg,mirror
+223,223,CV-Bench/ADE20K/validation/images/ADE_val_00000808.jpg,"ashcan, trash can, garbage can, wastebin, ash bin, ash-bin, ashbin, dustbin, trash barrel, trash bin"
+224,224,CV-Bench/ADE20K/validation/images/ADE_val_00000818.jpg,"car, auto, automobile, machine, motorcar"
+225,225,CV-Bench/ADE20K/validation/images/ADE_val_00000819.jpg,"plant, flora, plant life"
+226,226,CV-Bench/ADE20K/validation/images/ADE_val_00000822.jpg,"car, auto, automobile, machine, motorcar"
+227,227,CV-Bench/ADE20K/validation/images/ADE_val_00000828.jpg,"truck, motortruck"
+228,228,CV-Bench/ADE20K/validation/images/ADE_val_00000830.jpg,"minibike, motorbike"
+229,229,CV-Bench/ADE20K/validation/images/ADE_val_00001108.jpg,"windowpane, window"
+230,230,CV-Bench/ADE20K/validation/images/ADE_val_00000832.jpg,"building, edifice"
+231,231,CV-Bench/ADE20K/validation/images/ADE_val_00000837.jpg,van
+232,232,CV-Bench/ADE20K/validation/images/ADE_val_00000838.jpg,"car, auto, automobile, machine, motorcar"
+233,233,CV-Bench/ADE20K/validation/images/ADE_val_00000840.jpg,"stairs, steps"
+234,234,CV-Bench/ADE20K/validation/images/ADE_val_00001937.jpg,"screen door, screen"
+235,235,CV-Bench/ADE20K/validation/images/ADE_val_00000873.jpg,"streetlight, street lamp"
+236,236,CV-Bench/ADE20K/validation/images/ADE_val_00001779.jpg,"sidewalk, pavement"
+237,237,CV-Bench/ADE20K/validation/images/ADE_val_00001782.jpg,"awning, sunshade, sunblind"
+238,238,CV-Bench/ADE20K/validation/images/ADE_val_00001787.jpg,tree
+239,239,CV-Bench/ADE20K/validation/images/ADE_val_00001793.jpg,"palm, palm tree"
+240,240,CV-Bench/ADE20K/validation/images/ADE_val_00001794.jpg,"banner, streamer"
+241,241,CV-Bench/ADE20K/validation/images/ADE_val_00001802.jpg,"car, auto, automobile, machine, motorcar"
+242,242,CV-Bench/ADE20K/validation/images/ADE_val_00001812.jpg,"antenna, aerial, transmitting aerial"
+243,243,CV-Bench/ADE20K/validation/images/ADE_val_00001813.jpg,"curb, curbing, kerb"
+244,244,CV-Bench/ADE20K/validation/images/ADE_val_00001819.jpg,pole
+245,245,CV-Bench/ADE20K/validation/images/ADE_val_00001821.jpg,sky
+246,246,CV-Bench/ADE20K/validation/images/ADE_val_00001824.jpg,"sidewalk, pavement"
+247,247,CV-Bench/ADE20K/validation/images/ADE_val_00001827.jpg,"road, route"
+248,248,CV-Bench/ADE20K/validation/images/ADE_val_00001831.jpg,"road, route"
+249,249,CV-Bench/ADE20K/validation/images/ADE_val_00001834.jpg,"road, route"
+250,250,CV-Bench/ADE20K/validation/images/ADE_val_00001836.jpg,"sidewalk, pavement"
+251,251,CV-Bench/ADE20K/validation/images/ADE_val_00001837.jpg,"trade name, brand name, brand, marque"
+252,252,CV-Bench/ADE20K/validation/images/ADE_val_00000124.jpg,pillow
+253,253,CV-Bench/ADE20K/validation/images/ADE_val_00001843.jpg,"traffic light, traffic signal, stoplight"
+254,254,CV-Bench/ADE20K/validation/images/ADE_val_00001847.jpg,"sidewalk, pavement"
+255,255,CV-Bench/ADE20K/validation/images/ADE_val_00001853.jpg,van
+256,256,CV-Bench/ADE20K/validation/images/ADE_val_00001854.jpg,"ashcan, trash can, garbage can, wastebin, ash bin, ash-bin, ashbin, dustbin, trash barrel, trash bin"
+257,257,CV-Bench/ADE20K/validation/images/ADE_val_00001859.jpg,"ashcan, trash can, garbage can, wastebin, ash bin, ash-bin, ashbin, dustbin, trash barrel, trash bin"
+258,258,CV-Bench/ADE20K/validation/images/ADE_val_00000126.jpg,mirror
+259,259,CV-Bench/ADE20K/validation/images/ADE_val_00001865.jpg,sky
+260,260,CV-Bench/ADE20K/validation/images/ADE_val_00001866.jpg,sky
+261,261,CV-Bench/ADE20K/validation/images/ADE_val_00001993.jpg,"sidewalk, pavement"
+262,262,CV-Bench/ADE20K/validation/images/ADE_val_00001995.jpg,"road, route"
+263,263,CV-Bench/ADE20K/validation/images/ADE_val_00001874.jpg,grass
+264,264,CV-Bench/ADE20K/validation/images/ADE_val_00001884.jpg,temple
+265,265,CV-Bench/ADE20K/validation/images/ADE_val_00000892.jpg,flag
+266,266,CV-Bench/ADE20K/validation/images/ADE_val_00000129.jpg,lamp
+267,267,CV-Bench/ADE20K/validation/images/ADE_val_00000905.jpg,sky
+268,268,CV-Bench/ADE20K/validation/images/ADE_val_00001905.jpg,sky
+269,269,CV-Bench/ADE20K/validation/images/ADE_val_00001914.jpg,house
+270,270,CV-Bench/ADE20K/validation/images/ADE_val_00001933.jpg,"rock, stone"
+271,271,CV-Bench/ADE20K/validation/images/ADE_val_00001021.jpg,machine
+272,272,CV-Bench/ADE20K/validation/images/ADE_val_00000044.jpg,"coffee table, cocktail table"
+273,273,CV-Bench/ADE20K/validation/images/ADE_val_00000051.jpg,wall
+274,274,CV-Bench/ADE20K/validation/images/ADE_val_00000134.jpg,"napkin, table napkin, serviette"
+275,275,CV-Bench/ADE20K/validation/images/ADE_val_00000241.jpg,wall
+276,276,CV-Bench/ADE20K/validation/images/ADE_val_00000943.jpg,"tank, storage tank"
+277,277,CV-Bench/ADE20K/validation/images/ADE_val_00000267.jpg,bottle
+278,278,CV-Bench/ADE20K/validation/images/ADE_val_00000269.jpg,table
+279,279,CV-Bench/ADE20K/validation/images/ADE_val_00001268.jpg,"curtain, drape, drapery, mantle, pall"
+280,280,CV-Bench/ADE20K/validation/images/ADE_val_00001273.jpg,wall
+281,281,CV-Bench/ADE20K/validation/images/ADE_val_00000138.jpg,"windowpane, window"
+282,282,CV-Bench/ADE20K/validation/images/ADE_val_00001275.jpg,wall
+283,283,CV-Bench/ADE20K/validation/images/ADE_val_00000282.jpg,"light, light source"
+284,284,CV-Bench/ADE20K/validation/images/ADE_val_00001281.jpg,"bannister, banister, balustrade, balusters, handrail"
+285,285,CV-Bench/ADE20K/validation/images/ADE_val_00001282.jpg,"painting, picture"
+286,286,CV-Bench/ADE20K/validation/images/ADE_val_00001283.jpg,wall
+287,287,CV-Bench/ADE20K/validation/images/ADE_val_00000292.jpg,cabinet
+288,288,CV-Bench/ADE20K/validation/images/ADE_val_00000295.jpg,"stairs, steps"
+289,289,CV-Bench/ADE20K/validation/images/ADE_val_00000298.jpg,"windowpane, window"
+290,290,CV-Bench/ADE20K/validation/images/ADE_val_00000139.jpg,wall
+291,291,CV-Bench/ADE20K/validation/images/ADE_val_00001325.jpg,oven
+292,292,CV-Bench/ADE20K/validation/images/ADE_val_00000338.jpg,"push button, push, button"
+293,293,CV-Bench/ADE20K/validation/images/ADE_val_00000341.jpg,wall
+294,294,CV-Bench/ADE20K/validation/images/ADE_val_00001536.jpg,wall
+295,295,CV-Bench/ADE20K/validation/images/ADE_val_00000140.jpg,door frame
+296,296,CV-Bench/ADE20K/validation/images/ADE_val_00001642.jpg,"person, individual, someone, somebody, mortal, soul"
+297,297,CV-Bench/ADE20K/validation/images/ADE_val_00001644.jpg,chair
+298,298,CV-Bench/ADE20K/validation/images/ADE_val_00001645.jpg,computer case
+299,299,CV-Bench/ADE20K/validation/images/ADE_val_00000725.jpg,vase
+300,300,CV-Bench/ADE20K/validation/images/ADE_val_00001724.jpg,counter
+301,301,CV-Bench/ADE20K/validation/images/ADE_val_00000143.jpg,bed
+302,302,CV-Bench/ADE20K/validation/images/ADE_val_00001725.jpg,"poster, posting, placard, notice, bill, card"
+303,303,CV-Bench/ADE20K/validation/images/ADE_val_00000774.jpg,wall
+304,304,CV-Bench/ADE20K/validation/images/ADE_val_00000775.jpg,chair
+305,305,CV-Bench/ADE20K/validation/images/ADE_val_00000903.jpg,wall
+306,306,CV-Bench/ADE20K/validation/images/ADE_val_00001911.jpg,wall
+307,307,CV-Bench/ADE20K/validation/images/ADE_val_00001912.jpg,"light, light source"
+308,308,CV-Bench/ADE20K/validation/images/ADE_val_00000145.jpg,"fluorescent, fluorescent fixture"
+309,309,CV-Bench/ADE20K/validation/images/ADE_val_00000929.jpg,"painting, picture"
+310,310,CV-Bench/ADE20K/validation/images/ADE_val_00001929.jpg,"pipe, pipage, piping"
+311,311,CV-Bench/ADE20K/validation/images/ADE_val_00000146.jpg,armchair
+312,312,CV-Bench/ADE20K/validation/images/ADE_val_00000147.jpg,pillow
+313,313,CV-Bench/ADE20K/validation/images/ADE_val_00000152.jpg,wall
+314,314,CV-Bench/ADE20K/validation/images/ADE_val_00000154.jpg,"painting, picture"
+315,315,CV-Bench/ADE20K/validation/images/ADE_val_00000156.jpg,bed
+316,316,CV-Bench/ADE20K/validation/images/ADE_val_00000157.jpg,book
+317,317,CV-Bench/ADE20K/validation/images/ADE_val_00000159.jpg,armchair
+318,318,CV-Bench/ADE20K/validation/images/ADE_val_00000163.jpg,bed
+319,319,CV-Bench/ADE20K/validation/images/ADE_val_00000172.jpg,wall
+320,320,CV-Bench/ADE20K/validation/images/ADE_val_00000177.jpg,cushion
+321,321,CV-Bench/ADE20K/validation/images/ADE_val_00000181.jpg,"wardrobe, closet, press"
+322,322,CV-Bench/ADE20K/validation/images/ADE_val_00000184.jpg,"windowpane, window"
+323,323,CV-Bench/ADE20K/validation/images/ADE_val_00000939.jpg,lamp
+324,324,CV-Bench/ADE20K/validation/images/ADE_val_00000940.jpg,door
+325,325,CV-Bench/ADE20K/validation/images/ADE_val_00001117.jpg,table
+326,326,CV-Bench/ADE20K/validation/images/ADE_val_00001119.jpg,"blind, screen"
+327,327,CV-Bench/ADE20K/validation/images/ADE_val_00001131.jpg,drawer
+328,328,CV-Bench/ADE20K/validation/images/ADE_val_00001134.jpg,wall
+329,329,CV-Bench/ADE20K/validation/images/ADE_val_00001135.jpg,"telephone, phone, telephone set"
+330,330,CV-Bench/ADE20K/validation/images/ADE_val_00001136.jpg,"curtain, drape, drapery, mantle, pall"
+331,331,CV-Bench/ADE20K/validation/images/ADE_val_00001138.jpg,"windowpane, window"
+332,332,CV-Bench/ADE20K/validation/images/ADE_val_00000237.jpg,"bag, handbag, pocketbook, purse"
+333,333,CV-Bench/ADE20K/validation/images/ADE_val_00001139.jpg,bed
+334,334,CV-Bench/ADE20K/validation/images/ADE_val_00001144.jpg,table
+335,335,CV-Bench/ADE20K/validation/images/ADE_val_00001152.jpg,bed
+336,336,CV-Bench/ADE20K/validation/images/ADE_val_00001153.jpg,bed
+337,337,CV-Bench/ADE20K/validation/images/ADE_val_00001154.jpg,armchair
+338,338,CV-Bench/ADE20K/validation/images/ADE_val_00001159.jpg,table
+339,339,CV-Bench/ADE20K/validation/images/ADE_val_00001160.jpg,radio
+340,340,CV-Bench/ADE20K/validation/images/ADE_val_00001162.jpg,"windowpane, window"
+341,341,CV-Bench/ADE20K/validation/images/ADE_val_00001163.jpg,"wall socket, wall plug, electric outlet, electrical outlet, outlet, electric receptacle"
+342,342,CV-Bench/ADE20K/validation/images/ADE_val_00000025.jpg,"('wall', 'stairs, steps')"
+343,343,CV-Bench/ADE20K/validation/images/ADE_val_00001049.jpg,"('light, light source', 'stairway, staircase')"
+344,344,CV-Bench/ADE20K/validation/images/ADE_val_00001130.jpg,"('mirror', 'wardrobe, closet, press')"
+345,345,CV-Bench/ADE20K/validation/images/ADE_val_00001137.jpg,"('cabinet', 'flower')"
+346,346,CV-Bench/ADE20K/validation/images/ADE_val_00001143.jpg,"('wall', 'coffee table, cocktail table')"
+347,347,CV-Bench/ADE20K/validation/images/ADE_val_00001145.jpg,"('bottle', 'switch, electric switch, electrical switch')"
+348,348,CV-Bench/ADE20K/validation/images/ADE_val_00001155.jpg,"('sconce', 'lamp')"
+349,349,CV-Bench/ADE20K/validation/images/ADE_val_00001167.jpg,"('wall', 'mirror')"
+350,350,CV-Bench/ADE20K/validation/images/ADE_val_00001172.jpg,"('sofa, couch, lounge', 'painting, picture')"
+351,351,CV-Bench/ADE20K/validation/images/ADE_val_00001173.jpg,"('lamp', 'door frame')"
+352,352,CV-Bench/ADE20K/validation/images/ADE_val_00001180.jpg,"('pillow', 'rug, carpet, carpeting')"
+353,353,CV-Bench/ADE20K/validation/images/ADE_val_00001182.jpg,"('cushion', 'table')"
+354,354,CV-Bench/ADE20K/validation/images/ADE_val_00001246.jpg,"('pillow', 'blind, screen')"
+355,355,CV-Bench/ADE20K/validation/images/ADE_val_00000255.jpg,"('box', 'chair')"
+356,356,CV-Bench/ADE20K/validation/images/ADE_val_00000309.jpg,"('bell', 'rope')"
+357,357,CV-Bench/ADE20K/validation/images/ADE_val_00000314.jpg,"('pot, flowerpot', 'painting, picture')"
+358,358,CV-Bench/ADE20K/validation/images/ADE_val_00000315.jpg,"('jar', 'pitcher, ewer')"
+359,359,CV-Bench/ADE20K/validation/images/ADE_val_00000316.jpg,"('bottle', 'table')"
+360,360,CV-Bench/ADE20K/validation/images/ADE_val_00000318.jpg,"('coffee table, cocktail table', 'table')"
+361,361,CV-Bench/ADE20K/validation/images/ADE_val_00000320.jpg,"('candle, taper, wax light', 'door')"
+362,362,CV-Bench/ADE20K/validation/images/ADE_val_00000240.jpg,"('bannister, banister, balustrade, balusters, handrail', 'statue')"
+363,363,CV-Bench/ADE20K/validation/images/ADE_val_00001316.jpg,"('windowpane, window', 'table')"
+364,364,CV-Bench/ADE20K/validation/images/ADE_val_00001317.jpg,"('cabinet', 'wall socket, wall plug, electric outlet, electrical outlet, outlet, electric receptacle')"
+365,365,CV-Bench/ADE20K/validation/images/ADE_val_00001319.jpg,"('mirror', 'table')"
+366,366,CV-Bench/ADE20K/validation/images/ADE_val_00001329.jpg,"('bed', 'lamp')"
+367,367,CV-Bench/ADE20K/validation/images/ADE_val_00001330.jpg,"('pillow', 'remote control, remote')"
+368,368,CV-Bench/ADE20K/validation/images/ADE_val_00001251.jpg,"('plaything, toy', 'desk')"
+369,369,CV-Bench/ADE20K/validation/images/ADE_val_00000420.jpg,"('painting, picture', 'laptop bag')"
+370,370,CV-Bench/ADE20K/validation/images/ADE_val_00000422.jpg,"('wall', 'desk')"
+371,371,CV-Bench/ADE20K/validation/images/ADE_val_00001421.jpg,"('wall socket, wall plug, electric outlet, electrical outlet, outlet, electric receptacle', 'desk organizer')"
+372,372,CV-Bench/ADE20K/validation/images/ADE_val_00001422.jpg,"('clock', 'printer')"
+373,373,CV-Bench/ADE20K/validation/images/ADE_val_00001423.jpg,"('loudspeaker, speaker, speaker unit, loudspeaker system, speaker system', 'ashcan, trash can, garbage can, wastebin, ash bin, ash-bin, ashbin, dustbin, trash barrel, trash bin')"
+374,374,CV-Bench/ADE20K/validation/images/ADE_val_00000434.jpg,"('sconce', 'painting, picture')"
+375,375,CV-Bench/ADE20K/validation/images/ADE_val_00000959.jpg,"('bed', 'telephone, phone, telephone set')"
+376,376,CV-Bench/ADE20K/validation/images/ADE_val_00000944.jpg,"('wall', 'clock')"
+377,377,CV-Bench/ADE20K/validation/images/ADE_val_00001431.jpg,"('painting, picture', 'lamp')"
+378,378,CV-Bench/ADE20K/validation/images/ADE_val_00001434.jpg,"('pillow', 'sconce')"
+379,379,CV-Bench/ADE20K/validation/images/ADE_val_00000460.jpg,"('plate', 'flower')"
+380,380,CV-Bench/ADE20K/validation/images/ADE_val_00000474.jpg,"('door', 'sink')"
+381,381,CV-Bench/ADE20K/validation/images/ADE_val_00000483.jpg,"('cutlery', 'stove, kitchen stove, range, kitchen range, cooking stove')"
+382,382,CV-Bench/ADE20K/validation/images/ADE_val_00000485.jpg,"('cabinet', 'kitchen island')"
+383,383,CV-Bench/ADE20K/validation/images/ADE_val_00000486.jpg,"('microwave, microwave oven', 'bowl')"
+384,384,CV-Bench/ADE20K/validation/images/ADE_val_00001466.jpg,"('refrigerator, icebox', 'fire extinguisher, extinguisher, asphyxiator')"
+385,385,CV-Bench/ADE20K/validation/images/ADE_val_00001470.jpg,"('wall', 'stove, kitchen stove, range, kitchen range, cooking stove')"
+386,386,CV-Bench/ADE20K/validation/images/ADE_val_00001473.jpg,"('pot, flowerpot', 'light troffer')"
+387,387,CV-Bench/ADE20K/validation/images/ADE_val_00001474.jpg,"('painting, picture', 'work surface')"
+388,388,CV-Bench/ADE20K/validation/images/ADE_val_00001477.jpg,"('curtain, drape, drapery, mantle, pall', 'air conditioner, air conditioning')"
+389,389,CV-Bench/ADE20K/validation/images/ADE_val_00001479.jpg,"('jar', 'windowpane, window')"
+390,390,CV-Bench/ADE20K/validation/images/ADE_val_00001487.jpg,"('wall', 'kitchen island')"
+391,391,CV-Bench/ADE20K/validation/images/ADE_val_00000505.jpg,"('table', 'table cloth')"
+392,392,CV-Bench/ADE20K/validation/images/ADE_val_00000508.jpg,"('magazine', 'cushion')"
+393,393,CV-Bench/ADE20K/validation/images/ADE_val_00000511.jpg,"('wall', 'door')"
+394,394,CV-Bench/ADE20K/validation/images/ADE_val_00000516.jpg,"('blind, screen', 'coffee table, cocktail table')"
+395,395,CV-Bench/ADE20K/validation/images/ADE_val_00000526.jpg,"('bar', 'door')"
+396,396,CV-Bench/ADE20K/validation/images/ADE_val_00001295.jpg,"('painting, picture', 'door')"
+397,397,CV-Bench/ADE20K/validation/images/ADE_val_00000532.jpg,"('laptop, laptop computer', 'armchair')"
+398,398,CV-Bench/ADE20K/validation/images/ADE_val_00000966.jpg,"('wall', 'fireplace, hearth, open fireplace')"
+399,399,CV-Bench/ADE20K/validation/images/ADE_val_00001508.jpg,"('flower', 'curtain, drape, drapery, mantle, pall')"
+400,400,CV-Bench/ADE20K/validation/images/ADE_val_00001527.jpg,"('cushion', 'sofa, couch, lounge')"
+401,401,CV-Bench/ADE20K/validation/images/ADE_val_00001965.jpg,"('wall', 'basket, handbasket')"
+402,402,CV-Bench/ADE20K/validation/images/ADE_val_00001967.jpg,"('beam', 'curtain, drape, drapery, mantle, pall')"
+403,403,CV-Bench/ADE20K/validation/images/ADE_val_00000688.jpg,"('cabinet', 'windowpane, window')"
+404,404,CV-Bench/ADE20K/validation/images/ADE_val_00000689.jpg,"('potatoes', 'vase')"
+405,405,CV-Bench/ADE20K/validation/images/ADE_val_00000699.jpg,"('wall', 'table')"
+406,406,CV-Bench/ADE20K/validation/images/ADE_val_00000715.jpg,"('signboard, sign', 'curtain, drape, drapery, mantle, pall')"
+407,407,CV-Bench/ADE20K/validation/images/ADE_val_00000716.jpg,"('person, individual, someone, somebody, mortal, soul', 'chandelier, pendant, pendent')"
+408,408,CV-Bench/ADE20K/validation/images/ADE_val_00000988.jpg,"('pool ball', 'lamp')"
+409,409,CV-Bench/ADE20K/validation/images/ADE_val_00001714.jpg,"('wall', 'chandelier, pendant, pendent')"
+410,410,CV-Bench/ADE20K/validation/images/ADE_val_00000750.jpg,"('shower', 'painting, picture')"
+411,411,CV-Bench/ADE20K/validation/images/ADE_val_00000899.jpg,"('microwave, microwave oven', 'door')"
+412,412,CV-Bench/ADE20K/validation/images/ADE_val_00000546.jpg,"('cave entrance', 'tree')"
+413,413,CV-Bench/ADE20K/validation/images/ADE_val_00001637.jpg,"('chimney', 'building, edifice')"
+414,414,CV-Bench/ADE20K/validation/images/ADE_val_00000896.jpg,"('hat, chapeau, lid', 'trench')"
+415,415,CV-Bench/ADE20K/validation/images/ADE_val_00000917.jpg,"('water', 'building, edifice')"
+416,416,CV-Bench/ADE20K/validation/images/ADE_val_00001110.jpg,"('tree', 'palm, palm tree')"
+417,417,CV-Bench/ADE20K/validation/images/ADE_val_00001288.jpg,"('rock, stone', 'plant, flora, plant life')"
+418,418,CV-Bench/ADE20K/validation/images/ADE_val_00000349.jpg,"('grass', 'mountain, mount')"
+419,419,CV-Bench/ADE20K/validation/images/ADE_val_00001350.jpg,"('plant, flora, plant life', 'field')"
+420,420,CV-Bench/ADE20K/validation/images/ADE_val_00001355.jpg,"('mountain, mount', 'water')"
+421,421,CV-Bench/ADE20K/validation/images/ADE_val_00000361.jpg,"('tree', 'wheelbarrow')"
+422,422,CV-Bench/ADE20K/validation/images/ADE_val_00000362.jpg,"('plant, flora, plant life', 'animal, animate being, beast, brute, creature, fauna')"
+423,423,CV-Bench/ADE20K/validation/images/ADE_val_00000551.jpg,"('double door', 'person, individual, someone, somebody, mortal, soul')"
+424,424,CV-Bench/ADE20K/validation/images/ADE_val_00001367.jpg,"('statue', 'person, individual, someone, somebody, mortal, soul')"
+425,425,CV-Bench/ADE20K/validation/images/ADE_val_00000419.jpg,"('field', 'hill')"
+426,426,CV-Bench/ADE20K/validation/images/ADE_val_00001972.jpg,"('mountain, mount', 'grass')"
+427,427,CV-Bench/ADE20K/validation/images/ADE_val_00000563.jpg,"('wall', 'person, individual, someone, somebody, mortal, soul')"
+428,428,CV-Bench/ADE20K/validation/images/ADE_val_00001973.jpg,"('mountain pass', 'mountain, mount')"
+429,429,CV-Bench/ADE20K/validation/images/ADE_val_00000560.jpg,"('mountain, mount', 'house')"
+430,430,CV-Bench/ADE20K/validation/images/ADE_val_00001982.jpg,"('sea', 'sun')"
+431,431,CV-Bench/ADE20K/validation/images/ADE_val_00000732.jpg,"('tree', 'rock, stone')"
+432,432,CV-Bench/ADE20K/validation/images/ADE_val_00001740.jpg,"('sea', 'hill')"
+433,433,CV-Bench/ADE20K/validation/images/ADE_val_00001900.jpg,"('rock, stone', 'river')"
+434,434,CV-Bench/ADE20K/validation/images/ADE_val_00001998.jpg,"('rock, stone', 'tree')"
+435,435,CV-Bench/ADE20K/validation/images/ADE_val_00000918.jpg,"('tree', 'tree')"
+436,436,CV-Bench/ADE20K/validation/images/ADE_val_00001918.jpg,"('waterfall, falls', 'land, ground, soil')"
+437,437,CV-Bench/ADE20K/validation/images/ADE_val_00000919.jpg,"('plant, flora, plant life', 'waterfall, falls')"
+438,438,CV-Bench/ADE20K/validation/images/ADE_val_00001068.jpg,"('wall', 'painting, picture')"
+439,439,CV-Bench/ADE20K/validation/images/ADE_val_00001223.jpg,"('stand', 'jar')"
+440,440,CV-Bench/ADE20K/validation/images/ADE_val_00000259.jpg,"('trouser, pant', 'base, pedestal, stand')"
+441,441,CV-Bench/ADE20K/validation/images/ADE_val_00000355.jpg,"('wall', 'mirror')"
+442,442,CV-Bench/ADE20K/validation/images/ADE_val_00000356.jpg,"('plate', 'painting, picture')"
+443,443,CV-Bench/ADE20K/validation/images/ADE_val_00000359.jpg,"('plant, flora, plant life', 'signboard, sign')"
+444,444,CV-Bench/ADE20K/validation/images/ADE_val_00001359.jpg,"('bag, handbag, pocketbook, purse', 'signboard, sign')"
+445,445,CV-Bench/ADE20K/validation/images/ADE_val_00000444.jpg,"('table', 'lamp')"
+446,446,CV-Bench/ADE20K/validation/images/ADE_val_00001961.jpg,"('wall', 'painting, picture')"
+447,447,CV-Bench/ADE20K/validation/images/ADE_val_00000544.jpg,"('stool', 'arcade, colonnade')"
+448,448,CV-Bench/ADE20K/validation/images/ADE_val_00001717.jpg,"('blind, screen', 'stool')"
+449,449,CV-Bench/ADE20K/validation/images/ADE_val_00001878.jpg,"('stand', 'fluorescent, fluorescent fixture')"
+450,450,CV-Bench/ADE20K/validation/images/ADE_val_00000927.jpg,"('wall', 'barrel, cask')"
+451,451,CV-Bench/ADE20K/validation/images/ADE_val_00000021.jpg,"('building, edifice', 'pot, flowerpot')"
+452,452,CV-Bench/ADE20K/validation/images/ADE_val_00001055.jpg,"('ball', 'grass')"
+453,453,CV-Bench/ADE20K/validation/images/ADE_val_00001075.jpg,"('grass', 'pole')"
+454,454,CV-Bench/ADE20K/validation/images/ADE_val_00001109.jpg,"('lamp', 'bat')"
+455,455,CV-Bench/ADE20K/validation/images/ADE_val_00000231.jpg,"('monitor, monitoring device', 'slot machine, coin machine')"
+456,456,CV-Bench/ADE20K/validation/images/ADE_val_00001249.jpg,"('pole', 'road, route')"
+457,457,CV-Bench/ADE20K/validation/images/ADE_val_00001335.jpg,"('rug, carpet, carpeting', 'person, individual, someone, somebody, mortal, soul')"
+458,458,CV-Bench/ADE20K/validation/images/ADE_val_00001336.jpg,"('rack', 'stairs, steps')"
+459,459,CV-Bench/ADE20K/validation/images/ADE_val_00001353.jpg,"('tree', 'wall')"
+460,460,CV-Bench/ADE20K/validation/images/ADE_val_00000395.jpg,"('loudspeaker, speaker, speaker unit, loudspeaker system, speaker system', 'music system')"
+461,461,CV-Bench/ADE20K/validation/images/ADE_val_00001395.jpg,"('light, light source', 'chair')"
+462,462,CV-Bench/ADE20K/validation/images/ADE_val_00001447.jpg,"('plant, flora, plant life', 'hot tub')"
+463,463,CV-Bench/ADE20K/validation/images/ADE_val_00001489.jpg,"('wall', 'labyrinth')"
+464,464,CV-Bench/ADE20K/validation/images/ADE_val_00001690.jpg,"('bench', 'streetlight, street lamp')"
+465,465,CV-Bench/ADE20K/validation/images/ADE_val_00001707.jpg,"('grass', 'tree')"
+466,466,CV-Bench/ADE20K/validation/images/ADE_val_00000713.jpg,"('wall', 'heater, warmer')"
+467,467,CV-Bench/ADE20K/validation/images/ADE_val_00001989.jpg,"('rake', 'person, individual, someone, somebody, mortal, soul')"
+468,468,CV-Bench/ADE20K/validation/images/ADE_val_00000013.jpg,"('plaything, toy', 'painting, picture')"
+469,469,CV-Bench/ADE20K/validation/images/ADE_val_00000741.jpg,"('plaything, toy', 'fence, fencing')"
+470,470,CV-Bench/ADE20K/validation/images/ADE_val_00001769.jpg,"('towel', 'windowpane, window')"
+471,471,CV-Bench/ADE20K/validation/images/ADE_val_00000930.jpg,"('ring', 'grandstand, covered stand')"
+472,472,CV-Bench/ADE20K/validation/images/ADE_val_00000934.jpg,"('tree', 'animal, animate being, beast, brute, creature, fauna')"
+473,473,CV-Bench/ADE20K/validation/images/ADE_val_00000010.jpg,"('light, light source', 'chair')"
+474,474,CV-Bench/ADE20K/validation/images/ADE_val_00001934.jpg,"('baggage carts', 'counter')"
+475,475,CV-Bench/ADE20K/validation/images/ADE_val_00000263.jpg,"('windowpane, window', 'meters')"
+476,476,CV-Bench/ADE20K/validation/images/ADE_val_00001264.jpg,"('controls', 'light, light source')"
+477,477,CV-Bench/ADE20K/validation/images/ADE_val_00000304.jpg,"('seat', 'stove, kitchen stove, range, kitchen range, cooking stove')"
+478,478,CV-Bench/ADE20K/validation/images/ADE_val_00001305.jpg,"('table', 'seat')"
+479,479,CV-Bench/ADE20K/validation/images/ADE_val_00001339.jpg,"('wall', 'elevator door')"
+480,480,CV-Bench/ADE20K/validation/images/ADE_val_00001371.jpg,"('kettle, boiler', 'work surface')"
+481,481,CV-Bench/ADE20K/validation/images/ADE_val_00000730.jpg,"('signboard, sign', 'door')"
+482,482,CV-Bench/ADE20K/validation/images/ADE_val_00001047.jpg,"('wall', 'laptop, laptop computer')"
+483,483,CV-Bench/ADE20K/validation/images/ADE_val_00000566.jpg,"('box', 'door')"
+484,484,CV-Bench/ADE20K/validation/images/ADE_val_00000567.jpg,"('sidewalk, pavement', 'car, auto, automobile, machine, motorcar')"
+485,485,CV-Bench/ADE20K/validation/images/ADE_val_00000587.jpg,"('streetlight, street lamp', 'stairs, steps')"
+486,486,CV-Bench/ADE20K/validation/images/ADE_val_00000593.jpg,"('fence, fencing', 'road, route')"
+487,487,CV-Bench/ADE20K/validation/images/ADE_val_00000595.jpg,"('road, route', 'mountain, mount')"
+488,488,CV-Bench/ADE20K/validation/images/ADE_val_00000077.jpg,"('mirror', 'shelf')"
+489,489,CV-Bench/ADE20K/validation/images/ADE_val_00000609.jpg,"('paper', 'laminating machine')"
+490,490,CV-Bench/ADE20K/validation/images/ADE_val_00000610.jpg,"('book', 'bottle')"
+491,491,CV-Bench/ADE20K/validation/images/ADE_val_00000612.jpg,"('grass', 'bucket, pail')"
+492,492,CV-Bench/ADE20K/validation/images/ADE_val_00000614.jpg,"('tree', 'tree')"
+493,493,CV-Bench/ADE20K/validation/images/ADE_val_00000615.jpg,"('car, auto, automobile, machine, motorcar', 'tunnel')"
+494,494,CV-Bench/ADE20K/validation/images/ADE_val_00000078.jpg,"('handle, grip, handgrip, hold', 'can, tin, tin can')"
+495,495,CV-Bench/ADE20K/validation/images/ADE_val_00000622.jpg,"('bannister, banister, balustrade, balusters, handrail', 'signboard, sign')"
+496,496,CV-Bench/ADE20K/validation/images/ADE_val_00000632.jpg,"('pier, wharf, wharfage, dock', 'trunk, tree trunk, bole')"
+497,497,CV-Bench/ADE20K/validation/images/ADE_val_00000978.jpg,"('sun', 'sea')"
+498,498,CV-Bench/ADE20K/validation/images/ADE_val_00001572.jpg,"('plant, flora, plant life', 'stairway, staircase')"
+499,499,CV-Bench/ADE20K/validation/images/ADE_val_00000079.jpg,"('mirror', 'shower screen')"
+500,500,CV-Bench/ADE20K/validation/images/ADE_val_00001978.jpg,"('building, edifice', 'rock, stone')"
+501,501,CV-Bench/ADE20K/validation/images/ADE_val_00000083.jpg,"('faucet', 'sink')"
+502,502,CV-Bench/ADE20K/validation/images/ADE_val_00001662.jpg,"('person, individual, someone, somebody, mortal, soul', 'car, auto, automobile, machine, motorcar')"
+503,503,CV-Bench/ADE20K/validation/images/ADE_val_00000667.jpg,"('grass', 'streetlight, street lamp')"
+504,504,CV-Bench/ADE20K/validation/images/ADE_val_00000091.jpg,"('towel dispenser', 'toilet, can, commode, crapper, pot, potty, stool, throne')"
+505,505,CV-Bench/ADE20K/validation/images/ADE_val_00000672.jpg,"('building, edifice', 'building, edifice')"
+506,506,CV-Bench/ADE20K/validation/images/ADE_val_00000673.jpg,"('vase', 'sofa, couch, lounge')"
+507,507,CV-Bench/ADE20K/validation/images/ADE_val_00001676.jpg,"('tree', 'shore')"
+508,508,CV-Bench/ADE20K/validation/images/ADE_val_00000681.jpg,"('person, individual, someone, somebody, mortal, soul', 'basket, handbasket')"
+509,509,CV-Bench/ADE20K/validation/images/ADE_val_00000093.jpg,"('wall', 'toilet, can, commode, crapper, pot, potty, stool, throne')"
+510,510,CV-Bench/ADE20K/validation/images/ADE_val_00001682.jpg,"('tree', 'stairs, steps')"
+511,511,CV-Bench/ADE20K/validation/images/ADE_val_00000684.jpg,"('tank, storage tank', 'fluorescent, fluorescent fixture')"
+512,512,CV-Bench/ADE20K/validation/images/ADE_val_00000003.jpg,"('signboard, sign', 'building, edifice')"
+513,513,CV-Bench/ADE20K/validation/images/ADE_val_00001005.jpg,"('building, edifice', 'person, individual, someone, somebody, mortal, soul')"
+514,514,CV-Bench/ADE20K/validation/images/ADE_val_00001006.jpg,"('trade name, brand name, brand, marque', 'ashcan, trash can, garbage can, wastebin, ash bin, ash-bin, ashbin, dustbin, trash barrel, trash bin')"
+515,515,CV-Bench/ADE20K/validation/images/ADE_val_00000014.jpg,"('building, edifice', 'container')"
+516,516,CV-Bench/ADE20K/validation/images/ADE_val_00000096.jpg,"('toilet tissue, toilet paper, bathroom tissue', 'toilet, can, commode, crapper, pot, potty, stool, throne')"
+517,517,CV-Bench/ADE20K/validation/images/ADE_val_00001024.jpg,"('tree', 'building, edifice')"
+518,518,CV-Bench/ADE20K/validation/images/ADE_val_00000100.jpg,"('sconce', 'soap dish')"
+519,519,CV-Bench/ADE20K/validation/images/ADE_val_00000190.jpg,"('stairs, steps', 'grass')"
+520,520,CV-Bench/ADE20K/validation/images/ADE_val_00001196.jpg,"('road, route', 'plant, flora, plant life')"
+521,521,CV-Bench/ADE20K/validation/images/ADE_val_00001202.jpg,"('building, edifice', 'manhole')"
+522,522,CV-Bench/ADE20K/validation/images/ADE_val_00001204.jpg,"('trade name, brand name, brand, marque', 'signboard, sign')"
+523,523,CV-Bench/ADE20K/validation/images/ADE_val_00000106.jpg,"('sink', 'bathtub, bathing tub, bath, tub')"
+524,524,CV-Bench/ADE20K/validation/images/ADE_val_00001211.jpg,"('trade name, brand name, brand, marque', 'plant, flora, plant life')"
+525,525,CV-Bench/ADE20K/validation/images/ADE_val_00001212.jpg,"('person, individual, someone, somebody, mortal, soul', 'ashcan, trash can, garbage can, wastebin, ash bin, ash-bin, ashbin, dustbin, trash barrel, trash bin')"
+526,526,CV-Bench/ADE20K/validation/images/ADE_val_00001216.jpg,"('road, route', 'bench')"
+527,527,CV-Bench/ADE20K/validation/images/ADE_val_00001248.jpg,"('car, auto, automobile, machine, motorcar', 'stairs, steps')"
+528,528,CV-Bench/ADE20K/validation/images/ADE_val_00000285.jpg,"('sidewalk, pavement', 'tree')"
+529,529,CV-Bench/ADE20K/validation/images/ADE_val_00001285.jpg,"('bannister, banister, balustrade, balusters, handrail', 'signboard, sign')"
+530,530,CV-Bench/ADE20K/validation/images/ADE_val_00000108.jpg,"('wall', 'bottle')"
+531,531,CV-Bench/ADE20K/validation/images/ADE_val_00001300.jpg,"('building, edifice', 'vending machine')"
+532,532,CV-Bench/ADE20K/validation/images/ADE_val_00001328.jpg,"('plant, flora, plant life', 'stairs, steps')"
+533,533,CV-Bench/ADE20K/validation/images/ADE_val_00001332.jpg,"('stairs, steps', 'antenna, aerial, transmitting aerial')"
+534,534,CV-Bench/ADE20K/validation/images/ADE_val_00001334.jpg,"('plant, flora, plant life', 'grass')"
+535,535,CV-Bench/ADE20K/validation/images/ADE_val_00001351.jpg,"('field', 'mountain, mount')"
+536,536,CV-Bench/ADE20K/validation/images/ADE_val_00001352.jpg,"('flag', 'sidewalk, pavement')"
+537,537,CV-Bench/ADE20K/validation/images/ADE_val_00000357.jpg,"('tree', 'fence, fencing')"
+538,538,CV-Bench/ADE20K/validation/images/ADE_val_00000937.jpg,"('wall', 'wall recessed light')"
+539,539,CV-Bench/ADE20K/validation/images/ADE_val_00001369.jpg,"('stairs, steps', 'plant, flora, plant life')"
+540,540,CV-Bench/ADE20K/validation/images/ADE_val_00000387.jpg,"('person, individual, someone, somebody, mortal, soul', 'stairs, steps')"
+541,541,CV-Bench/ADE20K/validation/images/ADE_val_00000393.jpg,"('tree', 'grass')"
+542,542,CV-Bench/ADE20K/validation/images/ADE_val_00001399.jpg,"('pier', 'mountain, mount')"
+543,543,CV-Bench/ADE20K/validation/images/ADE_val_00000405.jpg,"('streetlight, street lamp', 'building, edifice')"
+544,544,CV-Bench/ADE20K/validation/images/ADE_val_00000037.jpg,"('palette', 'wall')"
+545,545,CV-Bench/ADE20K/validation/images/ADE_val_00001083.jpg,"('sconce', 'towel')"
+546,546,CV-Bench/ADE20K/validation/images/ADE_val_00000411.jpg,"('plant, flora, plant life', 'tree')"
+547,547,CV-Bench/ADE20K/validation/images/ADE_val_00000415.jpg,"('bridge, span', 'light post')"
+548,548,CV-Bench/ADE20K/validation/images/ADE_val_00000417.jpg,"('car, auto, automobile, machine, motorcar', 'railing, rail')"
+549,549,CV-Bench/ADE20K/validation/images/ADE_val_00001410.jpg,"('streetlight, street lamp', 'traffic light, traffic signal, stoplight')"
+550,550,CV-Bench/ADE20K/validation/images/ADE_val_00001084.jpg,"('toilet tissue, toilet paper, bathroom tissue', 'screen door, screen')"
+551,551,CV-Bench/ADE20K/validation/images/ADE_val_00000452.jpg,"('bannister, banister, balustrade, balusters, handrail', 'tree')"
+552,552,CV-Bench/ADE20K/validation/images/ADE_val_00000457.jpg,"('building, edifice', 'van')"
+553,553,CV-Bench/ADE20K/validation/images/ADE_val_00000494.jpg,"('person, individual, someone, somebody, mortal, soul', 'helicopter')"
+554,554,CV-Bench/ADE20K/validation/images/ADE_val_00001502.jpg,"('mountain, mount', 'beacon, lighthouse, beacon light, pharos')"
+555,555,CV-Bench/ADE20K/validation/images/ADE_val_00000537.jpg,"('tree', 'tower')"
+556,556,CV-Bench/ADE20K/validation/images/ADE_val_00001086.jpg,"('toilet, can, commode, crapper, pot, potty, stool, throne', 'soap')"
+557,557,CV-Bench/ADE20K/validation/images/ADE_val_00001540.jpg,"('food, solid food', 'person, individual, someone, somebody, mortal, soul')"
+558,558,CV-Bench/ADE20K/validation/images/ADE_val_00000545.jpg,"('person, individual, someone, somebody, mortal, soul', 'road, route')"
+559,559,CV-Bench/ADE20K/validation/images/ADE_val_00000564.jpg,"('plant, flora, plant life', 'clock')"
+560,560,CV-Bench/ADE20K/validation/images/ADE_val_00000982.jpg,"('ruins', 'grass')"
+561,561,CV-Bench/ADE20K/validation/images/ADE_val_00001089.jpg,"('bathtub, bathing tub, bath, tub', 'sink')"
+562,562,CV-Bench/ADE20K/validation/images/ADE_val_00000650.jpg,"('signboard, sign', 'traffic light, traffic signal, stoplight')"
+563,563,CV-Bench/ADE20K/validation/images/ADE_val_00001696.jpg,"('snow', 'car, auto, automobile, machine, motorcar')"
+564,564,CV-Bench/ADE20K/validation/images/ADE_val_00000710.jpg,"('streetlight, street lamp', 'sidewalk, pavement')"
+565,565,CV-Bench/ADE20K/validation/images/ADE_val_00000721.jpg,"('building, edifice', 'ramp')"
+566,566,CV-Bench/ADE20K/validation/images/ADE_val_00001721.jpg,"('animal, animate being, beast, brute, creature, fauna', 'tree')"
+567,567,CV-Bench/ADE20K/validation/images/ADE_val_00001091.jpg,"('toilet, can, commode, crapper, pot, potty, stool, throne', 'mirror')"
+568,568,CV-Bench/ADE20K/validation/images/ADE_val_00000755.jpg,"('building, edifice', 'palm, palm tree')"
+569,569,CV-Bench/ADE20K/validation/images/ADE_val_00000756.jpg,"('building, edifice', 'boat')"
+570,570,CV-Bench/ADE20K/validation/images/ADE_val_00000762.jpg,"('building, edifice', 'skyscraper')"
+571,571,CV-Bench/ADE20K/validation/images/ADE_val_00000763.jpg,"('hanging clothes', 'tree')"
+572,572,CV-Bench/ADE20K/validation/images/ADE_val_00001092.jpg,"('countertop', 'candlestick, candle holder')"
+573,573,CV-Bench/ADE20K/validation/images/ADE_val_00001753.jpg,"('tree', 'tree')"
+574,574,CV-Bench/ADE20K/validation/images/ADE_val_00001754.jpg,"('building, edifice', 'tree')"
+575,575,CV-Bench/ADE20K/validation/images/ADE_val_00001756.jpg,"('clock', 'tree')"
+576,576,CV-Bench/ADE20K/validation/images/ADE_val_00001761.jpg,"('skyscraper', 'building, edifice')"
+577,577,CV-Bench/ADE20K/validation/images/ADE_val_00000782.jpg,"('sidewalk, pavement', 'trade name, brand name, brand, marque')"
+578,578,CV-Bench/ADE20K/validation/images/ADE_val_00001093.jpg,"('sconce', 'shower')"
+579,579,CV-Bench/ADE20K/validation/images/ADE_val_00000810.jpg,"('stairs, steps', 'trade name, brand name, brand, marque')"
+580,580,CV-Bench/ADE20K/validation/images/ADE_val_00000841.jpg,"('traffic light, traffic signal, stoplight', 'ashcan, trash can, garbage can, wastebin, ash bin, ash-bin, ashbin, dustbin, trash barrel, trash bin')"
+581,581,CV-Bench/ADE20K/validation/images/ADE_val_00000846.jpg,"('building, edifice', 'manhole')"
+582,582,CV-Bench/ADE20K/validation/images/ADE_val_00001097.jpg,"('wall', 'curtain, drape, drapery, mantle, pall')"
+583,583,CV-Bench/ADE20K/validation/images/ADE_val_00000856.jpg,"('bannister, banister, balustrade, balusters, handrail', 'traffic light, traffic signal, stoplight')"
+584,584,CV-Bench/ADE20K/validation/images/ADE_val_00000857.jpg,"('person, individual, someone, somebody, mortal, soul', 'curtain, drape, drapery, mantle, pall')"
+585,585,CV-Bench/ADE20K/validation/images/ADE_val_00001786.jpg,"('signboard, sign', 'manhole')"
+586,586,CV-Bench/ADE20K/validation/images/ADE_val_00001789.jpg,"('barrier', 'ashcan, trash can, garbage can, wastebin, ash bin, ash-bin, ashbin, dustbin, trash barrel, trash bin')"
+587,587,CV-Bench/ADE20K/validation/images/ADE_val_00001807.jpg,"('car, auto, automobile, machine, motorcar', 'street number')"
+588,588,CV-Bench/ADE20K/validation/images/ADE_val_00001103.jpg,"('toilet, can, commode, crapper, pot, potty, stool, throne', 'fluorescent, fluorescent fixture')"
+589,589,CV-Bench/ADE20K/validation/images/ADE_val_00001810.jpg,"('sidewalk, pavement', 'streetlight, street lamp')"
+590,590,CV-Bench/ADE20K/validation/images/ADE_val_00001811.jpg,"('streetlight, street lamp', 'ashcan, trash can, garbage can, wastebin, ash bin, ash-bin, ashbin, dustbin, trash barrel, trash bin')"
+591,591,CV-Bench/ADE20K/validation/images/ADE_val_00001814.jpg,"('postbox, mailbox, letter box', 'sidewalk, pavement')"
+592,592,CV-Bench/ADE20K/validation/images/ADE_val_00001839.jpg,"('road, route', 'tree')"
+593,593,CV-Bench/ADE20K/validation/images/ADE_val_00001104.jpg,"('pot, flowerpot', 'bathtub, bathing tub, bath, tub')"
+594,594,CV-Bench/ADE20K/validation/images/ADE_val_00001846.jpg,"('sidewalk, pavement', 'clock')"
+595,595,CV-Bench/ADE20K/validation/images/ADE_val_00001850.jpg,"('mountain, mount', 'truck, motortruck')"
+596,596,CV-Bench/ADE20K/validation/images/ADE_val_00001856.jpg,"('car, auto, automobile, machine, motorcar', 'person, individual, someone, somebody, mortal, soul')"
+597,597,CV-Bench/ADE20K/validation/images/ADE_val_00001868.jpg,"('mountain, mount', 'arcade, colonnade')"
+598,598,CV-Bench/ADE20K/validation/images/ADE_val_00001869.jpg,"('car, auto, automobile, machine, motorcar', 'building, edifice')"
+599,599,CV-Bench/ADE20K/validation/images/ADE_val_00001106.jpg,"('mug', 'pot')"
+600,600,CV-Bench/ADE20K/validation/images/ADE_val_00001994.jpg,"('railing, rail', 'road, route')"
+601,601,CV-Bench/ADE20K/validation/images/ADE_val_00000891.jpg,"('palm, palm tree', 'cross')"
+602,602,CV-Bench/ADE20K/validation/images/ADE_val_00001902.jpg,"('tree', 'table')"
+603,603,CV-Bench/ADE20K/validation/images/ADE_val_00000915.jpg,"('wall', 'windowpane, window')"
+604,604,CV-Bench/ADE20K/validation/images/ADE_val_00000931.jpg,"('plant, flora, plant life', 'table')"
+605,605,CV-Bench/ADE20K/validation/images/ADE_val_00001930.jpg,"('plant, flora, plant life', 'plant, flora, plant life')"
+606,606,CV-Bench/ADE20K/validation/images/ADE_val_00001042.jpg,"('wall', 'bulletin board, notice board')"
+607,607,CV-Bench/ADE20K/validation/images/ADE_val_00000117.jpg,"('cushion', 'windowpane, window')"
+608,608,CV-Bench/ADE20K/validation/images/ADE_val_00001269.jpg,"('cabinet', 'table')"
+609,609,CV-Bench/ADE20K/validation/images/ADE_val_00001945.jpg,"('cutlery', 'painting, picture')"
+610,610,CV-Bench/ADE20K/validation/images/ADE_val_00000280.jpg,"('windowpane, window', 'ashcan, trash can, garbage can, wastebin, ash bin, ash-bin, ashbin, dustbin, trash barrel, trash bin')"
+611,611,CV-Bench/ADE20K/validation/images/ADE_val_00000118.jpg,"('magazine', 'television receiver, television, television set, tv, tv set, idiot box, boob tube, telly, goggle box')"
+612,612,CV-Bench/ADE20K/validation/images/ADE_val_00001337.jpg,"('wall', 'screen, silver screen, projection screen')"
+613,613,CV-Bench/ADE20K/validation/images/ADE_val_00000392.jpg,"('column, pillar', 'wall')"
+614,614,CV-Bench/ADE20K/validation/images/ADE_val_00001426.jpg,"('lamp', 'stool')"
+615,615,CV-Bench/ADE20K/validation/images/ADE_val_00000647.jpg,"('windowpane, window', 'monitor, monitoring device')"
+616,616,CV-Bench/ADE20K/validation/images/ADE_val_00001694.jpg,"('wall', 'car, auto, automobile, machine, motorcar')"
+617,617,CV-Bench/ADE20K/validation/images/ADE_val_00000724.jpg,"('bench', 'counter')"
+618,618,CV-Bench/ADE20K/validation/images/ADE_val_00001775.jpg,"('wall', 'door')"
+619,619,CV-Bench/ADE20K/validation/images/ADE_val_00000909.jpg,"('table', 'magazine')"
+620,620,CV-Bench/ADE20K/validation/images/ADE_val_00000127.jpg,"('chair', 'table lamp')"
+621,621,CV-Bench/ADE20K/validation/images/ADE_val_00000131.jpg,"('wall', 'painting, picture')"
+622,622,CV-Bench/ADE20K/validation/images/ADE_val_00000148.jpg,"('pillow', 'book')"
+623,623,CV-Bench/ADE20K/validation/images/ADE_val_00000149.jpg,"('table', 'cellular telephone, cellular phone, cellphone, cell, mobile phone')"
+624,624,CV-Bench/ADE20K/validation/images/ADE_val_00000166.jpg,"('door', 'table')"
+625,625,CV-Bench/ADE20K/validation/images/ADE_val_00000174.jpg,"('curtain, drape, drapery, mantle, pall', 'cushion')"
+626,626,CV-Bench/ADE20K/validation/images/ADE_val_00000175.jpg,"('heater', 'chest of drawers, chest, bureau, dresser')"
+627,627,CV-Bench/ADE20K/validation/images/ADE_val_00000178.jpg,"('bed', 'alarm clock, alarm')"
+628,628,CV-Bench/ADE20K/validation/images/ADE_val_00000179.jpg,"('signboard, sign', 'bed')"
+629,629,CV-Bench/ADE20K/validation/images/ADE_val_00001118.jpg,"('eiderdown, duvet, continental quilt', 'switch, electric switch, electrical switch')"
+630,630,CV-Bench/ADE20K/validation/images/ADE_val_00001124.jpg,"('rug, carpet, carpeting', 'plant, flora, plant life')"
+631,631,CV-Bench/ADE20K/validation/images/ADE_val_00001128.jpg,"('pillow', 'blind, screen')"
+632,632,CV-Bench/ADE20K/validation/images/ADE_val_00001129.jpg,"('table', 'switch, electric switch, electrical switch')"
+633,633,CV-Bench/COCO/coco/images/000000135902.jpg,train
+634,634,CV-Bench/COCO/coco/images/000000505638.jpg,train
+635,635,CV-Bench/COCO/coco/images/000000526751.jpg,boat
+636,636,CV-Bench/COCO/coco/images/000000281929.jpg,person
+637,637,CV-Bench/COCO/coco/images/000000066926.jpg,donut
+638,638,CV-Bench/COCO/coco/images/000000062353.jpg,giraffe
+639,639,CV-Bench/COCO/coco/images/000000256192.jpg,person
+640,640,CV-Bench/COCO/coco/images/000000140076.jpg,dining table
+641,641,CV-Bench/COCO/coco/images/000000183437.jpg,person
+642,642,CV-Bench/COCO/coco/images/000000028285.jpg,clock
+643,643,CV-Bench/COCO/coco/images/000000286994.jpg,elephant
+644,644,CV-Bench/COCO/coco/images/000000527750.jpg,bowl
+645,645,CV-Bench/COCO/coco/images/000000330818.jpg,person
+646,646,CV-Bench/COCO/coco/images/000000046872.jpg,person
+647,647,CV-Bench/COCO/coco/images/000000478862.jpg,airplane
+648,648,CV-Bench/COCO/coco/images/000000100274.jpg,truck
+649,649,CV-Bench/COCO/coco/images/000000060886.jpg,person
+650,650,CV-Bench/COCO/coco/images/000000357748.jpg,person
+651,651,CV-Bench/COCO/coco/images/000000109441.jpg,traffic light
+652,652,CV-Bench/COCO/coco/images/000000216419.jpg,clock
+653,653,CV-Bench/COCO/coco/images/000000581062.jpg,skateboard
+654,654,CV-Bench/COCO/coco/images/000000199395.jpg,boat
+655,655,CV-Bench/COCO/coco/images/000000568147.jpg,parking meter
+656,656,CV-Bench/COCO/coco/images/000000568439.jpg,backpack
+657,657,CV-Bench/COCO/coco/images/000000327890.jpg,bench
+658,658,CV-Bench/COCO/coco/images/000000231549.jpg,bed
+659,659,CV-Bench/COCO/coco/images/000000076261.jpg,bird
+660,660,CV-Bench/COCO/coco/images/000000523957.jpg,skateboard
+661,661,CV-Bench/COCO/coco/images/000000577959.jpg,person
+662,662,CV-Bench/COCO/coco/images/000000055528.jpg,toothbrush
+663,663,CV-Bench/COCO/coco/images/000000037689.jpg,person
+664,664,CV-Bench/COCO/coco/images/000000057150.jpg,teddy bear
+665,665,CV-Bench/COCO/coco/images/000000146825.jpg,train
+666,666,CV-Bench/COCO/coco/images/000000447342.jpg,bus
+667,667,CV-Bench/COCO/coco/images/000000110211.jpg,zebra
+668,668,CV-Bench/COCO/coco/images/000000376365.jpg,cup
+669,669,CV-Bench/COCO/coco/images/000000054967.jpg,person
+670,670,CV-Bench/COCO/coco/images/000000186632.jpg,sink
+671,671,CV-Bench/COCO/coco/images/000000414676.jpg,clock
+672,672,CV-Bench/COCO/coco/images/000000129416.jpg,cow
+673,673,CV-Bench/COCO/coco/images/000000111086.jpg,car
+674,674,CV-Bench/COCO/coco/images/000000448365.jpg,person
+675,675,CV-Bench/COCO/coco/images/000000005037.jpg,bus
+676,676,CV-Bench/COCO/coco/images/000000058350.jpg,knife
+677,677,CV-Bench/COCO/coco/images/000000119828.jpg,mouse
+678,678,CV-Bench/COCO/coco/images/000000463199.jpg,handbag
+679,679,CV-Bench/COCO/coco/images/000000109313.jpg,cup
+680,680,CV-Bench/COCO/coco/images/000000552842.jpg,person
+681,681,CV-Bench/COCO/coco/images/000000034452.jpg,frisbee
+682,682,CV-Bench/COCO/coco/images/000000086755.jpg,backpack
+683,683,CV-Bench/COCO/coco/images/000000219440.jpg,cow
+684,684,CV-Bench/COCO/coco/images/000000047112.jpg,wine glass
+685,685,CV-Bench/COCO/coco/images/000000157847.jpg,bird
+686,686,CV-Bench/COCO/coco/images/000000266981.jpg,car
+687,687,CV-Bench/COCO/coco/images/000000427055.jpg,stop sign
+688,688,CV-Bench/COCO/coco/images/000000153529.jpg,handbag
+689,689,CV-Bench/COCO/coco/images/000000219271.jpg,truck
+690,690,CV-Bench/COCO/coco/images/000000239627.jpg,bottle
+691,691,CV-Bench/COCO/coco/images/000000515445.jpg,surfboard
+692,692,CV-Bench/COCO/coco/images/000000090108.jpg,toilet
+693,693,CV-Bench/COCO/coco/images/000000043435.jpg,person
+694,694,CV-Bench/COCO/coco/images/000000311295.jpg,zebra
+695,695,CV-Bench/COCO/coco/images/000000505942.jpg,traffic light
+696,696,CV-Bench/COCO/coco/images/000000527215.jpg,kite
+697,697,CV-Bench/COCO/coco/images/000000425925.jpg,clock
+698,698,CV-Bench/COCO/coco/images/000000225184.jpg,sheep
+699,699,CV-Bench/COCO/coco/images/000000115946.jpg,person
+700,700,CV-Bench/COCO/coco/images/000000346232.jpg,car
+701,701,CV-Bench/COCO/coco/images/000000014473.jpg,train
+702,702,CV-Bench/COCO/coco/images/000000423104.jpg,frisbee
+703,703,CV-Bench/COCO/coco/images/000000349480.jpg,handbag
+704,704,CV-Bench/COCO/coco/images/000000221291.jpg,person
+705,705,CV-Bench/COCO/coco/images/000000065736.jpg,person
+706,706,CV-Bench/COCO/coco/images/000000029984.jpg,chair
+707,707,CV-Bench/COCO/coco/images/000000192716.jpg,car
+708,708,CV-Bench/COCO/coco/images/000000050943.jpg,person
+709,709,CV-Bench/COCO/coco/images/000000565563.jpg,bed
+710,710,CV-Bench/COCO/coco/images/000000464824.jpg,person
+711,711,CV-Bench/COCO/coco/images/000000391144.jpg,elephant
+712,712,CV-Bench/COCO/coco/images/000000066635.jpg,mouse
+713,713,CV-Bench/COCO/coco/images/000000284106.jpg,carrot
+714,714,CV-Bench/COCO/coco/images/000000426836.jpg,kite
+715,715,CV-Bench/COCO/coco/images/000000256868.jpg,person
+716,716,CV-Bench/COCO/coco/images/000000578236.jpg,bird
+717,717,CV-Bench/COCO/coco/images/000000491071.jpg,sink
+718,718,CV-Bench/COCO/coco/images/000000219485.jpg,cat
+719,719,CV-Bench/COCO/coco/images/000000400044.jpg,person
+720,720,CV-Bench/COCO/coco/images/000000500613.jpg,car
+721,721,CV-Bench/COCO/coco/images/000000279541.jpg,pizza
+722,722,CV-Bench/COCO/coco/images/000000027972.jpg,surfboard
+723,723,CV-Bench/COCO/coco/images/000000193884.jpg,stop sign
+724,724,CV-Bench/COCO/coco/images/000000095155.jpg,snowboard
+725,725,CV-Bench/COCO/coco/images/000000155154.jpg,toilet
+726,726,CV-Bench/COCO/coco/images/000000270297.jpg,train
+727,727,CV-Bench/COCO/coco/images/000000175438.jpg,potted plant
+728,728,CV-Bench/COCO/coco/images/000000194716.jpg,cell phone
+729,729,CV-Bench/COCO/coco/images/000000404805.jpg,person
+730,730,CV-Bench/COCO/coco/images/000000422706.jpg,boat
+731,731,CV-Bench/COCO/coco/images/000000276285.jpg,fork
+732,732,CV-Bench/COCO/coco/images/000000216497.jpg,microwave
+733,733,CV-Bench/COCO/coco/images/000000166259.jpg,bird
+734,734,CV-Bench/COCO/coco/images/000000175251.jpg,person
+735,735,CV-Bench/COCO/coco/images/000000016451.jpg,surfboard
+736,736,CV-Bench/COCO/coco/images/000000050149.jpg,bowl
+737,737,CV-Bench/COCO/coco/images/000000354547.jpg,tie
+738,738,CV-Bench/COCO/coco/images/000000184384.jpg,orange
+739,739,CV-Bench/COCO/coco/images/000000229849.jpg,tennis racket
+740,740,CV-Bench/COCO/coco/images/000000255749.jpg,bus
+741,741,CV-Bench/COCO/coco/images/000000319696.jpg,microwave
+742,742,CV-Bench/COCO/coco/images/000000378099.jpg,keyboard
+743,743,CV-Bench/COCO/coco/images/000000087742.jpg,vase
+744,744,CV-Bench/COCO/coco/images/000000235241.jpg,umbrella
+745,745,CV-Bench/COCO/coco/images/000000050896.jpg,bowl
+746,746,CV-Bench/COCO/coco/images/000000053994.jpg,parking meter
+747,747,CV-Bench/COCO/coco/images/000000408774.jpg,person
+748,748,CV-Bench/COCO/coco/images/000000507037.jpg,backpack
+749,749,CV-Bench/COCO/coco/images/000000468233.jpg,clock
+750,750,CV-Bench/COCO/coco/images/000000455352.jpg,clock
+751,751,CV-Bench/COCO/coco/images/000000022969.jpg,giraffe
+752,752,CV-Bench/COCO/coco/images/000000045090.jpg,person
+753,753,CV-Bench/COCO/coco/images/000000257478.jpg,person
+754,754,CV-Bench/COCO/coco/images/000000392933.jpg,giraffe
+755,755,CV-Bench/COCO/coco/images/000000427256.jpg,baseball bat
+756,756,CV-Bench/COCO/coco/images/000000569565.jpg,truck
+757,757,CV-Bench/COCO/coco/images/000000240023.jpg,tennis racket
+758,758,CV-Bench/COCO/coco/images/000000283070.jpg,orange
+759,759,CV-Bench/COCO/coco/images/000000288042.jpg,umbrella
+760,760,CV-Bench/COCO/coco/images/000000390826.jpg,bottle
+761,761,CV-Bench/COCO/coco/images/000000528980.jpg,stop sign
+762,762,CV-Bench/COCO/coco/images/000000320425.jpg,giraffe
+763,763,CV-Bench/COCO/coco/images/000000020333.jpg,bowl
+764,764,CV-Bench/COCO/coco/images/000000248980.jpg,broccoli
+765,765,CV-Bench/COCO/coco/images/000000104669.jpg,broccoli
+766,766,CV-Bench/COCO/coco/images/000000108495.jpg,skateboard
+767,767,CV-Bench/COCO/coco/images/000000434548.jpg,sports ball
+768,768,CV-Bench/COCO/coco/images/000000083172.jpg,chair
+769,769,CV-Bench/COCO/coco/images/000000409867.jpg,cat
+770,770,CV-Bench/COCO/coco/images/000000063602.jpg,cup
+771,771,CV-Bench/COCO/coco/images/000000344909.jpg,fire hydrant
+772,772,CV-Bench/COCO/coco/images/000000060507.jpg,sports ball
+773,773,CV-Bench/COCO/coco/images/000000372819.jpg,dog
+774,774,CV-Bench/COCO/coco/images/000000474881.jpg,sheep
+775,775,CV-Bench/COCO/coco/images/000000443426.jpg,person
+776,776,CV-Bench/COCO/coco/images/000000340697.jpg,bottle
+777,777,CV-Bench/COCO/coco/images/000000461036.jpg,bear
+778,778,CV-Bench/COCO/coco/images/000000011122.jpg,stop sign
+779,779,CV-Bench/COCO/coco/images/000000292060.jpg,sink
+780,780,CV-Bench/COCO/coco/images/000000041888.jpg,bird
+781,781,CV-Bench/COCO/coco/images/000000150638.jpg,bottle
+782,782,CV-Bench/COCO/coco/images/000000523194.jpg,fire hydrant
+783,783,CV-Bench/COCO/coco/images/000000333237.jpg,bed
+784,784,CV-Bench/COCO/coco/images/000000123131.jpg,truck
+785,785,CV-Bench/COCO/coco/images/000000512985.jpg,surfboard
+786,786,CV-Bench/COCO/coco/images/000000541952.jpg,clock
+787,787,CV-Bench/COCO/coco/images/000000412362.jpg,wine glass
+788,788,CV-Bench/COCO/coco/images/000000296317.jpg,giraffe
+789,789,CV-Bench/COCO/coco/images/000000076211.jpg,clock
+790,790,CV-Bench/COCO/coco/images/000000268729.jpg,giraffe
+791,791,CV-Bench/COCO/coco/images/000000224119.jpg,tv
+792,792,CV-Bench/COCO/coco/images/000000126216.jpg,elephant
+793,793,CV-Bench/COCO/coco/images/000000212559.jpg,sheep
+794,794,CV-Bench/COCO/coco/images/000000172648.jpg,car
+795,795,CV-Bench/COCO/coco/images/000000173033.jpg,bear
+796,796,CV-Bench/COCO/coco/images/000000544605.jpg,traffic light
+797,797,CV-Bench/COCO/coco/images/000000002532.jpg,skis
+798,798,CV-Bench/COCO/coco/images/000000189078.jpg,banana
+799,799,CV-Bench/COCO/coco/images/000000209753.jpg,cell phone
+800,800,CV-Bench/COCO/coco/images/000000154425.jpg,person
+801,801,CV-Bench/COCO/coco/images/000000392481.jpg,airplane
+802,802,CV-Bench/COCO/coco/images/000000400922.jpg,clock
+803,803,CV-Bench/COCO/coco/images/000000486046.jpg,zebra
+804,804,CV-Bench/COCO/coco/images/000000244099.jpg,horse
+805,805,CV-Bench/COCO/coco/images/000000577149.jpg,zebra
+806,806,CV-Bench/COCO/coco/images/000000198641.jpg,cat
+807,807,CV-Bench/COCO/coco/images/000000378244.jpg,snowboard
+808,808,CV-Bench/COCO/coco/images/000000127182.jpg,potted plant
+809,809,CV-Bench/COCO/coco/images/000000255917.jpg,traffic light
+810,810,CV-Bench/COCO/coco/images/000000398237.jpg,person
+811,811,CV-Bench/COCO/coco/images/000000375469.jpg,surfboard
+812,812,CV-Bench/COCO/coco/images/000000185950.jpg,skateboard
+813,813,CV-Bench/COCO/coco/images/000000018380.jpg,vase
+814,814,CV-Bench/COCO/coco/images/000000049060.jpg,person
+815,815,CV-Bench/COCO/coco/images/000000023359.jpg,person
+816,816,CV-Bench/COCO/coco/images/000000273617.jpg,stop sign
+817,817,CV-Bench/COCO/coco/images/000000165257.jpg,sink
+818,818,CV-Bench/COCO/coco/images/000000410934.jpg,broccoli
+819,819,CV-Bench/COCO/coco/images/000000372349.jpg,bottle
+820,820,CV-Bench/COCO/coco/images/000000097988.jpg,bench
+821,821,CV-Bench/COCO/coco/images/000000291791.jpg,motorcycle
+822,822,CV-Bench/COCO/coco/images/000000221281.jpg,giraffe
+823,823,CV-Bench/COCO/coco/images/000000124636.jpg,cow
+824,824,CV-Bench/COCO/coco/images/000000350003.jpg,truck
+825,825,CV-Bench/COCO/coco/images/000000008211.jpg,chair
+826,826,CV-Bench/COCO/coco/images/000000267537.jpg,person
+827,827,CV-Bench/COCO/coco/images/000000342397.jpg,person
+828,828,CV-Bench/COCO/coco/images/000000294163.jpg,clock
+829,829,CV-Bench/COCO/coco/images/000000504389.jpg,tennis racket
+830,830,CV-Bench/COCO/coco/images/000000425361.jpg,laptop
+831,831,CV-Bench/COCO/coco/images/000000473406.jpg,person
+832,832,CV-Bench/COCO/coco/images/000000322352.jpg,dining table
+833,833,CV-Bench/COCO/coco/images/000000223090.jpg,knife
+834,834,CV-Bench/COCO/coco/images/000000034205.jpg,broccoli
+835,835,CV-Bench/COCO/coco/images/000000288685.jpg,dog
+836,836,CV-Bench/COCO/coco/images/000000459757.jpg,giraffe
+837,837,CV-Bench/COCO/coco/images/000000474078.jpg,sports ball
+838,838,CV-Bench/COCO/coco/images/000000248400.jpg,bowl
+839,839,CV-Bench/COCO/coco/images/000000121031.jpg,horse
+840,840,CV-Bench/COCO/coco/images/000000151516.jpg,bird
+841,841,CV-Bench/COCO/coco/images/000000371552.jpg,bench
+842,842,CV-Bench/COCO/coco/images/000000032081.jpg,person
+843,843,CV-Bench/COCO/coco/images/000000426268.jpg,train
+844,844,CV-Bench/COCO/coco/images/000000229553.jpg,skateboard
+845,845,CV-Bench/COCO/coco/images/000000319369.jpg,umbrella
+846,846,CV-Bench/COCO/coco/images/000000515350.jpg,surfboard
+847,847,CV-Bench/COCO/coco/images/000000500826.jpg,traffic light
+848,848,CV-Bench/COCO/coco/images/000000066771.jpg,person
+849,849,CV-Bench/COCO/coco/images/000000373315.jpg,skateboard
+850,850,CV-Bench/COCO/coco/images/000000545730.jpg,zebra
+851,851,CV-Bench/COCO/coco/images/000000521141.jpg,person
+852,852,CV-Bench/COCO/coco/images/000000314177.jpg,toilet
+853,853,CV-Bench/COCO/coco/images/000000066038.jpg,chair
+854,854,CV-Bench/COCO/coco/images/000000109992.jpg,snowboard
+855,855,CV-Bench/COCO/coco/images/000000553731.jpg,cell phone
+856,856,CV-Bench/COCO/coco/images/000000263969.jpg,cake
+857,857,CV-Bench/COCO/coco/images/000000191761.jpg,orange
+858,858,CV-Bench/COCO/coco/images/000000214753.jpg,person
+859,859,CV-Bench/COCO/coco/images/000000511760.jpg,car
+860,860,CV-Bench/COCO/coco/images/000000519764.jpg,cat
+861,861,CV-Bench/COCO/coco/images/000000233567.jpg,sheep
+862,862,CV-Bench/COCO/coco/images/000000116825.jpg,cat
+863,863,CV-Bench/COCO/coco/images/000000104119.jpg,bird
+864,864,CV-Bench/COCO/coco/images/000000419408.jpg,person
+865,865,CV-Bench/COCO/coco/images/000000261706.jpg,cat
+866,866,CV-Bench/COCO/coco/images/000000032735.jpg,skis
+867,867,CV-Bench/COCO/coco/images/000000098261.jpg,bird
+868,868,CV-Bench/COCO/coco/images/000000204186.jpg,motorcycle
+869,869,CV-Bench/COCO/coco/images/000000161032.jpg,person
+870,870,CV-Bench/COCO/coco/images/000000384513.jpg,horse
+871,871,CV-Bench/COCO/coco/images/000000015335.jpg,cell phone
+872,872,CV-Bench/COCO/coco/images/000000010977.jpg,toilet
+873,873,CV-Bench/COCO/coco/images/000000329080.jpg,suitcase
+874,874,CV-Bench/COCO/coco/images/000000447917.jpg,bicycle
+875,875,CV-Bench/COCO/coco/images/000000064523.jpg,tennis racket
+876,876,CV-Bench/COCO/coco/images/000000022371.jpg,tie
+877,877,CV-Bench/COCO/coco/images/000000447314.jpg,person
+878,878,CV-Bench/COCO/coco/images/000000175443.jpg,teddy bear
+879,879,CV-Bench/COCO/coco/images/000000312720.jpg,skis
+880,880,CV-Bench/COCO/coco/images/000000383289.jpg,person
+881,881,CV-Bench/COCO/coco/images/000000001296.jpg,cell phone
+882,882,CV-Bench/COCO/coco/images/000000282296.jpg,bottle
+883,883,CV-Bench/COCO/coco/images/000000565989.jpg,clock
+884,884,CV-Bench/COCO/coco/images/000000377723.jpg,bus
+885,885,CV-Bench/COCO/coco/images/000000403385.jpg,toilet
+886,886,CV-Bench/COCO/coco/images/000000184324.jpg,bicycle
+887,887,CV-Bench/COCO/coco/images/000000023272.jpg,cat
+888,888,CV-Bench/COCO/coco/images/000000573626.jpg,cow
+889,889,CV-Bench/COCO/coco/images/000000007574.jpg,bottle
+890,890,CV-Bench/COCO/coco/images/000000181303.jpg,person
+891,891,CV-Bench/COCO/coco/images/000000172617.jpg,suitcase
+892,892,CV-Bench/COCO/coco/images/000000049810.jpg,cat
+893,893,CV-Bench/COCO/coco/images/000000233370.jpg,person
+894,894,CV-Bench/COCO/coco/images/000000460929.jpg,bottle
+895,895,CV-Bench/COCO/coco/images/000000006614.jpg,apple
+896,896,CV-Bench/COCO/coco/images/000000213086.jpg,book
+897,897,CV-Bench/COCO/coco/images/000000130586.jpg,kite
+898,898,CV-Bench/COCO/coco/images/000000189310.jpg,chair
+899,899,CV-Bench/COCO/coco/images/000000423971.jpg,toilet
+900,900,CV-Bench/COCO/coco/images/000000138819.jpg,sink
+901,901,CV-Bench/COCO/coco/images/000000132931.jpg,baseball glove
+902,902,CV-Bench/COCO/coco/images/000000550797.jpg,toilet
+903,903,CV-Bench/COCO/coco/images/000000318080.jpg,bear
+904,904,CV-Bench/COCO/coco/images/000000509403.jpg,dog
+905,905,CV-Bench/COCO/coco/images/000000322574.jpg,hot dog
+906,906,CV-Bench/COCO/coco/images/000000144333.jpg,bicycle
+907,907,CV-Bench/COCO/coco/images/000000532575.jpg,boat
+908,908,CV-Bench/COCO/coco/images/000000387387.jpg,bus
+909,909,CV-Bench/COCO/coco/images/000000244019.jpg,fire hydrant
+910,910,CV-Bench/COCO/coco/images/000000367082.jpg,couch
+911,911,CV-Bench/COCO/coco/images/000000227686.jpg,horse
+912,912,CV-Bench/COCO/coco/images/000000401250.jpg,skis
+913,913,CV-Bench/COCO/coco/images/000000187243.jpg,person
+914,914,CV-Bench/COCO/coco/images/000000284282.jpg,dining table
+915,915,CV-Bench/COCO/coco/images/000000415536.jpg,bus
+916,916,CV-Bench/COCO/coco/images/000000384850.jpg,toilet
+917,917,CV-Bench/COCO/coco/images/000000122672.jpg,surfboard
+918,918,CV-Bench/COCO/coco/images/000000551822.jpg,dining table
+919,919,CV-Bench/COCO/coco/images/000000180560.jpg,cake
+920,920,CV-Bench/COCO/coco/images/000000297343.jpg,stop sign
+921,921,CV-Bench/COCO/coco/images/000000197658.jpg,baseball glove
+922,922,CV-Bench/COCO/coco/images/000000181499.jpg,laptop
+923,923,CV-Bench/COCO/coco/images/000000558213.jpg,skateboard
+924,924,CV-Bench/COCO/coco/images/000000162366.jpg,parking meter
+925,925,CV-Bench/COCO/coco/images/000000537153.jpg,bench
+926,926,CV-Bench/COCO/coco/images/000000300842.jpg,skateboard
+927,927,CV-Bench/COCO/coco/images/000000104803.jpg,toilet
+928,928,CV-Bench/COCO/coco/images/000000157213.jpg,elephant
+929,929,CV-Bench/COCO/coco/images/000000393014.jpg,hot dog
+930,930,CV-Bench/COCO/coco/images/000000231088.jpg,umbrella
+931,931,CV-Bench/COCO/coco/images/000000165713.jpg,fire hydrant
+932,932,CV-Bench/COCO/coco/images/000000089271.jpg,cat
+933,933,CV-Bench/COCO/coco/images/000000544519.jpg,toothbrush
+934,934,CV-Bench/COCO/coco/images/000000490470.jpg,boat
+935,935,CV-Bench/COCO/coco/images/000000433243.jpg,giraffe
+936,936,CV-Bench/COCO/coco/images/000000489924.jpg,skateboard
+937,937,CV-Bench/COCO/coco/images/000000200667.jpg,cow
+938,938,CV-Bench/COCO/coco/images/000000102331.jpg,person
+939,939,CV-Bench/COCO/coco/images/000000269932.jpg,horse
+940,940,CV-Bench/COCO/coco/images/000000176446.jpg,laptop
+941,941,CV-Bench/COCO/coco/images/000000300155.jpg,bird
+942,942,CV-Bench/COCO/coco/images/000000139871.jpg,airplane
+943,943,CV-Bench/COCO/coco/images/000000375015.jpg,bear
+944,944,CV-Bench/COCO/coco/images/000000269113.jpg,dog
+945,945,CV-Bench/COCO/coco/images/000000429530.jpg,vase
+946,946,CV-Bench/COCO/coco/images/000000328030.jpg,teddy bear
+947,947,CV-Bench/COCO/coco/images/000000355905.jpg,dog
+948,948,CV-Bench/COCO/coco/images/000000494869.jpg,person
+949,949,CV-Bench/COCO/coco/images/000000517523.jpg,airplane
+950,950,CV-Bench/COCO/coco/images/000000067315.jpg,person
+951,951,CV-Bench/COCO/coco/images/000000427338.jpg,motorcycle
+952,952,CV-Bench/COCO/coco/images/000000263299.jpg,train
+953,953,CV-Bench/COCO/coco/images/000000446117.jpg,bench
+954,954,CV-Bench/COCO/coco/images/000000347163.jpg,stop sign
+955,955,CV-Bench/COCO/coco/images/000000329041.jpg,handbag
+956,956,CV-Bench/COCO/coco/images/000000198960.jpg,sheep
+957,957,CV-Bench/COCO/coco/images/000000468965.jpg,kite
+958,958,CV-Bench/COCO/coco/images/000000106048.jpg,bus
+959,959,CV-Bench/COCO/coco/images/000000143931.jpg,person
+960,960,CV-Bench/COCO/coco/images/000000236914.jpg,dining table
+961,961,CV-Bench/COCO/coco/images/000000452122.jpg,airplane
+962,962,CV-Bench/COCO/coco/images/000000200839.jpg,book
+963,963,CV-Bench/COCO/coco/images/000000348488.jpg,horse
+964,964,CV-Bench/COCO/coco/images/000000085195.jpg,fork
+965,965,CV-Bench/COCO/coco/images/000000394328.jpg,toilet
+966,966,CV-Bench/COCO/coco/images/000000076731.jpg,laptop
+967,967,CV-Bench/COCO/coco/images/000000163118.jpg,frisbee
+968,968,CV-Bench/COCO/coco/images/000000566042.jpg,giraffe
+969,969,CV-Bench/COCO/coco/images/000000466567.jpg,donut
+970,970,CV-Bench/COCO/coco/images/000000404128.jpg,airplane
+971,971,CV-Bench/COCO/coco/images/000000023023.jpg,suitcase
+972,972,CV-Bench/COCO/coco/images/000000254814.jpg,truck
+973,973,CV-Bench/COCO/coco/images/000000346905.jpg,elephant
+974,974,CV-Bench/COCO/coco/images/000000138241.jpg,dining table
+975,975,CV-Bench/COCO/coco/images/000000216636.jpg,cake
+976,976,CV-Bench/COCO/coco/images/000000348045.jpg,toilet
+977,977,CV-Bench/COCO/coco/images/000000572517.jpg,bear
+978,978,CV-Bench/COCO/coco/images/000000008277.jpg,fork
+979,979,CV-Bench/COCO/coco/images/000000345466.jpg,sports ball
+980,980,CV-Bench/COCO/coco/images/000000020247.jpg,bear
+981,981,CV-Bench/COCO/coco/images/000000516143.jpg,bus
+982,982,CV-Bench/COCO/coco/images/000000151662.jpg,giraffe
+983,983,CV-Bench/COCO/coco/images/000000125952.jpg,suitcase
+984,984,CV-Bench/COCO/coco/images/000000508639.jpg,horse
+985,985,CV-Bench/COCO/coco/images/000000106281.jpg,train
+986,986,CV-Bench/COCO/coco/images/000000236730.jpg,zebra
+987,987,CV-Bench/COCO/coco/images/000000339823.jpg,umbrella
+988,988,CV-Bench/COCO/coco/images/000000116589.jpg,zebra
+989,989,CV-Bench/COCO/coco/images/000000326970.jpg,handbag
+990,990,CV-Bench/COCO/coco/images/000000140556.jpg,person
+991,991,CV-Bench/COCO/coco/images/000000095786.jpg,cup
+992,992,CV-Bench/COCO/coco/images/000000096493.jpg,couch
+993,993,CV-Bench/COCO/coco/images/000000356125.jpg,person
+994,994,CV-Bench/COCO/coco/images/000000384616.jpg,fire hydrant
+995,995,CV-Bench/COCO/coco/images/000000085576.jpg,toilet
+996,996,CV-Bench/COCO/coco/images/000000359135.jpg,elephant
+997,997,CV-Bench/COCO/coco/images/000000301061.jpg,person
+998,998,CV-Bench/COCO/coco/images/000000088250.jpg,elephant
+999,999,CV-Bench/COCO/coco/images/000000219578.jpg,couch
+1000,1000,CV-Bench/COCO/coco/images/000000291861.jpg,zebra
+1001,1001,CV-Bench/COCO/coco/images/000000009448.jpg,umbrella
+1002,1002,CV-Bench/COCO/coco/images/000000435299.jpg,cat
+1003,1003,CV-Bench/COCO/coco/images/000000484415.jpg,toilet
+1004,1004,CV-Bench/COCO/coco/images/000000085478.jpg,bear
+1005,1005,CV-Bench/COCO/coco/images/000000284698.jpg,motorcycle
+1006,1006,CV-Bench/COCO/coco/images/000000267191.jpg,elephant
+1007,1007,CV-Bench/COCO/coco/images/000000424545.jpg,cat
+1008,1008,CV-Bench/COCO/coco/images/000000237316.jpg,sink
+1009,1009,CV-Bench/COCO/coco/images/000000114770.jpg,motorcycle
+1010,1010,CV-Bench/COCO/coco/images/000000170739.jpg,elephant
+1011,1011,CV-Bench/COCO/coco/images/000000499109.jpg,sandwich
+1012,1012,CV-Bench/COCO/coco/images/000000010764.jpg,baseball glove
+1013,1013,CV-Bench/COCO/coco/images/000000358427.jpg,broccoli
+1014,1014,CV-Bench/COCO/coco/images/000000311950.jpg,hot dog
+1015,1015,CV-Bench/COCO/coco/images/000000453166.jpg,tie
+1016,1016,CV-Bench/COCO/coco/images/000000280325.jpg,parking meter
+1017,1017,CV-Bench/COCO/coco/images/000000552775.jpg,refrigerator
+1018,1018,CV-Bench/COCO/coco/images/000000356432.jpg,cup
+1019,1019,CV-Bench/COCO/coco/images/000000130566.jpg,train
+1020,1020,CV-Bench/COCO/coco/images/000000073118.jpg,teddy bear
+1021,1021,CV-Bench/COCO/coco/images/000000014831.jpg,bed
+1022,1022,CV-Bench/COCO/coco/images/000000326541.jpg,cell phone
+1023,1023,CV-Bench/COCO/coco/images/000000179141.jpg,cup
+1024,1024,CV-Bench/COCO/coco/images/000000364297.jpg,cat
+1025,1025,CV-Bench/COCO/coco/images/000000270908.jpg,tennis racket
+1026,1026,CV-Bench/COCO/coco/images/000000018519.jpg,person
+1027,1027,CV-Bench/COCO/coco/images/000000185292.jpg,person
+1028,1028,CV-Bench/COCO/coco/images/000000224200.jpg,fire hydrant
+1029,1029,CV-Bench/COCO/coco/images/000000241319.jpg,sink
+1030,1030,CV-Bench/COCO/coco/images/000000201025.jpg,elephant
+1031,1031,CV-Bench/COCO/coco/images/000000163257.jpg,person
+1032,1032,CV-Bench/COCO/coco/images/000000458255.jpg,bed
+1033,1033,CV-Bench/COCO/coco/images/000000089880.jpg,dog
+1034,1034,CV-Bench/COCO/coco/images/000000519208.jpg,elephant
+1035,1035,CV-Bench/COCO/coco/images/000000232348.jpg,toaster
+1036,1036,CV-Bench/COCO/coco/images/000000112110.jpg,person
+1037,1037,CV-Bench/COCO/coco/images/000000308466.jpg,sink
+1038,1038,CV-Bench/COCO/coco/images/000000077595.jpg,laptop
+1039,1039,CV-Bench/COCO/coco/images/000000462031.jpg,person
+1040,1040,CV-Bench/COCO/coco/images/000000162415.jpg,baseball glove
+1041,1041,CV-Bench/COCO/coco/images/000000111036.jpg,oven
+1042,1042,CV-Bench/COCO/coco/images/000000311180.jpg,person
+1043,1043,CV-Bench/COCO/coco/images/000000205647.jpg,truck
+1044,1044,CV-Bench/COCO/coco/images/000000473219.jpg,book
+1045,1045,CV-Bench/COCO/coco/images/000000284762.jpg,traffic light
+1046,1046,CV-Bench/COCO/coco/images/000000497867.jpg,person
+1047,1047,CV-Bench/COCO/coco/images/000000333956.jpg,parking meter
+1048,1048,CV-Bench/COCO/coco/images/000000578967.jpg,train
+1049,1049,CV-Bench/COCO/coco/images/000000382088.jpg,horse
+1050,1050,CV-Bench/COCO/coco/images/000000118209.jpg,horse
+1051,1051,CV-Bench/COCO/coco/images/000000500477.jpg,person
+1052,1052,CV-Bench/COCO/coco/images/000000020059.jpg,zebra
+1053,1053,CV-Bench/COCO/coco/images/000000042563.jpg,train
+1054,1054,CV-Bench/COCO/coco/images/000000079229.jpg,dog
+1055,1055,CV-Bench/COCO/coco/images/000000126110.jpg,truck
+1056,1056,CV-Bench/COCO/coco/images/000000227765.jpg,spoon
+1057,1057,CV-Bench/COCO/coco/images/000000452084.jpg,bowl
+1058,1058,CV-Bench/COCO/coco/images/000000532530.jpg,dog
+1059,1059,CV-Bench/COCO/coco/images/000000482436.jpg,bottle
+1060,1060,CV-Bench/COCO/coco/images/000000079588.jpg,clock
+1061,1061,CV-Bench/COCO/coco/images/000000303893.jpg,bench
+1062,1062,CV-Bench/COCO/coco/images/000000452515.jpg,sports ball
+1063,1063,CV-Bench/COCO/coco/images/000000535578.jpg,sheep
+1064,1064,CV-Bench/COCO/coco/images/000000372260.jpg,car
+1065,1065,CV-Bench/COCO/coco/images/000000051976.jpg,person
+1066,1066,CV-Bench/COCO/coco/images/000000033759.jpg,baseball bat
+1067,1067,CV-Bench/COCO/coco/images/000000496571.jpg,cup
+1068,1068,CV-Bench/COCO/coco/images/000000271116.jpg,cup
+1069,1069,CV-Bench/COCO/coco/images/000000465129.jpg,bowl
+1070,1070,CV-Bench/COCO/coco/images/000000578093.jpg,train
+1071,1071,CV-Bench/COCO/coco/images/000000070254.jpg,bench
+1072,1072,CV-Bench/COCO/coco/images/000000262631.jpg,bottle
+1073,1073,CV-Bench/COCO/coco/images/000000488075.jpg,microwave
+1074,1074,CV-Bench/COCO/coco/images/000000519522.jpg,clock
+1075,1075,CV-Bench/COCO/coco/images/000000027768.jpg,person
+1076,1076,CV-Bench/COCO/coco/images/000000555597.jpg,person
+1077,1077,CV-Bench/COCO/coco/images/000000579818.jpg,person
+1078,1078,CV-Bench/COCO/coco/images/000000367680.jpg,bus
+1079,1079,CV-Bench/COCO/coco/images/000000019042.jpg,"('car', 'bird')"
+1080,1080,CV-Bench/COCO/coco/images/000000311392.jpg,"('person', 'cow')"
+1081,1081,CV-Bench/COCO/coco/images/000000117908.jpg,"('bottle', 'person')"
+1082,1082,CV-Bench/COCO/coco/images/000000458768.jpg,"('sink', 'oven')"
+1083,1083,CV-Bench/COCO/coco/images/000000273198.jpg,"('car', 'person')"
+1084,1084,CV-Bench/COCO/coco/images/000000540414.jpg,"('person', 'bus')"
+1085,1085,CV-Bench/COCO/coco/images/000000474167.jpg,"('handbag', 'bottle')"
+1086,1086,CV-Bench/COCO/coco/images/000000272566.jpg,"('apple', 'cup')"
+1087,1087,CV-Bench/COCO/coco/images/000000122962.jpg,"('pizza', 'cell phone')"
+1088,1088,CV-Bench/COCO/coco/images/000000320664.jpg,"('hot dog', 'spoon')"
+1089,1089,CV-Bench/COCO/coco/images/000000193162.jpg,"('dog', 'sheep')"
+1090,1090,CV-Bench/COCO/coco/images/000000200162.jpg,"('traffic light', 'train')"
+1091,1091,CV-Bench/COCO/coco/images/000000445658.jpg,"('bowl', 'teddy bear')"
+1092,1092,CV-Bench/COCO/coco/images/000000572408.jpg,"('cow', 'sheep')"
+1093,1093,CV-Bench/COCO/coco/images/000000369771.jpg,"('sandwich', 'broccoli')"
+1094,1094,CV-Bench/COCO/coco/images/000000256941.jpg,"('bicycle', 'umbrella')"
+1095,1095,CV-Bench/COCO/coco/images/000000025424.jpg,"('sports ball', 'person')"
+1096,1096,CV-Bench/COCO/coco/images/000000520871.jpg,"('fork', 'cup')"
+1097,1097,CV-Bench/COCO/coco/images/000000115870.jpg,"('person', 'cell phone')"
+1098,1098,CV-Bench/COCO/coco/images/000000214720.jpg,"('chair', 'cake')"
+1099,1099,CV-Bench/COCO/coco/images/000000082807.jpg,"('cake', 'chair')"
+1100,1100,CV-Bench/COCO/coco/images/000000495146.jpg,"('truck', 'person')"
+1101,1101,CV-Bench/COCO/coco/images/000000323496.jpg,"('sports ball', 'tennis racket')"
+1102,1102,CV-Bench/COCO/coco/images/000000022755.jpg,"('bus', 'car')"
+1103,1103,CV-Bench/COCO/coco/images/000000341196.jpg,"('person', 'surfboard')"
+1104,1104,CV-Bench/COCO/coco/images/000000064868.jpg,"('dog', 'bottle')"
+1105,1105,CV-Bench/COCO/coco/images/000000298396.jpg,"('scissors', 'banana')"
+1106,1106,CV-Bench/COCO/coco/images/000000009400.jpg,"('mouse', 'keyboard')"
+1107,1107,CV-Bench/COCO/coco/images/000000042528.jpg,"('chair', 'cell phone')"
+1108,1108,CV-Bench/COCO/coco/images/000000293300.jpg,"('elephant', 'person')"
+1109,1109,CV-Bench/COCO/coco/images/000000259690.jpg,"('bench', 'chair')"
+1110,1110,CV-Bench/COCO/coco/images/000000352582.jpg,"('frisbee', 'person')"
+1111,1111,CV-Bench/COCO/coco/images/000000576654.jpg,"('person', 'kite')"
+1112,1112,CV-Bench/COCO/coco/images/000000017029.jpg,"('car', 'dog')"
+1113,1113,CV-Bench/COCO/coco/images/000000139684.jpg,"('vase', 'couch')"
+1114,1114,CV-Bench/COCO/coco/images/000000446574.jpg,"('bottle', 'toilet')"
+1115,1115,CV-Bench/COCO/coco/images/000000032941.jpg,"('car', 'truck')"
+1116,1116,CV-Bench/COCO/coco/images/000000293858.jpg,"('dining table', 'hot dog')"
+1117,1117,CV-Bench/COCO/coco/images/000000133244.jpg,"('chair', 'tennis racket')"
+1118,1118,CV-Bench/COCO/coco/images/000000202339.jpg,"('suitcase', 'person')"
+1119,1119,CV-Bench/COCO/coco/images/000000105264.jpg,"('person', 'cow')"
+1120,1120,CV-Bench/COCO/coco/images/000000347335.jpg,"('cup', 'knife')"
+1121,1121,CV-Bench/COCO/coco/images/000000492284.jpg,"('backpack', 'cat')"
+1122,1122,CV-Bench/COCO/coco/images/000000541634.jpg,"('spoon', 'bowl')"
+1123,1123,CV-Bench/COCO/coco/images/000000289222.jpg,"('traffic light', 'person')"
+1124,1124,CV-Bench/COCO/coco/images/000000534673.jpg,"('bus', 'person')"
+1125,1125,CV-Bench/COCO/coco/images/000000370711.jpg,"('umbrella', 'person')"
+1126,1126,CV-Bench/COCO/coco/images/000000275791.jpg,"('boat', 'train')"
+1127,1127,CV-Bench/COCO/coco/images/000000186980.jpg,"('sink', 'refrigerator')"
+1128,1128,CV-Bench/COCO/coco/images/000000248284.jpg,"('handbag', 'person')"
+1129,1129,CV-Bench/COCO/coco/images/000000437239.jpg,"('person', 'backpack')"
+1130,1130,CV-Bench/COCO/coco/images/000000078032.jpg,"('bench', 'boat')"
+1131,1131,CV-Bench/COCO/coco/images/000000482585.jpg,"('traffic light', 'train')"
+1132,1132,CV-Bench/COCO/coco/images/000000375278.jpg,"('book', 'person')"
+1133,1133,CV-Bench/COCO/coco/images/000000341719.jpg,"('snowboard', 'person')"
+1134,1134,CV-Bench/COCO/coco/images/000000543047.jpg,"('dining table', 'handbag')"
+1135,1135,CV-Bench/COCO/coco/images/000000127517.jpg,"('surfboard', 'umbrella')"
+1136,1136,CV-Bench/COCO/coco/images/000000581357.jpg,"('bench', 'skateboard')"
+1137,1137,CV-Bench/COCO/coco/images/000000578871.jpg,"('motorcycle', 'chair')"
+1138,1138,CV-Bench/COCO/coco/images/000000513181.jpg,"('boat', 'truck')"
+1139,1139,CV-Bench/COCO/coco/images/000000429623.jpg,"('pizza', 'chair')"
+1140,1140,CV-Bench/COCO/coco/images/000000248314.jpg,"('mouse', 'bottle')"
+1141,1141,CV-Bench/COCO/coco/images/000000160556.jpg,"('microwave', 'laptop')"
+1142,1142,CV-Bench/COCO/coco/images/000000084170.jpg,"('bus', 'car')"
+1143,1143,CV-Bench/COCO/coco/images/000000255401.jpg,"('bottle', 'sink')"
+1144,1144,CV-Bench/COCO/coco/images/000000182611.jpg,"('cup', 'person')"
+1145,1145,CV-Bench/COCO/coco/images/000000231747.jpg,"('baseball bat', 'sports ball')"
+1146,1146,CV-Bench/COCO/coco/images/000000255536.jpg,"('umbrella', 'person')"
+1147,1147,CV-Bench/COCO/coco/images/000000033638.jpg,"('oven', 'person')"
+1148,1148,CV-Bench/COCO/coco/images/000000163611.jpg,"('fork', 'pizza')"
+1149,1149,CV-Bench/COCO/coco/images/000000464476.jpg,"('tv', 'person')"
+1150,1150,CV-Bench/COCO/coco/images/000000092091.jpg,"('person', 'boat')"
+1151,1151,CV-Bench/COCO/coco/images/000000577182.jpg,"('bench', 'bird')"
+1152,1152,CV-Bench/COCO/coco/images/000000274708.jpg,"('person', 'skis')"
+1153,1153,CV-Bench/COCO/coco/images/000000345361.jpg,"('spoon', 'car')"
+1154,1154,CV-Bench/COCO/coco/images/000000167898.jpg,"('toilet', 'bottle')"
+1155,1155,CV-Bench/COCO/coco/images/000000373382.jpg,"('tennis racket', 'handbag')"
+1156,1156,CV-Bench/COCO/coco/images/000000049759.jpg,"('sports ball', 'person')"
+1157,1157,CV-Bench/COCO/coco/images/000000166166.jpg,"('chair', 'vase')"
+1158,1158,CV-Bench/COCO/coco/images/000000098520.jpg,"('truck', 'airplane')"
+1159,1159,CV-Bench/COCO/coco/images/000000395801.jpg,"('car', 'bench')"
+1160,1160,CV-Bench/COCO/coco/images/000000458410.jpg,"('book', 'couch')"
+1161,1161,CV-Bench/COCO/coco/images/000000189213.jpg,"('chair', 'refrigerator')"
+1162,1162,CV-Bench/COCO/coco/images/000000471023.jpg,"('person', 'train')"
+1163,1163,CV-Bench/COCO/coco/images/000000070229.jpg,"('teddy bear', 'person')"
+1164,1164,CV-Bench/COCO/coco/images/000000206994.jpg,"('bench', 'train')"
+1165,1165,CV-Bench/COCO/coco/images/000000257084.jpg,"('person', 'chair')"
+1166,1166,CV-Bench/COCO/coco/images/000000460494.jpg,"('knife', 'carrot')"
+1167,1167,CV-Bench/COCO/coco/images/000000312406.jpg,"('bowl', 'banana')"
+1168,1168,CV-Bench/COCO/coco/images/000000354072.jpg,"('sink', 'bottle')"
+1169,1169,CV-Bench/COCO/coco/images/000000166521.jpg,"('book', 'couch')"
+1170,1170,CV-Bench/COCO/coco/images/000000405205.jpg,"('bus', 'truck')"
+1171,1171,CV-Bench/COCO/coco/images/000000012576.jpg,"('tv', 'person')"
+1172,1172,CV-Bench/COCO/coco/images/000000369675.jpg,"('person', 'clock')"
+1173,1173,CV-Bench/COCO/coco/images/000000088462.jpg,"('stop sign', 'bus')"
+1174,1174,CV-Bench/COCO/coco/images/000000180011.jpg,"('giraffe', 'person')"
+1175,1175,CV-Bench/COCO/coco/images/000000163117.jpg,"('backpack', 'handbag')"
+1176,1176,CV-Bench/COCO/coco/images/000000117374.jpg,"('cat', 'bird')"
+1177,1177,CV-Bench/COCO/coco/images/000000295809.jpg,"('bicycle', 'car')"
+1178,1178,CV-Bench/COCO/coco/images/000000018491.jpg,"('bench', 'baseball bat')"
+1179,1179,CV-Bench/COCO/coco/images/000000185472.jpg,"('bicycle', 'train')"
+1180,1180,CV-Bench/COCO/coco/images/000000424721.jpg,"('carrot', 'chair')"
+1181,1181,CV-Bench/COCO/coco/images/000000567886.jpg,"('book', 'teddy bear')"
+1182,1182,CV-Bench/COCO/coco/images/000000578922.jpg,"('toothbrush', 'vase')"
+1183,1183,CV-Bench/COCO/coco/images/000000148620.jpg,"('keyboard', 'mouse')"
+1184,1184,CV-Bench/COCO/coco/images/000000442836.jpg,"('person', 'frisbee')"
+1185,1185,CV-Bench/COCO/coco/images/000000480944.jpg,"('car', 'stop sign')"
+1186,1186,CV-Bench/COCO/coco/images/000000293390.jpg,"('toothbrush', 'sink')"
+1187,1187,CV-Bench/COCO/coco/images/000000562581.jpg,"('sports ball', 'tennis racket')"
+1188,1188,CV-Bench/COCO/coco/images/000000044590.jpg,"('car', 'motorcycle')"
+1189,1189,CV-Bench/COCO/coco/images/000000062025.jpg,"('bottle', 'toilet')"
+1190,1190,CV-Bench/COCO/coco/images/000000128148.jpg,"('potted plant', 'tv')"
+1191,1191,CV-Bench/COCO/coco/images/000000120572.jpg,"('clock', 'bench')"
+1192,1192,CV-Bench/COCO/coco/images/000000411953.jpg,"('person', 'tie')"
+1193,1193,CV-Bench/COCO/coco/images/000000561889.jpg,"('knife', 'carrot')"
+1194,1194,CV-Bench/COCO/coco/images/000000103723.jpg,"('elephant', 'person')"
+1195,1195,CV-Bench/COCO/coco/images/000000530836.jpg,"('dining table', 'sink')"
+1196,1196,CV-Bench/COCO/coco/images/000000541773.jpg,"('dining table', 'couch')"
+1197,1197,CV-Bench/COCO/coco/images/000000488592.jpg,"('bicycle', 'umbrella')"
+1198,1198,CV-Bench/COCO/coco/images/000000368684.jpg,"('book', 'chair')"
+1199,1199,CV-Bench/COCO/coco/images/000000398652.jpg,"('potted plant', 'dining table')"
+1200,1200,CV-Bench/COCO/coco/images/000000249180.jpg,"('person', 'cell phone')"
+1201,1201,CV-Bench/COCO/coco/images/000000281409.jpg,"('chair', 'baseball glove')"
+1202,1202,CV-Bench/COCO/coco/images/000000555972.jpg,"('vase', 'chair')"
+1203,1203,CV-Bench/COCO/coco/images/000000173371.jpg,"('knife', 'fork')"
+1204,1204,CV-Bench/COCO/coco/images/000000319607.jpg,"('traffic light', 'bicycle')"
+1205,1205,CV-Bench/COCO/coco/images/000000277689.jpg,"('dining table', 'wine glass')"
+1206,1206,CV-Bench/COCO/coco/images/000000042889.jpg,"('keyboard', 'teddy bear')"
+1207,1207,CV-Bench/COCO/coco/images/000000516173.jpg,"('surfboard', 'person')"
+1208,1208,CV-Bench/COCO/coco/images/000000546964.jpg,"('person', 'dining table')"
+1209,1209,CV-Bench/COCO/coco/images/000000253835.jpg,"('bottle', 'clock')"
+1210,1210,CV-Bench/COCO/coco/images/000000319184.jpg,"('frisbee', 'person')"
+1211,1211,CV-Bench/COCO/coco/images/000000068387.jpg,"('person', 'baseball bat')"
+1212,1212,CV-Bench/COCO/coco/images/000000389316.jpg,"('elephant', 'person')"
+1213,1213,CV-Bench/COCO/coco/images/000000308793.jpg,"('backpack', 'person')"
+1214,1214,CV-Bench/COCO/coco/images/000000084431.jpg,"('tv', 'pizza')"
+1215,1215,CV-Bench/COCO/coco/images/000000539883.jpg,"('remote', 'person')"
+1216,1216,CV-Bench/COCO/coco/images/000000242411.jpg,"('truck', 'person')"
+1217,1217,CV-Bench/COCO/coco/images/000000003661.jpg,"('keyboard', 'cup')"
+1218,1218,CV-Bench/COCO/coco/images/000000057672.jpg,"('boat', 'truck')"
+1219,1219,CV-Bench/COCO/coco/images/000000261097.jpg,"('tennis racket', 'person')"
+1220,1220,CV-Bench/COCO/coco/images/000000133645.jpg,"('bench', 'boat')"
+1221,1221,CV-Bench/COCO/coco/images/000000129062.jpg,"('dining table', 'person')"
+1222,1222,CV-Bench/COCO/coco/images/000000385719.jpg,"('mouse', 'laptop')"
+1223,1223,CV-Bench/COCO/coco/images/000000569917.jpg,"('toothbrush', 'toilet')"
+1224,1224,CV-Bench/COCO/coco/images/000000180296.jpg,"('chair', 'suitcase')"
+1225,1225,CV-Bench/COCO/coco/images/000000052412.jpg,"('truck', 'airplane')"
+1226,1226,CV-Bench/COCO/coco/images/000000439426.jpg,"('donut', 'person')"
+1227,1227,CV-Bench/COCO/coco/images/000000153632.jpg,"('bowl', 'fork')"
+1228,1228,CV-Bench/COCO/coco/images/000000436617.jpg,"('dining table', 'bench')"
+1229,1229,CV-Bench/COCO/coco/images/000000500478.jpg,"('baseball glove', 'person')"
+1230,1230,CV-Bench/COCO/coco/images/000000501023.jpg,"('stop sign', 'traffic light')"
+1231,1231,CV-Bench/COCO/coco/images/000000523782.jpg,"('bird', 'truck')"
+1232,1232,CV-Bench/COCO/coco/images/000000273715.jpg,"('person', 'skis')"
+1233,1233,CV-Bench/COCO/coco/images/000000384661.jpg,"('bottle', 'clock')"
+1234,1234,CV-Bench/COCO/coco/images/000000412531.jpg,"('car', 'parking meter')"
+1235,1235,CV-Bench/COCO/coco/images/000000151962.jpg,"('dog', 'person')"
+1236,1236,CV-Bench/COCO/coco/images/000000395343.jpg,"('bowl', 'cup')"
+1237,1237,CV-Bench/COCO/coco/images/000000406997.jpg,"('person', 'handbag')"
+1238,1238,CV-Bench/COCO/coco/images/000000087244.jpg,"('fire hydrant', 'bench')"
+1239,1239,CV-Bench/COCO/coco/images/000000213935.jpg,"('apple', 'orange')"
+1240,1240,CV-Bench/COCO/coco/images/000000492110.jpg,"('person', 'cell phone')"
+1241,1241,CV-Bench/COCO/coco/images/000000231822.jpg,"('sandwich', 'cake')"
+1242,1242,CV-Bench/COCO/coco/images/000000308531.jpg,"('bench', 'clock')"
+1243,1243,CV-Bench/COCO/coco/images/000000409630.jpg,"('keyboard', 'mouse')"
+1244,1244,CV-Bench/COCO/coco/images/000000199236.jpg,"('person', 'horse')"
+1245,1245,CV-Bench/COCO/coco/images/000000213035.jpg,"('wine glass', 'person')"
+1246,1246,CV-Bench/COCO/coco/images/000000257370.jpg,"('person', 'potted plant')"
+1247,1247,CV-Bench/COCO/coco/images/000000138550.jpg,"('chair', 'fire hydrant')"
+1248,1248,CV-Bench/COCO/coco/images/000000287667.jpg,"('carrot', 'knife')"
+1249,1249,CV-Bench/COCO/coco/images/000000229659.jpg,"('chair', 'clock')"
+1250,1250,CV-Bench/COCO/coco/images/000000479155.jpg,"('apple', 'dog')"
+1251,1251,CV-Bench/COCO/coco/images/000000312421.jpg,"('dining table', 'suitcase')"
+1252,1252,CV-Bench/COCO/coco/images/000000387098.jpg,"('cup', 'bottle')"
+1253,1253,CV-Bench/COCO/coco/images/000000156924.jpg,"('chair', 'person')"
+1254,1254,CV-Bench/COCO/coco/images/000000047819.jpg,"('person', 'horse')"
+1255,1255,CV-Bench/COCO/coco/images/000000072852.jpg,"('bicycle', 'person')"
+1256,1256,CV-Bench/COCO/coco/images/000000127530.jpg,"('tennis racket', 'sports ball')"
+1257,1257,CV-Bench/COCO/coco/images/000000563604.jpg,"('handbag', 'bicycle')"
+1258,1258,CV-Bench/COCO/coco/images/000000130699.jpg,"('car', 'truck')"
+1259,1259,CV-Bench/COCO/coco/images/000000470773.jpg,"('knife', 'cup')"
+1260,1260,CV-Bench/COCO/coco/images/000000559513.jpg,"('knife', 'bottle')"
+1261,1261,CV-Bench/COCO/coco/images/000000494634.jpg,"('wine glass', 'cat')"
+1262,1262,CV-Bench/COCO/coco/images/000000334719.jpg,"('person', 'frisbee')"
+1263,1263,CV-Bench/COCO/coco/images/000000289960.jpg,"('person', 'kite')"
+1264,1264,CV-Bench/COCO/coco/images/000000237864.jpg,"('elephant', 'dog')"
+1265,1265,CV-Bench/COCO/coco/images/000000338986.jpg,"('car', 'train')"
+1266,1266,CV-Bench/COCO/coco/images/000000572620.jpg,"('person', 'bottle')"
+1267,1267,CV-Bench/COCO/coco/images/000000553511.jpg,"('traffic light', 'fire hydrant')"
+1268,1268,CV-Bench/COCO/coco/images/000000419312.jpg,"('fork', 'knife')"
+1269,1269,CV-Bench/COCO/coco/images/000000554002.jpg,"('handbag', 'dog')"
+1270,1270,CV-Bench/COCO/coco/images/000000567640.jpg,"('person', 'truck')"
+1271,1271,CV-Bench/COCO/coco/images/000000521509.jpg,"('bed', 'vase')"
+1272,1272,CV-Bench/COCO/coco/images/000000147223.jpg,"('bus', 'car')"
+1273,1273,CV-Bench/COCO/coco/images/000000156076.jpg,"('fork', 'bottle')"
+1274,1274,CV-Bench/COCO/coco/images/000000182923.jpg,"('tennis racket', 'tie')"
+1275,1275,CV-Bench/COCO/coco/images/000000560880.jpg,"('dog', 'person')"
+1276,1276,CV-Bench/COCO/coco/images/000000186422.jpg,"('bear', 'bird')"
+1277,1277,CV-Bench/COCO/coco/images/000000505789.jpg,"('handbag', 'clock')"
+1278,1278,CV-Bench/COCO/coco/images/000000206135.jpg,"('clock', 'cow')"
+1279,1279,CV-Bench/COCO/coco/images/000000379842.jpg,"('book', 'remote')"
+1280,1280,CV-Bench/COCO/coco/images/000000424642.jpg,"('frisbee', 'bottle')"
+1281,1281,CV-Bench/COCO/coco/images/000000148999.jpg,"('person', 'traffic light')"
+1282,1282,CV-Bench/COCO/coco/images/000000226154.jpg,"('person', 'bus')"
+1283,1283,CV-Bench/COCO/coco/images/000000184400.jpg,"('traffic light', 'train')"
+1284,1284,CV-Bench/COCO/coco/images/000000313454.jpg,"('wine glass', 'bottle')"
+1285,1285,CV-Bench/COCO/coco/images/000000414510.jpg,"('backpack', 'truck')"
+1286,1286,CV-Bench/COCO/coco/images/000000398203.jpg,"('sports ball', 'person')"
+1287,1287,CV-Bench/COCO/coco/images/000000315187.jpg,"('bus', 'car')"
+1288,1288,CV-Bench/COCO/coco/images/000000520707.jpg,"('tv', 'suitcase')"
+1289,1289,CV-Bench/COCO/coco/images/000000450100.jpg,"('cup', 'spoon')"
+1290,1290,CV-Bench/COCO/coco/images/000000514797.jpg,"('person', 'kite')"
+1291,1291,CV-Bench/COCO/coco/images/000000050326.jpg,"('person', 'chair')"
+1292,1292,CV-Bench/COCO/coco/images/000000068833.jpg,"('microwave', 'clock')"
+1293,1293,CV-Bench/COCO/coco/images/000000232538.jpg,"('car', 'train')"
+1294,1294,CV-Bench/COCO/coco/images/000000533145.jpg,"('tv', 'person')"
+1295,1295,CV-Bench/COCO/coco/images/000000116208.jpg,"('dining table', 'wine glass')"
+1296,1296,CV-Bench/COCO/coco/images/000000311190.jpg,"('person', 'dog')"
+1297,1297,CV-Bench/COCO/coco/images/000000148719.jpg,"('truck', 'person')"
+1298,1298,CV-Bench/COCO/coco/images/000000053505.jpg,"('bottle', 'toilet')"
+1299,1299,CV-Bench/COCO/coco/images/000000436883.jpg,"('suitcase', 'bus')"
+1300,1300,CV-Bench/COCO/coco/images/000000169076.jpg,"('person', 'bed')"
+1301,1301,CV-Bench/COCO/coco/images/000000129135.jpg,"('bench', 'train')"
+1302,1302,CV-Bench/COCO/coco/images/000000220858.jpg,"('bird', 'boat')"
+1303,1303,CV-Bench/COCO/coco/images/000000055299.jpg,"('umbrella', 'bird')"
+1304,1304,CV-Bench/COCO/coco/images/000000369442.jpg,"('sheep', 'stop sign')"
+1305,1305,CV-Bench/COCO/coco/images/000000507975.jpg,"('person', 'car')"
+1306,1306,CV-Bench/COCO/coco/images/000000239274.jpg,"('person', 'boat')"
+1307,1307,CV-Bench/COCO/coco/images/000000396526.jpg,"('potted plant', 'book')"
+1308,1308,CV-Bench/COCO/coco/images/000000121586.jpg,"('book', 'cat')"
+1309,1309,CV-Bench/COCO/coco/images/000000198489.jpg,"('umbrella', 'car')"
+1310,1310,CV-Bench/COCO/coco/images/000000179392.jpg,"('keyboard', 'tv')"
+1311,1311,CV-Bench/COCO/coco/images/000000145620.jpg,"('person', 'motorcycle')"
+1312,1312,CV-Bench/COCO/coco/images/000000133819.jpg,"('parking meter', 'traffic light')"
+1313,1313,CV-Bench/COCO/coco/images/000000092939.jpg,"('knife', 'cake')"
+1314,1314,CV-Bench/COCO/coco/images/000000376900.jpg,"('tennis racket', 'person')"
+1315,1315,CV-Bench/COCO/coco/images/000000369757.jpg,"('pizza', 'hot dog')"
+1316,1316,CV-Bench/COCO/coco/images/000000495054.jpg,"('airplane', 'truck')"
+1317,1317,CV-Bench/COCO/coco/images/000000436738.jpg,"('bus', 'book')"
+1318,1318,CV-Bench/COCO/coco/images/000000442323.jpg,"('suitcase', 'chair')"
+1319,1319,CV-Bench/COCO/coco/images/000000532058.jpg,"('remote', 'bottle')"
+1320,1320,CV-Bench/COCO/coco/images/000000250766.jpg,"('knife', 'carrot')"
+1321,1321,CV-Bench/COCO/coco/images/000000263966.jpg,"('sheep', 'horse')"
+1322,1322,CV-Bench/COCO/coco/images/000000315450.jpg,"('bus', 'truck')"
+1323,1323,CV-Bench/COCO/coco/images/000000327592.jpg,"('clock', 'spoon')"
+1324,1324,CV-Bench/COCO/coco/images/000000223738.jpg,"('sports ball', 'baseball bat')"
+1325,1325,CV-Bench/COCO/coco/images/000000314182.jpg,"('bowl', 'broccoli')"
+1326,1326,CV-Bench/COCO/coco/images/000000351331.jpg,"('pizza', 'fork')"
+1327,1327,CV-Bench/COCO/coco/images/000000401446.jpg,"('umbrella', 'handbag')"
+1328,1328,CV-Bench/COCO/coco/images/000000014439.jpg,"('chair', 'kite')"
+1329,1329,CV-Bench/COCO/coco/images/000000011699.jpg,"('suitcase', 'person')"
+1330,1330,CV-Bench/COCO/coco/images/000000102411.jpg,"('car', 'person')"
+1331,1331,CV-Bench/COCO/coco/images/000000512836.jpg,"('umbrella', 'dog')"
+1332,1332,CV-Bench/COCO/coco/images/000000257169.jpg,"('toilet', 'person')"
+1333,1333,CV-Bench/COCO/coco/images/000000211120.jpg,"('bowl', 'truck')"
+1334,1334,CV-Bench/COCO/coco/images/000000578500.jpg,"('couch', 'potted plant')"
+1335,1335,CV-Bench/COCO/coco/images/000000243204.jpg,"('sandwich', 'person')"
+1336,1336,CV-Bench/COCO/coco/images/000000043581.jpg,"('pizza', 'fork')"
+1337,1337,CV-Bench/COCO/coco/images/000000575970.jpg,"('bowl', 'sink')"
+1338,1338,CV-Bench/COCO/coco/images/000000500211.jpg,"('chair', 'umbrella')"
+1339,1339,CV-Bench/COCO/coco/images/000000379441.jpg,"('remote', 'laptop')"
+1340,1340,CV-Bench/COCO/coco/images/000000449190.jpg,"('sandwich', 'carrot')"
+1341,1341,CV-Bench/COCO/coco/images/000000412894.jpg,"('handbag', 'traffic light')"
+1342,1342,CV-Bench/COCO/coco/images/000000166768.jpg,"('person', 'tie')"
+1343,1343,CV-Bench/COCO/coco/images/000000194724.jpg,"('chair', 'book')"
+1344,1344,CV-Bench/COCO/coco/images/000000461751.jpg,"('person', 'backpack')"
+1345,1345,CV-Bench/COCO/coco/images/000000140286.jpg,"('horse', 'person')"
+1346,1346,CV-Bench/COCO/coco/images/000000190236.jpg,"('potted plant', 'mouse')"
+1347,1347,CV-Bench/COCO/coco/images/000000472375.jpg,"('cup', 'dog')"
+1348,1348,CV-Bench/COCO/coco/images/000000407960.jpg,"('oven', 'bowl')"
+1349,1349,CV-Bench/COCO/coco/images/000000002157.jpg,"('wine glass', 'cake')"
+1350,1350,CV-Bench/COCO/coco/images/000000039956.jpg,"('bed', 'chair')"
+1351,1351,CV-Bench/COCO/coco/images/000000183391.jpg,"('chair', 'tennis racket')"
+1352,1352,CV-Bench/COCO/coco/images/000000482917.jpg,"('tv', 'person')"
+1353,1353,CV-Bench/COCO/coco/images/000000451879.jpg,"('sports ball', 'person')"
+1354,1354,CV-Bench/COCO/coco/images/000000279145.jpg,"('potted plant', 'cat')"
+1355,1355,CV-Bench/COCO/coco/images/000000474293.jpg,"('teddy bear', 'person')"
+1356,1356,CV-Bench/COCO/coco/images/000000097679.jpg,"('car', 'snowboard')"
+1357,1357,CV-Bench/COCO/coco/images/000000397354.jpg,"('bottle', 'refrigerator')"
+1358,1358,CV-Bench/COCO/coco/images/000000139077.jpg,"('book', 'tv')"
+1359,1359,CV-Bench/COCO/coco/images/000000352618.jpg,"('banana', 'orange')"
+1360,1360,CV-Bench/COCO/coco/images/000000449312.jpg,"('donut', 'car')"
+1361,1361,CV-Bench/COCO/coco/images/000000025986.jpg,"('bowl', 'cup')"
+1362,1362,CV-Bench/COCO/coco/images/000000327769.jpg,"('cup', 'bottle')"
+1363,1363,CV-Bench/COCO/coco/images/000000259097.jpg,"('person', 'frisbee')"
+1364,1364,CV-Bench/COCO/coco/images/000000475904.jpg,"('bird', 'boat')"
+1365,1365,CV-Bench/COCO/coco/images/000000419379.jpg,"('donut', 'person')"
+1366,1366,CV-Bench/COCO/coco/images/000000388215.jpg,"('sports ball', 'person')"
+1367,1367,CV-Bench/COCO/coco/images/000000491008.jpg,"('potted plant', 'boat')"
+1368,1368,CV-Bench/COCO/coco/images/000000237928.jpg,"('microwave', 'oven')"
+1369,1369,CV-Bench/COCO/coco/images/000000546626.jpg,"('cell phone', 'bottle')"
+1370,1370,CV-Bench/COCO/coco/images/000000475572.jpg,"('teddy bear', 'person')"
+1371,1371,CV-Bench/COCO/coco/images/000000121417.jpg,"('umbrella', 'bench')"
+1372,1372,CV-Bench/COCO/coco/images/000000139260.jpg,"('banana', 'spoon')"
+1373,1373,CV-Bench/COCO/coco/images/000000239041.jpg,"('sink', 'hair drier')"
+1374,1374,CV-Bench/COCO/coco/images/000000337498.jpg,"('pizza', 'knife')"
+1375,1375,CV-Bench/COCO/coco/images/000000414638.jpg,"('fork', 'cup')"
+1376,1376,CV-Bench/COCO/coco/images/000000567825.jpg,"('bottle', 'wine glass')"
+1377,1377,CV-Bench/COCO/coco/images/000000405432.jpg,"('donut', 'remote')"
+1378,1378,CV-Bench/COCO/coco/images/000000568584.jpg,"('couch', 'chair')"
+1379,1379,CV-Bench/COCO/coco/images/000000009769.jpg,"('fire hydrant', 'truck')"
+1380,1380,CV-Bench/COCO/coco/images/000000067406.jpg,"('person', 'kite')"
+1381,1381,CV-Bench/COCO/coco/images/000000042102.jpg,"('tie', 'handbag')"
+1382,1382,CV-Bench/COCO/coco/images/000000442161.jpg,"('person', 'handbag')"
+1383,1383,CV-Bench/COCO/coco/images/000000022192.jpg,"('handbag', 'dog')"
+1384,1384,CV-Bench/COCO/coco/images/000000294855.jpg,"('bottle', 'suitcase')"
+1385,1385,CV-Bench/COCO/coco/images/000000089045.jpg,"('potted plant', 'book')"
+1386,1386,CV-Bench/COCO/coco/images/000000047010.jpg,"('cow', 'giraffe')"
+1387,1387,CV-Bench/COCO/coco/images/000000313783.jpg,"('carrot', 'fork')"
+1388,1388,CV-Bench/COCO/coco/images/000000265816.jpg,"('potted plant', 'horse')"
+1389,1389,CV-Bench/COCO/coco/images/000000136915.jpg,"('book', 'tie')"
+1390,1390,CV-Bench/COCO/coco/images/000000259830.jpg,"('bicycle', 'motorcycle')"
+1391,1391,CV-Bench/COCO/coco/images/000000017379.jpg,"('sink', 'tv')"
+1392,1392,CV-Bench/COCO/coco/images/000000228214.jpg,"('bottle', 'cell phone')"
+1393,1393,CV-Bench/COCO/coco/images/000000551780.jpg,"('clock', 'spoon')"
+1394,1394,CV-Bench/COCO/coco/images/000000311928.jpg,"('sports ball', 'person')"
+1395,1395,CV-Bench/COCO/coco/images/000000292005.jpg,"('bottle', 'toilet')"
+1396,1396,CV-Bench/COCO/coco/images/000000231527.jpg,"('knife', 'orange')"
+1397,1397,CV-Bench/COCO/coco/images/000000201072.jpg,"('tennis racket', 'person')"
+1398,1398,CV-Bench/COCO/coco/images/000000493905.jpg,"('chair', 'tennis racket')"
+1399,1399,CV-Bench/COCO/coco/images/000000024027.jpg,"('person', 'kite')"
+1400,1400,CV-Bench/COCO/coco/images/000000083531.jpg,"('bottle', 'cup')"
+1401,1401,CV-Bench/COCO/coco/images/000000124442.jpg,"('person', 'kite')"
+1402,1402,CV-Bench/COCO/coco/images/000000344888.jpg,"('horse', 'truck')"
+1403,1403,CV-Bench/COCO/coco/images/000000329447.jpg,"('cow', 'dog')"
+1404,1404,CV-Bench/COCO/coco/images/000000086582.jpg,"('potted plant', 'laptop')"
+1405,1405,CV-Bench/COCO/coco/images/000000301376.jpg,"('traffic light', 'bicycle')"
+1406,1406,CV-Bench/COCO/coco/images/000000019432.jpg,"('sports ball', 'tennis racket')"
+1407,1407,CV-Bench/COCO/coco/images/000000236721.jpg,"('bowl', 'spoon')"
+1408,1408,CV-Bench/COCO/coco/images/000000185802.jpg,"('chair', 'umbrella')"
+1409,1409,CV-Bench/COCO/coco/images/000000210855.jpg,"('bottle', 'vase')"
+1410,1410,CV-Bench/COCO/coco/images/000000026204.jpg,"('car', 'traffic light')"
+1411,1411,CV-Bench/COCO/coco/images/000000132587.jpg,"('person', 'bird')"
+1412,1412,CV-Bench/COCO/coco/images/000000100723.jpg,"('person', 'stop sign')"
+1413,1413,CV-Bench/COCO/coco/images/000000423123.jpg,"('refrigerator', 'backpack')"
+1414,1414,CV-Bench/COCO/coco/images/000000157807.jpg,"('sink', 'cat')"
+1415,1415,CV-Bench/COCO/coco/images/000000245448.jpg,"('person', 'truck')"
+1416,1416,CV-Bench/COCO/coco/images/000000344100.jpg,"('sandwich', 'cup')"
+1417,1417,CV-Bench/COCO/coco/images/000000070774.jpg,"('motorcycle', 'bird')"
+1418,1418,CV-Bench/COCO/coco/images/000000205514.jpg,"('chair', 'tv')"
+1419,1419,CV-Bench/COCO/coco/images/000000025096.jpg,"('zebra', 'person')"
+1420,1420,CV-Bench/COCO/coco/images/000000575081.jpg,"('tv', 'person')"
+1421,1421,CV-Bench/COCO/coco/images/000000017207.jpg,"('motorcycle', 'bus')"
+1422,1422,CV-Bench/COCO/coco/images/000000331817.jpg,"('wine glass', 'potted plant')"
+1423,1423,CV-Bench/COCO/coco/images/000000452793.jpg,"('refrigerator', 'sink')"
+1424,1424,CV-Bench/COCO/coco/images/000000309391.jpg,"('person', 'bus')"
+1425,1425,CV-Bench/COCO/coco/images/000000506656.jpg,"('person', 'horse')"
+1426,1426,CV-Bench/COCO/coco/images/000000399296.jpg,"('hot dog', 'person')"
+1427,1427,CV-Bench/COCO/coco/images/000000562207.jpg,"('person', 'bowl')"
+1428,1428,CV-Bench/COCO/coco/images/000000520910.jpg,"('toilet', 'person')"
+1429,1429,CV-Bench/COCO/coco/images/000000408696.jpg,"('person', 'toilet')"
+1430,1430,CV-Bench/COCO/coco/images/000000427500.jpg,"('fire hydrant', 'car')"
+1431,1431,CV-Bench/COCO/coco/images/000000100624.jpg,"('cell phone', 'person')"
+1432,1432,CV-Bench/COCO/coco/images/000000228144.jpg,"('chair', 'dining table')"
+1433,1433,CV-Bench/COCO/coco/images/000000379800.jpg,"('stop sign', 'train')"
+1434,1434,CV-Bench/COCO/coco/images/000000226147.jpg,"('person', 'dining table')"
+1435,1435,CV-Bench/COCO/coco/images/000000335427.jpg,"('spoon', 'broccoli')"
+1436,1436,CV-Bench/COCO/coco/images/000000304365.jpg,"('person', 'train')"
+1437,1437,CV-Bench/COCO/coco/images/000000575187.jpg,"('giraffe', 'person')"
