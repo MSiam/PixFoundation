@@ -1,7 +1,7 @@
 # PixFoundation: Are We Heading in the Right Direction with Pixel-level Vision Foundation Models?
 [Project Webpage](), [Paper](https://arxiv.org/abs/2502.04192)
 
-Official implementation of our work on PixFoundation direction. Code coming soon...
+Official implementation of my work on PixFoundation direction.
 
 <div align="center">
 <img src="https://github.com/MSiam/PixFoundation/blob/1f9a5711ed7a3f87338bcb7d8b8381bd79d38431/imgs/ICML25PixFoundation.drawio.png" width="70%" height="70%"><br><br>
@@ -33,10 +33,8 @@ git clone --recursive https://github.com/MSiam/PixFoundation
 ```
 bash pixmmvp/scripts/run_all.sh
 ```
-
-* Instructions for the automatic baseline
-[AutoBaseline](https://github.com/MSiam/PixFoundation/blob/master/autobaseline.md)
-
+* Each of the pixel-level MLLMs inference code is based on their respective gradio demo codes not customized for a certain task.
+* Instructions for the automatic baseline [AutoBaseline](https://github.com/MSiam/PixFoundation/blob/master/autobaseline.md)
 * PixCV-Bench evaluation code coming soon
 
 ## When does grounding emerge in MLLMs?
@@ -48,7 +46,7 @@ Our finding is that grounding can emerge coinciding with output text that descri
 </div>
 
 <div align="center">
-<img src="https://github.com/MSiam/PixFoundation/blob/0a9a03ad929ff55cb42ef6a7c3352626d2486ffe/imgs/emerging_text.png" width="70%" height="70%">
+<img src="https://github.com/MSiam/PixFoundation/blob/55686df651a7ceaf43f649eaa4e8a47c14aae91b/imgs/emerging_text.png" width="70%" height="70%">
 </div>
 
 <div align="center">

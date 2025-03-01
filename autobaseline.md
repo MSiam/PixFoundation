@@ -8,7 +8,7 @@ The automatic baseline runs in two stages, refer to "pixmmvp/scripts/infer_gptau
 * Generate the automatically selected mask using GPT segmentation grading (--stage 2)
 
 ## Example Visualizations
-This a repository that include example visualizations used to generate the automatic selection in PixMMVP:
+This a repository that includes example visualizations used to generate the automatic selection in PixMMVP:
 ```
 git clone https://github.com/MSiam/AutoGPTImages
 ```
