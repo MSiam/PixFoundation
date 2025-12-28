@@ -331,7 +331,7 @@ def eval_model(args):
             else:
                 response_msks = np.array(response_msks.detach().cpu()*255, np.uint8)
 
-            cv2.imwrite(os.path.join(args.preds_dir, f"{photo_id}.png"), response_msks)
+            cv2.imwrite(os.path.join(args.preds_dir, "%05d.png"%photo_id), response_msks)
 
         print(response_text)
         if args.prompt_for_seg == 3:
