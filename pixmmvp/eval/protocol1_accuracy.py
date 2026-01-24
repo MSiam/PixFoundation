@@ -12,7 +12,7 @@ parser = argparse.ArgumentParser(description='Process OpenAI API key and JSONL f
 # Add arguments
 parser.add_argument('--openai_api_key', default = "", help='Your OpenAI API key')
 parser.add_argument('--answer_file', default = "answer.jsonl",help='Path to the JSONL file')
-
+parser.add_argument('--questions_file', default='', type=str)
 # Parse arguments
 args = parser.parse_args()
 
@@ -52,19 +52,30 @@ def get_yes_no_answer(question):
         return "Could not determine yes or no."
 
 
-def retrieve_full_acc(answer_file):
+def retrieve_full_acc(answer_file, questions_file):
+    if questions_file != '':
+        df = pd.read_csv(questions_file)  # Assuming the fields are separated by tabs
+    else:
+        df = None
+
     accuracy = []
     num_correct, num_total = 0, 0
     with open(answer_file, 'r') as file:
         index, round_correct = 0, 0
         for line in tqdm(file):
             data = json.loads(line)
-            question, correct_answer, model_response = data["prompt"], data["answer"], data["response"]
+            try:
+                # Protocol 1 format
+                question, correct_answer, model_response = data["prompt"], data["answer"], data["response"]
+            except:
+                # Protocol 2 format for confirmation on the prompt sensitivity results
+                assert df is not None, "dataframe cant be none in this evaluation"
+                qid, correct_answer, model_response = data['question_id'], data["gt_answer"], data["answer"]
+                question = df.iloc[qid-1]['Question'] + ' Options: ' + df.iloc[qid-1]['Options']
 #            question4gpt = f"Given the following question {question}, the correct answer is {correct_answer}. Does the following answer correctly answers the question, answer:{model_response}?"
             question4gpt = f"Given the following question {question}, the correct answer is {correct_answer}. Does the following answer correctly answers the question, answer:{model_response}? Respond with a Yes/No"
             #print(question, ' ', correct_answer, ' ', model_response)
             gpt_grade = get_yes_no_answer(question4gpt)
-
             index += 1
             if gpt_grade=="yes" or gpt_grade=="yes.":
                 accuracy.append(1)
@@ -84,6 +95,6 @@ def retrieve_full_acc(answer_file):
     print(f"The accuracy is {num_correct/num_total}")
     return accuracy
 
-acc = retrieve_full_acc(args.answer_file)
+acc = retrieve_full_acc(args.answer_file, args.questions_file)
 dataframe = pd.DataFrame(acc, columns=['acc'])
 dataframe.to_csv(args.answer_file.replace('.jsonl', '.csv'))

@@ -35,6 +35,8 @@ def compute_metrics(jsonl_file, output_file, csv_file, extra_outdir=None):
     correct, total = 0, 0
     model = ""
     finegrained_correct= []
+    accuracy = []
+
     with open(jsonl_file, 'r') as file:
         output_file = os.path.expanduser(output_file)
         os.makedirs(os.path.dirname(output_file), exist_ok=True)
@@ -50,12 +52,13 @@ def compute_metrics(jsonl_file, output_file, csv_file, extra_outdir=None):
                 text_answer = full_options[ord(gt_answer)-ord('a')]
                 if (gt_answer == answer) or (answer == text_answer):
                     finegrained_correct.append(1)
+                    accuracy.append(1)
                     if (ind%2==0) or (ind%2==1 and correct%2==1):
                         # increase only if even or odd and even is correct too
                         correct += 1
-
                 else:
                     finegrained_correct.append(0)
+                    accuracy.append(0)
                     if ind%2==1 and correct%2==1:
                         # even one is correct so decrease
                         correct -= 1
@@ -72,6 +75,9 @@ def compute_metrics(jsonl_file, output_file, csv_file, extra_outdir=None):
     }
     add_data_to_csv(csv_file, combined_data)
     print(combined_data)
+
+    dataframe = pd.DataFrame(accuracy, columns=['acc'])
+    dataframe.to_csv(args.answers_file.replace('.jsonl', '.csv'))
 
     if extra_outdir is not None:
         os.makedirs(extra_outdir, exist_ok=True)

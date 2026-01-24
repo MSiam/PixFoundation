@@ -1,8 +1,8 @@
 import glob
 import argparse
 import numpy as np
-from dataset_helpers.register_mmvp import register_new_dataset
-from dataset_helpers.custom_coco_dataset import CustomCOCODataset
+from pixmmvp.dataset.register_mmvp import register_new_dataset
+from pixmmvp.dataset.custom_coco_dataset import CustomCOCODataset
 import torch.utils.data as torchdata
 from tqdm import tqdm as tqdm
 from detectron2.data.build import trivial_batch_collator

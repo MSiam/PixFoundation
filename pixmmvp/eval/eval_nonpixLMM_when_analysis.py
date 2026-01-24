@@ -1,8 +1,8 @@
 import glob
 import argparse
 import numpy as np
-from dataset_helpers.register_mmvp import register_new_dataset
-from dataset_helpers.custom_coco_dataset import CustomCOCODataset
+from pixmmvp.dataset.register_mmvp import register_new_dataset
+from pixmmvp.dataset.custom_coco_dataset import CustomCOCODataset
 import torch.utils.data as torchdata
 from tqdm import tqdm as tqdm
 from detectron2.data.build import trivial_batch_collator
@@ -117,8 +117,6 @@ if __name__ == "__main__":
             continue
 
         filename = minibatch[0]['file_name']
-        #if filename.split('/')[-1] != '292.jpg':
-        #    continue
         anno_masks = minibatch[0]['masks']
         if type(anno_masks) == list:
             assert len(anno_masks) == 1, "More than one mask Issue"
@@ -139,7 +137,6 @@ if __name__ == "__main__":
 
             if loc >= i*10 and loc < (i+1)*10:
                 bins[i] += 1
-
     np.save(os.path.join(args.when_out_dir, '%s_loc.npy'%args.meta_file.split('/')[-1].split('.')[0]), bins)
     np.save(os.path.join(args.when_out_dir, '%s_concept.npy'%args.meta_file.split('/')[-1].split('.')[0]), token_concept)
 

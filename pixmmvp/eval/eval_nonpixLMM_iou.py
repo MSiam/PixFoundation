@@ -1,8 +1,8 @@
 import glob
 import argparse
 import numpy as np
-from dataset_helpers.register_mmvp import register_new_dataset
-from dataset_helpers.custom_coco_dataset import CustomCOCODataset
+from pixmmvp.dataset.register_mmvp import register_new_dataset
+from pixmmvp.dataset.custom_coco_dataset import CustomCOCODataset
 import torch.utils.data as torchdata
 from tqdm import tqdm as tqdm
 from detectron2.data.build import trivial_batch_collator
@@ -29,9 +29,12 @@ def parse_args():
     parser.add_argument("--batchsize", default=8, type=int)
     parser.add_argument("--workers", default=0, type=int)
     parser.add_argument("--viz_dir", default="", type=str)
+    parser.add_argument("--remove_none_flag", action="store_true")
+    parser.add_argument("--varidx", type=int, default=-1)
     return parser.parse_args()
 
 def retrieve_highest_iou(filename, preds_files, anno_masks):
+    orig_filename = filename
     filename = filename.split('/')[-1].split('.')[0]
     matched_preds_files = [pf for pf in preds_files if filename == pf.split('/')[-1].split('_')[0]]
 
@@ -44,18 +47,20 @@ def retrieve_highest_iou(filename, preds_files, anno_masks):
         pred_mask = cv2.imread(predf, 0)
         pred_mask[pred_mask==255] = 1
 
-        if anno_masks.sum() == 0:
-            # retrieve the smallest mask since all will have iou = 0
-            if mask_area > pred_mask.sum():
-                mask_area = pred_mask.sum()
-                best_matched_mask = pred_mask
-                best_matched_file= predf
-        else:
-            iou = compute_iou(pred_mask, anno_masks)
-            if iou >= best_iou:
-                best_iou = iou
-                best_matched_mask = pred_mask
-                best_matched_file = predf
+#        if anno_masks.sum() == 0:
+#            # retrieve the smallest mask since all will have iou = 0
+#            if mask_area > pred_mask.sum():
+#                mask_area = pred_mask.sum()
+#                best_matched_mask = pred_mask
+#                best_matched_file= predf
+#            img = Image.open(orig_filename)
+#            best_matched_mask = np.zeros((img.size[1], img.size[0]), np.uint8)
+#        else:
+        iou = compute_iou(pred_mask, anno_masks)
+        if iou >= best_iou:
+            best_iou = iou
+            best_matched_mask = pred_mask
+            best_matched_file = predf
     return best_matched_mask
 
 def denormalize(img, mean, scale):
@@ -86,13 +91,23 @@ def retrieve_max_spacy_score(filename, preds_files, meta_info):
             best_spacy_score = spacy_score
             best_matched_mask = pred_mask
             best_matched_file = predf
+
+    spacy_threshold = 0.7
+    if best_spacy_score < spacy_threshold and best_matched_mask is not None:
+        best_matched_mask = np.zeros_like(best_matched_mask)
     return best_matched_mask
 
-def retrieve_auto_select(filename, preds_files, meta_info):
+def retrieve_auto_select(filename, preds_dir, preds_files, meta_info):
+
     for row in meta_info:
         fname = str(int(row["question_id"])+1)+'.jpg'
         if fname == filename.split('/')[-1]:
-            selectedf = row["selected file"]
+            selectedf = os.path.join(preds_dir, row["selected file"])
+            if selectedf.split('/')[-1] == 'NONE':
+                # Object doesnt exist in image
+                img = Image.open(filename)
+                return np.zeros((img.size[1], img.size[0]), np.uint8)
+
             pred_mask = cv2.imread(selectedf, 0)
             pred_mask[pred_mask==255] = 1
             return pred_mask
@@ -137,11 +152,17 @@ def show_mask_pred(image, mask):
 if __name__ == "__main__":
     args = parse_args()
 
-    register_new_dataset(args.dataset_root)
+    register_new_dataset(args.dataset_root, args.varidx)
 
     mean = [123.675, 116.28, 103.53]
     std = [58.395, 57.12, 57.375]
-    dataset = CustomCOCODataset(mean, std)
+
+    if args.varidx == -1:
+        prefix = 'mmvp_val'
+    else:
+        prefix = 'mmvp_sensitivity_val'
+
+    dataset = CustomCOCODataset(mean, std, prefix, args.varidx)
 
     # Dataloading
     dataloader = torchdata.DataLoader(dataset, batch_size=args.batchsize,
@@ -167,10 +188,18 @@ if __name__ == "__main__":
         if args.viz_dir != "" and not os.path.exists(args.viz_dir):
             os.mkdir(args.viz_dir)
 
+    if args.remove_none_flag:
+        none_flag_file = open(os.path.join(args.dataset_root, 'meta_none.txt'), 'r')
+        none_flag_images = none_flag_file.read().strip().split('\n')
+
     for idx, minibatch in tqdm(enumerate(dataloader)):
         for i in range(len(minibatch)):
 
             filename = minibatch[i]['file_name']
+            if args.remove_none_flag:
+                if filename.split('/')[-1] in none_flag_images:
+                    continue
+
             anno_masks = minibatch[i]['masks']
             if type(anno_masks) == list:
                 assert len(anno_masks) == 1, "More than one mask Issue"
@@ -181,11 +210,15 @@ if __name__ == "__main__":
                 pred_mask = cv2.imread(preds_files[idx * args.batchsize + i], 0)
                 pred_mask[pred_mask==255] = 1
             elif args.type == "oracle":
-                pred_mask = retrieve_highest_iou(filename, preds_files, anno_masks)
+                if anno_masks.sum() == 0:
+                    img = Image.open(filename)
+                    pred_mask = np.zeros((img.size[1], img.size[0]), np.uint8)
+                else:
+                    pred_mask = retrieve_highest_iou(filename, preds_files, anno_masks)
             elif args.type == "spacy_score":
                pred_mask = retrieve_max_spacy_score(filename, preds_files, meta_info)
             elif args.type == "auto":
-                pred_mask = retrieve_auto_select(filename, preds_files, meta_info)
+                pred_mask = retrieve_auto_select(filename, args.preds_dir, preds_files, meta_info)
 
             if pred_mask is not None:
                 iou = compute_iou(pred_mask, anno_masks)
@@ -197,15 +230,14 @@ if __name__ == "__main__":
                     vis_image = show_mask_pred(img, pred_mask)
                     cv2.imwrite(os.path.join(args.viz_dir, filename.split('/')[-1]), vis_image)
             else:
+                iou = 0
                 if args.type in ["spacy_score", "oracle", "auto"] and args.viz_dir != "":
                     img = minibatch[i]['image']
                     img = np.array(img.permute(1,2,0))
                     img = denormalize(img, mean, scale)
                     cv2.imwrite(os.path.join(args.viz_dir, filename.split('/')[-1]), img)
-                continue
 
             miou += iou
             nimages += 1
-
     print("Total mIoU = ", float(miou / nimages))
-
+    print("# Images = ", nimages)
