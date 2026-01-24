@@ -9,7 +9,8 @@ Official implementation of my work on PixFoundation direction.
 
 
 ## Benchmarking Pixel-level MLLMs on PixMMVP & PixCV-Bench
-PixMMVP and PixCV-Bench augment recent benchmarks with referring expression annotations and their corresponding segmentation. These are paired with the object of interest in the question within their original visual question answering task. The goal is to evaluate the pixel-level visual grounding and visual question answering capabilities of recent pixel-level MLLMs, e.g.,OMG-Llava, Llava-G, GLAMM and LISA.
+PixMMVP and PixCV-Bench augment recent benchmarks with referring expression annotations and their corresponding segmentation. These are paired with the object of interest in the question within their original visual question answering task. The goal is to evaluate the pixel-level visual grounding and visual question answering capabilities of recent pixel-level MLLMs, e.g.,OMG-Llava, Llava-G, GLAMM and LISA. We also provide an interpretability mechanism for MLLMs that understands when
+visual grounding occurs w.r.t the output tokens, through using MLLM as a Judge on the output segmentation.
 
 <div align="center">
 <img src="https://github.com/MSiam/PixFoundation/blob/693bfd82d5c1f6f95b6adf9eac8e3725637a6bb4/imgs/dataset.png" width="70%" height="70%"><br><br>
