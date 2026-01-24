@@ -42,9 +42,11 @@ bash pixmmvp/scripts/run_all.sh
 git clone https://github.com/MSiam/AutoGPTImages
 ```
 
+### Changes to Evaluation Protocols
+[Changes](https://github.com/MSiam/PixFoundation/blob/master/Changes.md)
+
 ## When does grounding emerge in MLLMs?
 Our finding is that grounding can emerge coinciding with output text that describes the object of interest in terms of color, location or state and not necessarily the exact output text of this object. We persistently find the most frequent emergence occurs in the last 40-60% of the output text in MLLMs not trained with pixel-level grounding supervision (e.g., Llava 1.5 & Cambrian-1). We also show a histogram of the concept categories of the output text that coincides with the best segmentation emerging in such MLLMs.
-* Minor fix where the examples with ground-truth mask allbackground are discarded in the "When" analysis.
 
 <div align="center">
 <img src="https://github.com/MSiam/PixFoundation/blob/1f9a5711ed7a3f87338bcb7d8b8381bd79d38431/imgs/histograms_new.png" width="70%" height="70%"><br><br>

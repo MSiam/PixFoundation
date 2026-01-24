@@ -11,6 +11,8 @@ POINT="pixmmvp_points/"
 SAM_PATH="sam_vit_h_4b8939.pth"
 OPENAI_API_KEY=""
 
+export PYTHONPATH=${PWD}/../../
+
 # Run 3 protocols
 MODEL="pretrained/" # path to omg_llava/omg_llava_7b_finetune_8gpus.pth
 bash infer_omgllava.sh $DATA $OUT 0 $ANS $MODEL
