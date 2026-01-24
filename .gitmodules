@@ -10,9 +10,15 @@
 [submodule "groundingLMM"]
 	path = groundingLMM
 	url = https://github.com/mbzuai-oryx/groundingLMM.git
-[submodule "groundLMM"]
-	path = groundLMM
-	url = https://github.com/MSiam/groundLMM.git
 [submodule "cambrian"]
 	path = cambrian
 	url = https://github.com/cambrian-mllm/cambrian.git
+[submodule "groundLMM"]
+	path = groundLMM
+	url = https://github.com/MSiam/groundLMM.git
+[submodule "Qwen3-VL"]
+	path = Qwen3-VL
+	url = https://github.com/QwenLM/Qwen3-VL
+[submodule "RGA3-release"]
+	path = RGA3-release
+	url = https://github.com/qirui-chen/RGA3-release
