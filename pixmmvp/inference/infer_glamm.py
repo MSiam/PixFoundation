@@ -49,7 +49,7 @@ def parse_args():
     parser.add_argument('--world_size', default=1, type=int, help='number of distributed processes')
     parser.add_argument('--local_rank', default=-1, type=int)
     parser.add_argument('--dist_url', default='env://', help='url used to set up distributed training')
-
+    parser.add_argument("--questions_file", type=str, default="Questions.csv")
     parser.add_argument(
         '--seed',
         type=int,
@@ -158,7 +158,7 @@ def give_options(input_string):
     result = [part.split(")")[1].strip() for part in parts[1:]]
     return result
 
-def process(line, args):
+def process(line, question_extension):
     qs = line["question"] + " Options:"
     options = line["options"].split('(b)')
     parts = [part.strip() for part in options]
@@ -168,13 +168,12 @@ def process(line, args):
         parts[1] = "B. " + parts[1]
     for part in parts:
         qs += f"\n{part}"
-    qs += f"\n{args.question_extension}"
+    qs += f"\n{question_extension}"
     return qs
 
 
 if __name__ == "__main__":
     args = parse_args()
-#    init_distributed_mode(args)
     cudnn.benchmark = False
     cudnn.deterministic = True
     torch.manual_seed(args.seed)
@@ -189,6 +188,7 @@ if __name__ == "__main__":
     seg_token_idx = tokenizer("[SEG]", add_special_tokens=False).input_ids[0]
     torch_dtype = torch.bfloat16  # By default, using bf16
     kwargs = {"torch_dtype": torch_dtype}
+    model_name = args.hf_model_path.split('/')[-1]
     model = GLaMMForCausalLM.from_pretrained(args.hf_model_path, low_cpu_mem_usage=True,
                                              seg_token_idx=seg_token_idx, **kwargs)
     # Update model config
@@ -217,20 +217,21 @@ if __name__ == "__main__":
         os.makedirs(os.path.dirname(answers_file), exist_ok=True)
     ans_file = open(answers_file, "w")
 
-    benchmark_dir = os.path.join(args.root, 'Questions.csv')
+    benchmark_dir = os.path.join(args.root, args.questions_file)
     # Load and read the CSV
     df = pd.read_csv(benchmark_dir)  # Assuming the fields are separated by tabs
     df_objects = pd.read_csv(os.path.join(args.root, 'Objects.csv'))
 
     if args.preds_dir != "":
         if not os.path.exists(args.viz_dir):
-            os.mkdir(args.viz_dir)
+            os.makedirs(args.viz_dir)
         if not os.path.exists(args.preds_dir):
-            os.mkdir(args.preds_dir)
+            os.makedirs(args.preds_dir)
+
+    question_extension = args.question_extension
 
     # Iterate over all the images, run inference and save results
     for index, row in tqdm(df.iterrows()):
-
         # Construct the 'prompts' string
         photo_id = index+1
         image_path = os.path.join(args.root_images, f"{photo_id}.jpg")
@@ -242,7 +243,7 @@ if __name__ == "__main__":
             cur_prompt = f'Can you please segment {Object} in the given image'
         elif args.prompt_for_seg == 2:
             cur_prompt += f' Can you also please segment {Object} in the given image'
-        elif args.prompt_for_seg == 3:
+        elif args.prompt_for_seg in [3, 4]:
             line = {
                     "question": str(row[1]),
                     "imageId": int(row[0])-1,
@@ -250,17 +251,19 @@ if __name__ == "__main__":
                     "text_options": give_options(str(row[2])),
                     "answer": str(row[3])
                    }
+            if 'question_extension' in row:
+                question_extension = row['question_extension']
 
-            cur_prompt = process(line, args)
+            cur_prompt = process(line, question_extension)
 
         output_text, pred_masks, _ = inference(cur_prompt, image_path)  # GLaMM Inference
-        if args.prompt_for_seg == 3:
+        if args.prompt_for_seg in [3, 4]:
             # CVBench Format
             ans_file.write(json.dumps({"question_id": photo_id,
                        "prompt": cur_prompt,
                        "answer": output_text.strip(),
                        "gt_answer": row["Correct Answer"],
-                       "model_id": "GLAMM",
+                       "model_id": model_name,
                        "text_options": line["text_options"]
                        }) + "\n")
 
@@ -272,7 +275,7 @@ if __name__ == "__main__":
                                        "answer": row["Correct Answer"],
                                        "response": output_text.strip(),
                                        "answer_id": ans_id,
-                                       "model_id": "GLAMM",
+                                       "model_id": model_name,
                                        }) + "\n")
         ans_file.flush()
 

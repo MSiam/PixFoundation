@@ -20,6 +20,11 @@ import openai
 import time
 from PIL import Image
 import math
+import base64
+
+def encode_image_to_base64(image_path):
+    with open(image_path, "rb") as image_file:
+        return base64.b64encode(image_file.read()).decode("utf-8")
 
 
 def visualize_preds(preds_files, image):
@@ -32,7 +37,6 @@ def visualize_preds(preds_files, image):
         mask[mask==255] = 1
         _mask_image = np.zeros((temp_image.shape[0], temp_image.shape[1], 3), dtype=np.uint8)
         if mask.sum() != 0:
-
             _mask_image[:, :, 0] = _mask_image[:, :, 0] + mask.astype(np.uint8) * color[0]
             _mask_image[:, :, 1] = _mask_image[:, :, 1] + mask.astype(np.uint8) * color[1]
             _mask_image[:, :, 2] = _mask_image[:, :, 2] + mask.astype(np.uint8) * color[2]
@@ -64,6 +68,8 @@ def prompt_gpt(prompt, urls):
     img_urls_dicts = []
 
     for url in urls:
+        base64_image = encode_image_to_base64(url)
+        url = f"data:image/jpeg;base64,{base64_image}"
         img_urls_dicts.append({
             "type": "image_url",
             "image_url": {
@@ -73,7 +79,7 @@ def prompt_gpt(prompt, urls):
     while True:
         try:
             response = openai.ChatCompletion.create(
-                model='gpt-4o',
+                model='gpt-5.1',
                 messages=[{
                     'role': 'system',
                     'content': 'You are a helpful and precise assistant for checking the quality of the answer.'
@@ -85,7 +91,7 @@ def prompt_gpt(prompt, urls):
                         "text": prompt,
                     }] + img_urls_dicts,
                 }],
-                temperature=0.2,  # TODO: figure out which temperature is best for evaluation
+                temperature=0.2,  # TODO: figure out which temperature is best for evaluation (if I am prompting it w/ same prompt multiple times)
             )
             break
         except openai.error.RateLimitError:
@@ -97,49 +103,11 @@ def prompt_gpt(prompt, urls):
     answer = response['choices'][0]['message']['content']
     return answer
 
-
-
-def div_images_into_groups(args, base_url, Object, matched_preds_files):
-
-    ngroupimgs = len(matched_preds_files)//3
-    best_indices = []
-    best_files =[]
-
-    for grimg_idx in range(ngroupimgs):
-        if grimg_idx == ngroupimgs - 1:
-            img_urls = []
-            for img_file in matched_preds_files[grimg_idx*3:]:
-                img_urls.append(base_url + img_file)
-        else:
-            img_urls = []
-            for img_file in matched_preds_files[grimg_idx*3:(grimg_idx+1)*3]:
-                img_urls.append(base_url + img_file)
-
-        N = len(img_urls)
-        prompt = f"Select the image that has {Object} best highlighted in red color than the others? Answer with a number from 1 to {N}. Mention the number only."
-        outputs = prompt_gpt(prompt, img_urls)
-
-        try:
-            # If output is directly a number
-            best_indices.append(grimg_idx*3+int(outputs)-1)
-            best_files.append(matched_preds_files[best_indices[-1]])
-        except:
-            # If output is not directly a number we need a regex matching
-            try:
-                best_indices.append(int(re.search("\d+", outputs)[0])-1)
-                best_files.append(matched_preds_files[best_indices[-1]])
-            except:
-                # If output doesn't show a number like third/first/...or somethign quite different can not be matched directly into a number
-                # Use the first image as default
-                best_indices.append(0)
-                best_files.append(matched_preds_files[best_indices[-1]])
-    return best_indices, best_files
-
 def eval_model(args):
     # Model
     images = {}
     for i in range(300):
-        file_path = os.path.join(args.root, 'MMVP Images', '%d.jpg'%(i+1))
+        file_path = os.path.join(args.root, args.image_prefix, '%d.jpg'%(i+1))
         images[i] = Image.open(file_path).convert('RGB')
 
 
@@ -175,13 +143,13 @@ def eval_model(args):
     final_selections = {}
 
     model_dir = args.auto_vis_dir.split('/')[-2]
-    base_github_url = "https://raw.githubusercontent.com/MSiam/AutoGPTImages/eb98403d6763f16505ffe45fe0a746c3c4365aab/"
-    base_github_url = base_github_url + model_dir + '/'
-    print('Base url: ', base_github_url)
 
+    MAX_IMGS = 499
     for line in tqdm(questions, total=len(questions)):
         idx = idx+1
         _, Object = df_objects.iloc[idx]
+        if idx < args.start_index:
+            continue
 
         if args.stage == 1:
             matched_preds_files, vis_images, filename = process_firststage(line, args, images, preds_files)
@@ -196,12 +164,32 @@ def eval_model(args):
         elif args.stage == 2:
             image_id = line["imageId"]
             filename= str(image_id+1)
+
+            # Filter out images that do not have the object
+            prompt = f"Does this image have {Object}? Answer yes/no only."
+            file_path = os.path.join(args.root, args.image_prefix, filename+'.jpg')
+            yes_no_answer = prompt_gpt(prompt, [file_path])
+            yes_regex = re.compile(r"^(yes)\.*$", re.IGNORECASE)
+            if not yes_regex.match(yes_no_answer.lower()):
+                selected_file = 'NONE'
+                ans_file.write(json.dumps({
+                    "question_id": idx,
+                    "selected file": selected_file,
+                }) + "\n")
+                ans_file.flush()
+                continue
+
+            # Perform Mask Selection
             matched_preds_files = os.listdir(os.path.join(args.auto_vis_dir, filename))
 
             if len(matched_preds_files) > 1:
                 img_urls = []
                 for mpfile in matched_preds_files:
-                    img_urls.append(base_github_url + filename + '/' + mpfile)
+                    img_urls.append(os.path.join(args.auto_vis_dir, filename, mpfile))
+
+                if len(img_urls) > MAX_IMGS:
+                    N = MAX_IMGS
+                    img_urls = img_urls[:MAX_IMGS]
 
                 N = len(img_urls)
                 prompt = f"Select the image that has {Object} best highlighted in red color than the others? Answer with a number from 1 to {N}. Mention the number only."
@@ -221,11 +209,15 @@ def eval_model(args):
 
                 selected_file = os.path.join(args.preds_dir, matched_preds_files[best_idx])
 
-                ans_file.write(json.dumps({
-                    "question_id": idx,
-                    "selected file": selected_file,
-                }) + "\n")
-                ans_file.flush()
+            elif len(matched_preds_files) == 1:
+                # its only 1 file
+                selected_file = os.path.join(args.preds_dir, matched_preds_files[0])
+
+            ans_file.write(json.dumps({
+                "question_id": idx,
+                "selected file": selected_file,
+            }) + "\n")
+            ans_file.flush()
 
     ans_file.close()
 
@@ -237,7 +229,8 @@ if __name__ == "__main__":
     parser.add_argument("--stage", default=1, type=int)
     parser.add_argument("--answers_file", type=str, default="./answers.jsonl")
     parser.add_argument('--openai_api_key', default = "", help='Your OpenAI API key')
-
+    parser.add_argument("--image_prefix", type=str, default="MMVP Images")
+    parser.add_argument("--start_index", type=int, default=0)
     args = parser.parse_args()
     if args.openai_api_key != "":
         openai.api_key = args.openai_api_key

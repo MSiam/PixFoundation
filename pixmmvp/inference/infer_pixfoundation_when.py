@@ -218,8 +218,9 @@ if __name__ == '__main__':
                 return_dict_in_generate=True)
 
             # get answer
-            input_token_len = input_ids.shape[1]
-            answer = tokenizer.batch_decode(output_ids['sequences'][:, input_token_len:], skip_special_tokens=True)[0]
+            #input_token_len = input_ids.shape[1]
+            #answer = tokenizer.batch_decode(output_ids['sequences'][:, input_token_len:], skip_special_tokens=True)[0]
+            answer = tokenizer.batch_decode(output_ids['sequences'], skip_special_tokens=True)[0]
 
             if args.prompt_for_seg == 3:
                 # CVBench Format
@@ -254,8 +255,8 @@ if __name__ == '__main__':
             assert image_token_start_index >= 0
 
             # process and save attention
-            save_sequences = output_ids['sequences'][:, input_token_len:].detach().cpu()
-            #save_sequences = output_ids['sequences'].detach().cpu()
+            #save_sequences = output_ids['sequences'][:, input_token_len:].detach().cpu()
+            save_sequences = output_ids['sequences'].detach().cpu()
             save_attn = []
             for i in range(len(output_ids['attentions'])):
                 save_attn_i = output_ids['attentions'][i]                                           # n_layers x n_heads x n_output x n_input

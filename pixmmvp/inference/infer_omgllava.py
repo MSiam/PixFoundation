@@ -151,6 +151,7 @@ def parse_args():
         help='Random seed for reproducible text generation')
     parser.add_argument("--max_new_tokens", type=int, default=512)
     parser.add_argument("--model_path", type=str, default="./pretrained/")
+    parser.add_argument("--questions_file", default="Questions.csv", type=str)
     args = parser.parse_args()
     return args
 
@@ -169,7 +170,7 @@ def get_input():
             print('Invalid characters detected. Please enter again.')
     return result
 
-def process(line, args):
+def process(line, question_extension):
     qs = line["question"] + " Options:"
     options = line["options"].split('(b)')
     parts = [part.strip() for part in options]
@@ -179,7 +180,7 @@ def process(line, args):
         parts[1] = "B. " + parts[1]
     for part in parts:
         qs += f"\n{part}"
-    qs += f"\n{args.question_extension}"
+    qs += f"\n{question_extension}"
     return qs
 
 def give_options(input_string):
@@ -320,8 +321,6 @@ def main():
             temperature=args.temperature,
             top_p=args.top_p,
             num_beams=args.num_beams,
-            #top_k=args.top_k,
-            #repetition_penalty=args.repetition_penalty,
             eos_token_id=tokenizer.eos_token_id,
             pad_token_id=tokenizer.pad_token_id
             if tokenizer.pad_token_id is not None else tokenizer.eos_token_id,
@@ -334,16 +333,17 @@ def main():
             os.makedirs(os.path.dirname(answers_file), exist_ok=True)
         ans_file = open(answers_file, "w")
 
-        benchmark_dir = os.path.join(args.root, 'Questions.csv')
+        benchmark_dir = os.path.join(args.root, args.questions_file)
         # Load and read the CSV
         df = pd.read_csv(benchmark_dir)  # Assuming the fields are separated by tabs
         df_objects = pd.read_csv(os.path.join(args.root, 'Objects.csv'))
 
         if args.viz_dir != "" and not os.path.exists(args.viz_dir):
-            os.mkdir(args.viz_dir)
+            os.makedirs(args.viz_dir)
         if args.preds_dir != "" and not os.path.exists(args.preds_dir):
-            os.mkdir(args.preds_dir)
+            os.makedirs(args.preds_dir)
 
+        question_extension = args.question_extension
         for index, row in tqdm(df.iterrows()):
 
             # Construct the 'prompts' string
@@ -352,7 +352,8 @@ def main():
 
             image = load_image(image_path)
 
-
+            orig_img = image.copy()
+            orig_size = image.size
             image = expand2square(
                 image, tuple(int(x * 255) for x in image_processor.image_mean))
             image_for_show = image
@@ -381,8 +382,10 @@ def main():
                         "text_options": give_options(str(row[2])),
                         "answer": str(row[3])
                        }
+                if 'question_extension' in row:
+                    question_extension = row['question_extension']
 
-                cur_prompt = process(line, args)
+                cur_prompt = process(line, question_extension)
 
             text = DEFAULT_IMAGE_TOKEN + '\n' + cur_prompt
             print(text)
@@ -411,7 +414,6 @@ def main():
             mm_inputs = prepare_inputs_labels_for_multimodal(
                 llm=llm, input_ids=ids, pixel_values=pixel_values)
             print(mm_inputs['inputs_embeds'].shape)
-            # mm_inputs['inputs_embeds'] = mm_inputs['inputs_embeds'].to(torch.float16)
 
             generate_output = llm.generate(
                 **mm_inputs,
@@ -433,12 +435,12 @@ def main():
                     # last_hidden_states, generate_output.sequences[0],
                     seg_id=model.seg_token_idx
                 )
-
                 if len(seg_hidden_states) != 0:
                     seg_hidden_states = projector_text2vision(seg_hidden_states)
                     batch_idxs = torch.zeros((seg_hidden_states.shape[0], ),
                                               dtype=torch.int64).to(seg_hidden_states.device)
                     pred_masks_list = model.visual_encoder.forward_llm_seg(seg_hidden_states, batch_idxs)
+
                     print((pred_masks_list[-1].flatten(2) > 0).sum(-1))
                     print(pred_masks_list[-1].shape)
 
@@ -446,11 +448,12 @@ def main():
 
                     masks = pred_masks_list[-1]
                     masks = F.interpolate(masks, size=image_for_show.size, mode='bilinear', align_corners=False)
+                    masks = masks[:, :, :orig_size[1], :orig_size[0]]
                     masks = masks.sigmoid() > 0.5
                     masks = masks.to(torch.uint8).cpu().numpy()[0, 0]
                     cv2.imwrite(os.path.join(args.preds_dir, "output%05d.png"%(index+1)), masks*255)
                 else:
-                    masks = np.zeros((image_for_show.size), dtype=np.uint8)
+                    masks = np.zeros(orig_size[::-1], dtype=np.uint8)
                     cv2.imwrite(os.path.join(args.preds_dir, "output%05d.png"%(index+1)), masks*255)
 
             output_text = tokenizer.decode(generate_output.sequences[0])

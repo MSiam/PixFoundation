@@ -85,7 +85,7 @@ def get_unpad_feature_size(feature_width, feature_height, image_width, image_hei
     return new_feature_width, new_feature_height, width_padding, height_padding
 
 
-def process(line, args):
+def process(line, question_extension):
     qs = line["question"] + " Options:"
     options = line["options"].split('(b)')
     parts = [part.strip() for part in options]
@@ -95,7 +95,7 @@ def process(line, args):
         parts[1] = "B. " + parts[1]
     for part in parts:
         qs += f"\n{part}"
-    qs += f"\n{args.question_extension}"
+    qs += f"\n{question_extension}"
     return qs
 
 def give_options(input_string):
@@ -135,6 +135,9 @@ if __name__ == '__main__':
     parser.add_argument("--viz_dir", type=str, default="viz/")
     parser.add_argument("--meta_file", type=str, default="meta_file.txt")
     parser.add_argument("--question_extension", type=str, default="Answer with the option's letter from the given choices directly.")
+    parser.add_argument("--point_file", type=str, default="point_file.txt")
+    parser.add_argument("--questions_file", default="Questions.csv", type=str)
+    parser.add_argument("--image_prefix", type=str, default="MMVP Images")
     args = parser.parse_args()
 
     cudnn.benchmark = False
@@ -167,7 +170,7 @@ if __name__ == '__main__':
     category_embeddings = [get_spacy_embedding(name, spacy_model) for name in seed_categories]
     category_embeddings = torch.stack(category_embeddings)
 
-    benchmark_dir = os.path.join(args.root, 'Questions.csv')
+    benchmark_dir = os.path.join(args.root, args.questions_file)
     # Load and read the CSV
     df = pd.read_csv(benchmark_dir)  # Assuming the fields are separated by tabs
     answers_file = os.path.expanduser(args.answers_file)
@@ -182,6 +185,12 @@ if __name__ == '__main__':
 
     f = open(args.meta_file, "w")
 
+    point_dir = os.path.dirname(args.point_file)
+    if not os.path.exists(point_dir):
+        os.makedirs(point_dir)
+    point_f = open(args.point_file, "w")
+
+    question_extension = args.question_extension
     # Loop through each row in the DataFrame
     for index, row in tqdm(df.iterrows()):
         # Construct the 'prompts' string
@@ -202,7 +211,10 @@ if __name__ == '__main__':
                     "answer": str(row[3])
                    }
 
-            qs = process(line, args)
+            if 'question_extension' in row:
+                question_extension = row['question_extension']
+
+            qs = process(line, question_extension)
 
         if model.config.mm_use_im_start_end:
             qs = DEFAULT_IM_START_TOKEN + DEFAULT_IMAGE_TOKEN + DEFAULT_IM_END_TOKEN + '\n' + qs
@@ -216,7 +228,7 @@ if __name__ == '__main__':
         input_ids = tokenizer_image_token(prompt, tokenizer, IMAGE_TOKEN_INDEX, return_tensors='pt').unsqueeze(0).cuda()
 
         photo_id = index+1
-        image_path = os.path.join(args.root, 'MMVP Images', f"{photo_id}.jpg")
+        image_path = os.path.join(args.root, args.image_prefix, f"{photo_id}.jpg")
 
         image = Image.open(image_path).convert('RGB')
         image_width = image.width
@@ -308,6 +320,9 @@ if __name__ == '__main__':
                 cv2.imwrite(os.path.join(args.preds_dir, f"{photo_id}.png"), np.zeros((image_height, image_width), np.uint8))
                 continue
 
+            # Its rarely needed and relates to last token and only occurs in the new Transformers version
+            groups = [group for group in groups if max(group['tokens']) < attentions.shape[0]]
+
             for group in groups:
                 attns = attentions[group['tokens']]
                 attn = attns.mean(dim=0)
@@ -355,6 +370,7 @@ if __name__ == '__main__':
                 similarity = torch.cosine_similarity(phrase_embedding.unsqueeze(0), Object_embedding.unsqueeze(0), dim=1)
                 mask = pred_masks[group_index]
                 groups[group_index]['mask'] = mask
+                groups[group_index]['point'] = point_coords_np[group_index]
                 keep_groups.append(group_index)
                 color = np.random.randint(0, 256, 3)
                 groups[group_index]['color'] = color
@@ -381,6 +397,7 @@ if __name__ == '__main__':
                 color = group['color']
                 masks = group['mask']
                 f.write("%d.jpg - %d - %s| %s| %f\n"%(photo_id, gridx, group['phrase'], group['core_word'], group["spacy_score"]))
+                point_f.write("%d.jpg | %s | %s\n"%(photo_id, group['phrase'], str(group['point'])))
 
                 for midx, mask in enumerate(masks):
                     image_vis = np.array(image).copy()
@@ -393,5 +410,6 @@ if __name__ == '__main__':
 
     ans_file.close()
     f.close()
+    point_f.close()
 
 

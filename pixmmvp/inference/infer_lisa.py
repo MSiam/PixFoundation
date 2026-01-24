@@ -62,6 +62,7 @@ def parse_args(args):
     parser.add_argument('--root_images', type=str)
     parser.add_argument('--answers_file', default='answer.jsonl', type=str)
     parser.add_argument('--prompt_for_seg', default=0, type=int)
+    parser.add_argument("--questions_file", default="Questions.csv", type=str)
     return parser.parse_args(args)
 
 
@@ -81,7 +82,7 @@ def preprocess(
     x = F.pad(x, (0, padw, 0, padh))
     return x
 
-def process(line, args):
+def process(line, question_extension):
     qs = line["question"] + " Options:"
     options = line["options"].split('(b)')
     parts = [part.strip() for part in options]
@@ -91,7 +92,7 @@ def process(line, args):
         parts[1] = "B. " + parts[1]
     for part in parts:
         qs += f"\n{part}"
-    qs += f"\n{args.question_extension}"
+    qs += f"\n{question_extension}"
     return qs
 
 def give_options(input_string):
@@ -300,7 +301,7 @@ def main():
     answers_file = os.path.expanduser(args.answers_file)
     ans_file = open(answers_file, "w")
 
-    benchmark_dir = os.path.join(args.root, 'Questions.csv')
+    benchmark_dir = os.path.join(args.root, args.questions_file)
     df = pd.read_csv(benchmark_dir)
     df_objects = pd.read_csv(os.path.join(args.root, 'Objects.csv'))
 
@@ -308,6 +309,8 @@ def main():
         os.mkdir(args.viz_dir)
     if args.preds_dir != "" and not os.path.exists(args.preds_dir):
         os.mkdir(args.preds_dir)
+
+    question_extension = args.question_extension
 
     for index, row in tqdm(df.iterrows()):
         # Construct the 'prompts' string
@@ -330,8 +333,10 @@ def main():
                     "text_options": give_options(str(row[2])),
                     "answer": str(row[3])
                    }
+            if 'question_extension' in row:
+                question_extension = row['question_extension']
 
-            cur_prompt = process(line, args)
+            cur_prompt = process(line, question_extension)
 
         output_image, output_text, pred_image = inference(args, cur_prompt, image_path, model, clip_image_processor, transform, tokenizer)
 

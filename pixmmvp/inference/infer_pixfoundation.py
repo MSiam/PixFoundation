@@ -27,45 +27,11 @@ from segment_anything import sam_model_registry, SamPredictor
 from utils import group_tokens, merge_preds, get_spacy_embedding
 import difflib
 
-# COCO categories, used to filter out abstract noun phrases
-seed_categories = ['person', 'bicycle', 'car', 'motorcycle', 'airplane', 'bus', 'train', 'truck', 'boat', 'traffic light',
-                   'fire hydrant', 'stop sign', 'parking meter', 'bench', 'bird', 'cat', 'dog', 'horse', 'sheep', 'cow',
-                   'elephant', 'bear', 'zebra', 'giraffe', 'backpack', 'umbrella', 'handbag', 'tie', 'suitcase', 'frisbee',
-                   'skis', 'snowboard', 'sports ball', 'kite', 'baseball bat', 'baseball glove', 'skateboard', 'surfboard', 'tennis racket', 'bottle',
-                   'wine glass', 'cup', 'fork', 'knife', 'spoon', 'bowl', 'banana', 'apple', 'sandwich', 'orange',
-                   'broccoli', 'carrot', 'hot dog', 'pizza', 'donut', 'cake', 'chair', 'couch', 'potted plant', 'bed',
-                   'dining table', 'toilet', 'tv', 'laptop', 'mouse', 'remote', 'keyboard', 'cell phone', 'microwave', 'oven',
-                   'toaster', 'sink', 'refrigerator', 'book', 'clock', 'vase', 'scissors', 'teddy bear', 'hair drier', 'toothbrush',
-                   'woman', 'man']
-
 def get_overlap(s1, s2):
     seq = difflib.SequenceMatcher(a=s1.lower(),b=s2.lower())
     return seq.ratio()
 
-def get_highest_overlap(groups, Object):
-    highest_group = None
-    highest_ratio = 0
-    highest_idx = -1
-
-#    max_spacy_score = 0
-#    max_spacy_group = None
-#    max_spacy_group_idx= -1
-
-    for idx, group in enumerate(groups):
-        ratio = get_overlap(group['phrase'], Object)
-        if ratio > highest_ratio:
-            highest_ratio = ratio
-            highest_group = group
-            highest_idx = idx
-
-#        if group['spacy_score'] > max_spacy_score:
-#            max_spacy_score= group['spacy_score']
-#            max_spacy_group = group
-#            max_spacy_group_idx = idx
-#    return max_spacy_group, max_spacy_group_idx
-    return highest_group, highest_idx
-
-def process(line, args):
+def process(line, question_extension):
     qs = line["question"] + " Options:"
     options = line["options"].split('(b)')
     parts = [part.strip() for part in options]
@@ -75,7 +41,7 @@ def process(line, args):
         parts[1] = "B. " + parts[1]
     for part in parts:
         qs += f"\n{part}"
-    qs += f"\n{args.question_extension}"
+    qs += f"\n{question_extension}"
     return qs
 
 def give_options(input_string):
@@ -114,7 +80,11 @@ if __name__ == '__main__':
     parser.add_argument("--preds_dir", type=str, default="preds/")
     parser.add_argument("--viz_dir", type=str, default="viz/")
     parser.add_argument("--meta_file", type=str, default="meta_file.txt")
+    parser.add_argument("--point_file", type=str, default="point_file.txt")
     parser.add_argument("--question_extension", type=str, default="Answer with the option's letter from the given choices directly.")
+    parser.add_argument("--questions_file", default="Questions.csv", type=str)
+    parser.add_argument("--image_prefix", type=str, default="MMVP Images")
+    parser.add_argument("--max_point", type=int, default=1)
     args = parser.parse_args()
 
     cudnn.benchmark = False
@@ -134,7 +104,6 @@ if __name__ == '__main__':
     disable_torch_init()
     model_path = os.path.expanduser(args.model_path)
     model_name = get_model_name_from_path(model_path)
-#    tokenizer, model, image_processor, context_len = load_pretrained_model(model_path, args.model_base, model_name)
     tokenizer, model, image_processor, context_len = load_pretrained_model(model_path, None, model_name)
     model.get_vision_tower().to(dtype=torch.float16)
 
@@ -143,10 +112,7 @@ if __name__ == '__main__':
     sam_model = sam_model_registry[args.sam_model](checkpoint=args.sam_ckpt).cuda()
     sam_predictor = SamPredictor(sam_model)
 
-    category_embeddings = [get_spacy_embedding(name, spacy_model) for name in seed_categories]
-    category_embeddings = torch.stack(category_embeddings)
-
-    benchmark_dir = os.path.join(args.root, 'Questions.csv')
+    benchmark_dir = os.path.join(args.root, args.questions_file)
     # Load and read the CSV
     df = pd.read_csv(benchmark_dir)  # Assuming the fields are separated by tabs
     answers_file = os.path.expanduser(args.answers_file)
@@ -159,8 +125,17 @@ if __name__ == '__main__':
     ans_file = open(answers_file, "w")
     df_objects = pd.read_csv(os.path.join(args.root, 'Objects.csv'))
 
+    meta_dir = os.path.dirname(args.meta_file)
+    if not os.path.exists(meta_dir):
+        os.makedirs(meta_dir)
     f = open(args.meta_file, "w")
 
+    point_dir = os.path.dirname(args.point_file)
+    if not os.path.exists(point_dir):
+        os.makedirs(point_dir)
+    point_f = open(args.point_file, "w")
+
+    question_extension = args.question_extension
     # Loop through each row in the DataFrame
     for index, row in tqdm(df.iterrows()):
         # Construct the 'prompts' string
@@ -181,7 +156,10 @@ if __name__ == '__main__':
                     "answer": str(row[3])
                    }
 
-            qs = process(line, args)
+            if 'question_extension' in row:
+                question_extension = row['question_extension']
+
+            qs = process(line, question_extension)
 
         if model.config.mm_use_im_start_end:
             qs = DEFAULT_IM_START_TOKEN + DEFAULT_IMAGE_TOKEN + DEFAULT_IM_END_TOKEN + '\n' + qs
@@ -195,7 +173,7 @@ if __name__ == '__main__':
         input_ids = tokenizer_image_token(prompt, tokenizer, IMAGE_TOKEN_INDEX, return_tensors='pt').unsqueeze(0).cuda()
 
         photo_id = index+1
-        image_path = os.path.join(args.root, 'MMVP Images', f"{photo_id}.jpg")
+        image_path = os.path.join(args.root, args.image_prefix, f"{photo_id}.jpg")
 
         image = Image.open(image_path).convert('RGB')
         image_width = image.width
@@ -218,16 +196,18 @@ if __name__ == '__main__':
                 return_dict_in_generate=True)
 
             # get answer
+            # Old version of Transformers 4.23.x
             input_token_len = input_ids.shape[1]
             answer = tokenizer.batch_decode(output_ids['sequences'][:, input_token_len:], skip_special_tokens=True)[0]
-
+            # New version of Transformers > 4.30.x
+            #answer = tokenizer.batch_decode(output_ids['sequences'], skip_special_tokens=True)[0]
             if args.prompt_for_seg == 3:
                 # CVBench Format
                 ans_file.write(json.dumps({"question_id": photo_id,
                                            "prompt": qs,
                                            "answer": answer.strip(),
                                            "gt_answer": row["Correct Answer"],
-                                           "model_id": "LLava",
+                                           "model_id": model_name,
                                            "text_options": line["text_options"]
                                            }) + "\n")
 
@@ -238,7 +218,7 @@ if __name__ == '__main__':
                                            "answer": row["Correct Answer"],
                                            "response": answer,
                                            "answer_id": ans_id,
-                                           "model_id": "LLava",
+                                           "model_id": model_name,
                                            }) + "\n")
             ans_file.flush()
 
@@ -254,7 +234,9 @@ if __name__ == '__main__':
             assert image_token_start_index >= 0
 
             # process and save attention
+            # Old version of Transformers 4.23.x
             save_sequences = output_ids['sequences'][:, input_token_len:].detach().cpu()
+            # New version of Transformers > 4.30.x (If using new Transformers with original LLava code fix _no_split_modules)
             #save_sequences = output_ids['sequences'].detach().cpu()
             save_attn = []
             for i in range(len(output_ids['attentions'])):
@@ -317,7 +299,12 @@ if __name__ == '__main__':
 
             sam_predictor.set_image(np.array(image))
             N, H, W = upsample_scores.shape
-            max_indices = torch.argmax(upsample_scores.reshape(N, -1), dim=1)
+            if args.max_point == 1:
+                max_indices = torch.argmax(upsample_scores.reshape(N, -1), dim=1)
+            else:
+                max_indices = torch.topk(upsample_scores.reshape(N, -1), k=args.max_point, dim=1)
+                max_indices = max_indices.indices[:, -1]
+
             h_coords = max_indices // W
             w_coords = max_indices % W
             point_coords_np = torch.stack([w_coords, h_coords], dim=1).numpy()
@@ -336,6 +323,7 @@ if __name__ == '__main__':
                 similarity = torch.cosine_similarity(phrase_embedding.unsqueeze(0), Object_embedding.unsqueeze(0), dim=1)
                 mask = pred_masks[group_index]
                 groups[group_index]['mask'] = mask
+                groups[group_index]['point'] = point_coords_np[group_index]
                 keep_groups.append(group_index)
                 color = np.random.randint(0, 256, 3)
                 groups[group_index]['color'] = color
@@ -350,17 +338,10 @@ if __name__ == '__main__':
             groups = [groups[i] for i in keep_groups]
             pred_masks = pred_masks[keep_groups]
 
-            #group, group_idx = get_highest_overlap(groups, Object)
-
-            if group is None:
-                cv2.imwrite(os.path.join(args.preds_dir, f"{photo_id}.png"), np.zeros((image_height, image_width), np.uint8))
-                continue
-
-            print(group['phrase'], '  : ', Object)
-
             for gridx, group in enumerate(groups):
                 masks = group['mask']
                 f.write("%d.jpg - %d - %s| %s| %f\n"%(photo_id, gridx, group['phrase'], group['core_word'], group["spacy_score"]))
+                point_f.write("%d.jpg | %s | %s\n"%(photo_id, group['phrase'], str(group['point'])))
 
                 for midx, mask in enumerate(masks):
                     image_vis = np.array(image).copy()
@@ -373,5 +354,5 @@ if __name__ == '__main__':
 
     ans_file.close()
     f.close()
-
+    point_f.close()
 

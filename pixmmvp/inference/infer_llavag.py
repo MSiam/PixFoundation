@@ -254,7 +254,7 @@ def give_options(input_string):
     result = [part.split(")")[1].strip() for part in parts[1:]]
     return result
 
-def process(line, args):
+def process(line, question_extension):
     qs = line["question"] + " Options:"
     options = line["options"].split('(b)')
     parts = [part.strip() for part in options]
@@ -264,13 +264,13 @@ def process(line, args):
         parts[1] = "B. " + parts[1]
     for part in parts:
         qs += f"\n{part}"
-    qs += f"\n{args.question_extension}"
+    qs += f"\n{question_extension}"
     return qs
 
 def eval_model(args):
     our_chatbot = InferenceLLavaG(args.model_path, args.path_vision_cfg, args.path_inter_cfg)
 
-    benchmark_dir = os.path.join(args.directory, 'Questions.csv')
+    benchmark_dir = os.path.join(args.directory, args.questions_file)
     # Load and read the CSV
     df = pd.read_csv(benchmark_dir)  # Assuming the fields are separated by tabs
     answers_file = os.path.expanduser(args.answers_file)
@@ -289,11 +289,13 @@ def eval_model(args):
         if not os.path.exists(args.viz_dir):
             os.mkdir(args.viz_dir)
 
+    question_extension = args.question_extension
+
     # Loop through each row in the DataFrame
     for index, row in tqdm(df.iterrows()):
         # Construct the 'prompts' string
         photo_id = index+1
-        image_path = os.path.join(args.directory, 'MMVP Images', f"{photo_id}.jpg")
+        image_path = os.path.join(args.directory, args.image_prefix, f"{photo_id}.jpg")
 
         cur_prompt = row['Question'] + " " + row['Options']
 
@@ -312,7 +314,10 @@ def eval_model(args):
                     "answer": str(row[3])
                    }
 
-            cur_prompt = process(line, args)
+            if 'question_extension' in row:
+                question_extension = row['question_extension']
+
+            cur_prompt = process(line, question_extension)
 
         input_data_dict = {'file_name': image_path, 'image_id': 0, 'question_id': 0,
                            'conversations': [[[{'from': 'human', 'value': '<image> '+cur_prompt},
@@ -325,7 +330,7 @@ def eval_model(args):
         response_text, _, response_mask, _  = our_chatbot.inference(input_data_dict)
 
         if args.preds_dir != "":
-            response_msks, img  = post_process_masks(image_path, response_mask, os.path.join(args.viz_dir, f"{photo_id}.jpg"))
+            response_msks, img  = post_process_masks(image_path, response_mask, os.path.join(args.viz_dir, f"%05d.jpg"%photo_id))
             if response_msks is None:
                 response_msks = np.zeros(img.shape[:2], np.uint8)
             else:
@@ -372,7 +377,8 @@ if __name__ == "__main__":
     parser.add_argument("--preds_dir", default="", type=str)
     parser.add_argument("--viz_dir", default="", type=str)
     parser.add_argument("--question_extension", type=str, default="Answer with the option's letter from the given choices directly.")
-
+    parser.add_argument("--questions_file", default="Questions.csv", type=str)
+    parser.add_argument("--image_prefix", default="MMVP Images", type=str)
     args = parser.parse_args()
 
     cudnn.benchmark = False
