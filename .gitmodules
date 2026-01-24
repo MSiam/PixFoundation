@@ -1,6 +1,3 @@
-[submodule "LLava-Grounding"]
-	path = LLava-Grounding
-	url = https://github.com/MSiam/LLaVA-Grounding.git
 [submodule "LISA"]
 	path = LISA
 	url = https://github.com/MSiam/LISA.git
