@@ -4,7 +4,7 @@
 Official implementation of my work on PixFoundation direction.
 
 <div align="center">
-<img src="https://github.com/MSiam/PixFoundation/blob/1f9a5711ed7a3f87338bcb7d8b8381bd79d38431/imgs/PixFoundationOverview.drawio.png" width="70%" height="70%"><br><br>
+<img src="https://github.com/MSiam/PixFoundation/blob/075f7b4da0f45fe6e391c3aaa63a3d0aeeddc58b/imgs/PixFoundationOverview.drawio.png" width="70%" height="70%"><br><br>
 </div>
 
 
