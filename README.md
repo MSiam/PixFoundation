@@ -4,7 +4,7 @@
 Official implementation of my work on PixFoundation direction.
 
 <div align="center">
-<img src="https://github.com/MSiam/PixFoundation/blob/1f9a5711ed7a3f87338bcb7d8b8381bd79d38431/imgs/ICML25PixFoundation.drawio.png" width="70%" height="70%"><br><br>
+<img src="https://github.com/MSiam/PixFoundation/blob/1f9a5711ed7a3f87338bcb7d8b8381bd79d38431/imgs/PixFoundationOverview.drawio.png" width="70%" height="70%"><br><br>
 </div>
 
 
@@ -14,6 +14,14 @@ PixMMVP and PixCV-Bench augment recent benchmarks with referring expression anno
 <div align="center">
 <img src="https://github.com/MSiam/PixFoundation/blob/693bfd82d5c1f6f95b6adf9eac8e3725637a6bb4/imgs/dataset.png" width="70%" height="70%"><br><br>
 </div>
+
+#### ToDos
+- [x] Release PixMMVP & PixCVBench annotations (Feb, 2025)
+- [x] Release PixMMVP evaluation code (Feb, 2025)
+- [x] Update PixMMVP evaluation to include RGA & Qwen2.5-VL (Jan, 2026)
+- [ ] Add PixMMVP Language Prompt Sensitivity
+- [ ] Add PixMMVP Visual Prompt Sensitivity
+- [ ] Release PixCVBench evaluation code
 
 ### Dataset Setup
 [Data](https://github.com/MSiam/PixFoundation/blob/master/Data.md)
@@ -25,8 +33,16 @@ PixMMVP and PixCV-Bench augment recent benchmarks with referring expression anno
 ```
 git clone --recursive https://github.com/MSiam/PixFoundation
 ```
-* Follow installation setup for each model within conda environment/s
-* Setup detectron2 for the IoU evaluation
+* Install the base requirements for evaluations
+```
+pip install -r requirements.txt
+```
+* Setup detectron2 for some utilities used (**Optional**)
+```
+git clone https://github.com/facebookresearch/detectron2.git
+python -m pip install -e detectron2
+```
+* Follow installation setup for each model you are evaluating, refer to their README, and build its conda environment
 
 #### Evaluation
 * Run evaluation script after modifying it to the models needed, it includes two examples:
@@ -34,8 +50,10 @@ git clone --recursive https://github.com/MSiam/PixFoundation
 bash pixmmvp/scripts/run_all.sh
 ```
 * Each of the pixel-level MLLMs inference code is based on their respective gradio demo codes not customized for a certain task.
-* Instructions for the automatic baseline [AutoBaseline](https://github.com/MSiam/PixFoundation/blob/master/autobaseline.md)
-* PixCV-Bench evaluation code coming soon
+* This a repository that includes example visualizations used in the automatic selection for LLaVA variants
+```
+git clone https://github.com/MSiam/AutoGPTImages
+```
 
 ## When does grounding emerge in MLLMs?
 Our finding is that grounding can emerge coinciding with output text that describes the object of interest in terms of color, location or state and not necessarily the exact output text of this object. We persistently find the most frequent emergence occurs in the last 40-60% of the output text in MLLMs not trained with pixel-level grounding supervision (e.g., Llava 1.5 & Cambrian-1). We also show a histogram of the concept categories of the output text that coincides with the best segmentation emerging in such MLLMs.

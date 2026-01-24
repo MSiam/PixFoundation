@@ -1,7 +1,8 @@
 # Dataset Setup for PixFoundation
 
 ## PixMMVP
-* Referring expressions and segmentation annotations are available under data/pixmmvp/
+* Download the dataset annotations from [hugging face](https://huggingface.co/IVUlab)
+* Or use the referring expressions and segmentation annotations that are available under data/pixmmvp/
 * Setup the dataset directory to the following
 
 ```
@@ -11,6 +12,7 @@
    |--- Objects.csv
    |--- Segmentations.json
    |--- visual_patterns.csv
+   |--- meta_none.txt
 ```
 
 ## PixCV-Bench
