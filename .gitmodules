@@ -22,3 +22,6 @@
 [submodule "LLaVA"]
 	path = LLaVA
 	url = https://github.com/haotian-liu/LLaVA
+[submodule "LLaVA-Grounding"]
+	path = LLaVA-Grounding
+	url = https://github.com/MSiam/LLaVA-Grounding
