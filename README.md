@@ -16,7 +16,7 @@ visual grounding occurs w.r.t the output tokens, through using MLLM as a Judge o
 <img src="https://github.com/MSiam/PixFoundation/blob/693bfd82d5c1f6f95b6adf9eac8e3725637a6bb4/imgs/dataset.png" width="70%" height="70%"><br><br>
 </div>
 
-#### ToDos
+### ToDos
 - [x] Release PixMMVP & PixCVBench annotations (Feb, 2025)
 - [x] Release PixMMVP evaluation code (Feb, 2025)
 - [x] Update PixMMVP evaluation to include RGA & Qwen2.5-VL (Jan, 2026)
@@ -27,25 +27,11 @@ visual grounding occurs w.r.t the output tokens, through using MLLM as a Judge o
 ### Dataset Setup
 [Data](https://github.com/MSiam/PixFoundation/blob/master/Data.md)
 
+### Installation
+[Installation](https://github.com/MSiam/PixFoundation/blob/master/INSTALL.md)
+
 ### PixMMVP Evaluation
 
-#### Installation
-* Clone the repository recursively to include the submodules
-```
-git clone --recursive https://github.com/MSiam/PixFoundation
-```
-* Install the base requirements for evaluations
-```
-pip install -r requirements.txt
-```
-* Setup detectron2 for some utilities used (**Optional**)
-```
-git clone https://github.com/facebookresearch/detectron2.git
-python -m pip install -e detectron2
-```
-* Follow installation setup for each model you are evaluating, refer to their README, and build its conda environment
-
-#### Evaluation
 * Run evaluation script after modifying it to the models needed, it includes two examples:
 ```
 bash pixmmvp/scripts/run_all.sh
