@@ -22,3 +22,6 @@
 [submodule "RGA3-release"]
 	path = RGA3-release
 	url = https://github.com/qirui-chen/RGA3-release
+[submodule "LLaVA"]
+	path = LLaVA
+	url = https://github.com/haotian-liu/LLaVA

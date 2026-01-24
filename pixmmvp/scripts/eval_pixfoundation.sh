@@ -17,14 +17,13 @@ else
 fi
 
 mkdir $VIZ
-echo "${META}meta_${MODELTEXT}_spaCy_${PROMPTTEXT}.txt"
 
 if [ $TYPE == "oracle" ]
 then
-    python ../eval/eval_nonpixLMM_iou.py --preds_dir "${PRED}preds_${MODELTEXT}_${PROMPTTEXT}"  --dataset_root "${DATA}" --viz_dir "${VIZ}/viz_${MODELTEXT}_${PROMPTTEXT}_${TYPE}/" --type $TYPE
+    python ../eval/eval_nonpixLMM_iou.py --preds_dir "${PRED}preds_${MODELTEXT}_${PROMPTTEXT}"  --dataset_root "${DATA}" --viz_dir "${VIZ}/viz_${MODELTEXT}_${PROMPTTEXT}_${TYPE}/" --type $TYPE --remove_none_flag
 elif [ $TYPE == "spacy_score" ]
 then
-    python ../eval/eval_nonpixLMM_iou.py --preds_dir "${PRED}preds_${MODELTEXT}_${PROMPTTEXT}"  --dataset_root "${DATA}" --viz_dir "${VIZ}/viz_${MODELTEXT}_${PROMPTTEXT}_${TYPE}/" --meta_file "${META}meta_${MODELTEXT}_spaCy_${PROMPTTEXT}.txt" --type $TYPE
+    python ../eval/eval_nonpixLMM_iou.py --preds_dir "${PRED}preds_${MODELTEXT}_${PROMPTTEXT}"  --dataset_root "${DATA}" --viz_dir "${VIZ}/viz_${MODELTEXT}_${PROMPTTEXT}_${TYPE}/" --meta_file "${META}meta_${MODELTEXT}_spaCy_${PROMPTTEXT}.txt" --type $TYPE --remove_none_flag 
 else
-    python ../eval/eval_nonpixLMM_iou.py --preds_dir "${PRED}preds_${MODELTEXT}_${PROMPTTEXT}"  --dataset_root "${DATA}" --viz_dir "${VIZ}/viz_${MODELTEXT}_${PROMPTTEXT}_${TYPE}/" --meta_file "${META}meta_${MODELTEXT}_gptauto_${PROMPTTEXT}.jsonl" --type $TYPE
+    python ../eval/eval_nonpixLMM_iou.py --preds_dir "${PRED}preds_${MODELTEXT}_${PROMPTTEXT}"  --dataset_root "${DATA}" --viz_dir "${VIZ}/viz_${MODELTEXT}_${PROMPTTEXT}_${TYPE}/" --meta_file "${META}meta_${MODELTEXT}_gptauto_${PROMPTTEXT}.jsonl" --type $TYPE --remove_none_flag 
 fi

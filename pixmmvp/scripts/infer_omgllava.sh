@@ -2,6 +2,7 @@ DATA=$1
 OUT=$2
 PROMPT=$3
 ANS=$4
+MODEL=$5
 
 source ~/.bashrc
 eval "$(conda shell.bash hook)"
@@ -24,4 +25,4 @@ else
     PROMPTTEXT="protocol2"
 fi
 
-python ../inference/infer_omgllava.py ../../OMG-Seg/omg_llava/omg_llava/configs/finetune/omg_llava_7b_finetune_8gpus.py pretrained_omgllava/omg_llava/omg_llava_7b_finetune_8gpus.pth --root $DATA --root_images "$DATA/MMVP Images/" --preds_dir "$OUT/preds_omgllava_$PROMPTTEXT" --viz_dir "$OUT/viz_omgllava_$PROMPTTEXT" --prompt_for_seg $PROMPT --answers_file "$ANS/answers_omgllava_$PROMPTTEXT.jsonl" --model_path pretrained_omgllava/
+python ../inference/infer_omgllava.py ../../OMG-Seg/omg_llava/omg_llava/configs/finetune/omg_llava_7b_finetune_8gpus.py "$MODEL"/omg_llava/omg_llava_7b_finetune_8gpus.pth --root $DATA --root_images "$DATA/MMVP Images/" --preds_dir "$OUT/preds_omgllava_$PROMPTTEXT" --viz_dir "$OUT/viz_omgllava_$PROMPTTEXT" --prompt_for_seg $PROMPT --answers_file "$ANS/answers_omgllava_$PROMPTTEXT.jsonl" --model_path "$MODEL"

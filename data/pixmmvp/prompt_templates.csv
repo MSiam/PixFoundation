@@ -1,0 +1,11 @@
+Index,Template
+1,"Ques:{}\n|{}\nInstruct:|{}\nAns:"
+2,"{}\n|{}\n|{}\nAnswer:"
+3,"{} |{} |{}"
+4,"Question-{} |{}. |{}.Answer-"
+5,"{}\t|{}\t|{}Answer::"
+6,"Question, {} |{}. |{}. Answer,"
+7,"Q: {}\n|{}\n|{}\nA:"
+8,"{}\t|{}\t|{}A:"
+9,"{}|{}|{}"
+10,"Q::{}|{}\n|{}\nA::"

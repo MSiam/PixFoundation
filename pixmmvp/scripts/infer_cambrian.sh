@@ -3,6 +3,8 @@ OUT=$2
 PROMPT=$3
 ANS=$4
 META=$5
+POINT=$6
+SAM_PATH=$7
 
 source ~/.bashrc
 eval "$(conda shell.bash hook)"
@@ -25,4 +27,4 @@ else
     PROMPTTEXT="protocol2"
 fi
 
-python ../inference/infer_pixfoundation_cambrian.py --root $DATA --model-path "nyu-visionx/cambrian-8b" --preds_dir "$OUT/preds_cambrian-8b_$PROMPTTEXT" --viz_dir "$OUT/viz_cambrian-8b_$PROMPTTEXT" --prompt_for_seg $PROMPT --answers_file "$ANS/answers_cambrian-8b_$PROMPTTEXT.jsonl" --meta_file "$META/meta_cambrian-8b_spaCy_$PROMPTTEXT.txt" --sam-ckpt "sam_checkpoints/sam_vit_h_4b8939.pth"
+python ../inference/infer_pixfoundation_cambrian.py --root $DATA --model-path "nyu-visionx/cambrian-8b" --preds_dir "$OUT/preds_cambrian-8b_$PROMPTTEXT" --viz_dir "$OUT/viz_cambrian-8b_$PROMPTTEXT" --prompt_for_seg $PROMPT --answers_file "$ANS/answers_cambrian-8b_$PROMPTTEXT.jsonl" --meta_file "$META/meta_cambrian-8b_spaCy_$PROMPTTEXT.txt" --sam-ckpt "${SAM_PATH}" --point_file "$POINT/point_cambrian-8b_$PROMPTTEXT.txt"

@@ -25,5 +25,3 @@ else
 fi
 
 python ../inference/infer_glamm.py --root $DATA --root_images "$DATA/MMVP Images/" --hf_model_path "MBZUAI/GLaMM-FullScope" --preds_dir "$OUT/preds_glammfull_$PROMPTTEXT" --viz_dir "$OUT/viz_glammfull_$PROMPTTEXT" --prompt_for_seg $PROMPT --answers_file "$ANS/answers_glammfull_$PROMPTTEXT.jsonl"
-
-python ../inference/infer_glamm.py --root $DATA --root_images "$DATA/MMVP Images/" --hf_model_path "MBZUAI/GLaMM-RegCap-RefCOCOg" --preds_dir "$OUT/preds_glammregcap_$PROMPTTEXT" --viz_dir "$OUT/viz_glammregcap_$PROMPTTEXT" --prompt_for_seg $PROMPT --answers_file "$ANS/answers_glammregcap_$PROMPTTEXT.jsonl"

@@ -1,0 +1,8 @@
+Index,Template
+1,"Can you please segment {} in the given image"
+2,"Can you segment {} in this image?"
+3,"Can you identify {} in this image? (with grounding)"
+4,"Identify {} in the scene, with grounding."
+5,"Can you identify {} in this image? (with grounding)"
+6,"Locate the {} and output a tight mask. If the object does not exist in the image dont generate any masks."
+7,"Output mask for the {}."
