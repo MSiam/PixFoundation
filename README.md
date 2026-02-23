@@ -37,8 +37,8 @@ git clone https://github.com/MSiam/AutoGPTImages
 ### Demo Interpretability Mechanism
 * Run the following script:
 ```
-python demo.py --image_path image2.jpg --ref_expr "the hands holding the hat" --openai_api_key API_KEY
-python demo.py --image_path image1.jpeg --ref_expr "the closed kitten's eyes" --openai_api_key API_KEY
+python interpretability_demo/demo.py --image_path image2.jpg --ref_expr "the hands holding the hat" --openai_api_key API_KEY
+python interpretability_demo/demo.py --image_path image1.jpeg --ref_expr "the closed kitten's eyes" --openai_api_key API_KEY
 ```
 
 ### Changes to Evaluation Protocols
