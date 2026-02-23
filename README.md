@@ -16,14 +16,6 @@ visual grounding occurs w.r.t the output tokens, through using MLLM as a Judge o
 <img src="https://github.com/MSiam/PixFoundation/blob/693bfd82d5c1f6f95b6adf9eac8e3725637a6bb4/imgs/dataset.png" width="70%" height="70%"><br><br>
 </div>
 
-### ToDos
-- [x] Release PixMMVP & PixCVBench annotations (Feb, 2025)
-- [x] Release PixMMVP evaluation code (Feb, 2025)
-- [x] Update PixMMVP evaluation to include RGA & Qwen2.5-VL (Jan, 2026)
-- [ ] Add PixMMVP Language Prompt Sensitivity
-- [ ] Add PixMMVP Visual Prompt Sensitivity
-- [ ] Release PixCVBench evaluation code
-
 ### Dataset Setup
 [Data](https://github.com/MSiam/PixFoundation/blob/master/Data.md)
 
