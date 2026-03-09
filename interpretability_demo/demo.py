@@ -1,3 +1,8 @@
+#####################################################################
+#                           PixFoundation
+#       Interpretability of MLLMs on When Grounding Emerges
+#       => code can run standalone w/o this repo
+#####################################################################
 import torch.backends.cudnn as cudnn
 import torch
 import numpy as np
@@ -8,7 +13,8 @@ import sys
 import cv2
 import matplotlib.pyplot as plt
 import argparse
-sys.path.append("../LLaVA/")
+#sys.path.append("../LLaVA/")
+sys.path.append("/media/ivulab/alkhwarizmi1/MMVP/LLaVA/")
 
 from transformers import AutoTokenizer
 from segment_anything import sam_model_registry, SamPredictor
@@ -338,7 +344,7 @@ if __name__ == "__main__":
     # load models
     model_path = 'liuhaotian/llava-v1.5-7b'
     sam_model = 'vit_h'
-    sam_ckpt = 'sam_vit_h_4b8939.pth'
+    sam_ckpt = '/media/ivulab/alkhwarizmi1/huggingface_cache_temp/sam_checkpoints/sam_vit_h_4b8939.pth'
 
     disable_torch_init()
     model_path = os.path.expanduser(model_path)
@@ -377,6 +383,6 @@ if __name__ == "__main__":
                     spine.set_linewidth(3)
 
             axes[i, j].imshow(images_vis[i*ncols+j])
+            images_vis[i*ncols+j].save('demo_out/demo2_%d.png'%(i*ncols+j))
 
     plt.show()
-

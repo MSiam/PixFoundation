@@ -35,11 +35,29 @@ git clone https://github.com/MSiam/AutoGPTImages
 ```
 
 ### Demo Interpretability Mechanism
-* Run the following script:
+* Run the following standalone script:
 ```
 python demo.py --image_path image2.jpg --ref_expr "the hands holding the hat" --openai_api_key API_KEY
 python demo.py --image_path image1.jpeg --ref_expr "the closed kitten's eyes" --openai_api_key API_KEY
 ```
+* First example output:
+
+|Noun Phrase | Image #1 | Image #2  | Image #3  |
+|---|---|---|---|
+|The hands|   |   |   |
+|the hat|   |   |   |
+|the scene|   |   |   |
+|a pair|   |   |   |
+|human hands|   |   |   |
+
+* Second example output:
+
+|Noun Phrase | Image #1 | Image #2  | Image #3  |
+|---|---|---|---|
+|the image|   |   |   |
+|three kittens|   |   |   |
+|them|   |   |   |
+|its eyes|   |   |   |
 
 ### Changes to Evaluation Protocols
 [Changes](https://github.com/MSiam/PixFoundation/blob/master/Changes.md)
