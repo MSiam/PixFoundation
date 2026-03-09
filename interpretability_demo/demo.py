@@ -382,6 +382,5 @@ if __name__ == "__main__":
                     spine.set_linewidth(3)
 
             axes[i, j].imshow(images_vis[i*ncols+j])
-            images_vis[i*ncols+j].save('demo_out/demo2_%d.png'%(i*ncols+j))
 
     plt.show()
