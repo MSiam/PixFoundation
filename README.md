@@ -54,7 +54,7 @@ python interpretability_demo/demo.py --image_path image1.jpeg --ref_expr "the cl
 
 |Noun Phrase | Image #1 | Image #2  | Image #3  |
 |---|---|---|---|
-|the image|   |   |   |
+|the image| <img src="https://github.com/MSiam/PixFoundation/blob/3f38704b022adf353cfccf46d6967387e7381e0a/interpretability_demo/demo_out/demo_0.png" width="40%" height="40%">  |   |   |
 |three kittens|   |   |   |
 |them|   |   |   |
 |its eyes|   |   |   |
