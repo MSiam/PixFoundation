@@ -82,7 +82,7 @@ def prompt_gpt(prompt, urls):
                 model='gpt-5.1',
                 messages=[{
                     'role': 'system',
-                    'content': 'You are a helpful and precise assistant for checking the quality of the answer.'
+                    'content': 'You are a helpful and precise assistant for checking the quality of the answer.' #TODO: Confirm system prompt when MLLM used as a Judge on segmentation
                     }, {
                     'role': 'user',
                     'content':
