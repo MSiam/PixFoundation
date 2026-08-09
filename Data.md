@@ -45,3 +45,4 @@ python pixmmvp/dataset/test_loader.py --root data/PixMMVP/ --out_dir OUT_DIR
 ```
 python pixcvbench/dataset/test_loader.py --ade_root data/PixCVBench/ADE20K/ --coco_root data/PixCVBench/COCO/ --out_dir OUT_DIR
 ```
+* Generate the prompts variations using the script under data/
