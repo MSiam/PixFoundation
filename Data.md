@@ -20,7 +20,7 @@
 python pixmmvp/dataset/test_loader.py --root data/PixMMVP/ --out_dir OUT_DIR
 ```
 * Generate the prompts variations using the script under data/
-* 
+  
 ## PixCV-Bench
 * Download [CV-Bench](https://huggingface.co/datasets/nyu-visionx/CV-Bench)
 * Use their tool to recreate the images for the 2D section only, or download directly from ADE20K and COCO2017 datasets.
