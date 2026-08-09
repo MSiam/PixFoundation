@@ -34,6 +34,10 @@ bash pixmmvp/scripts/run_all.sh
 git clone https://github.com/MSiam/AutoGPTImages
 ```
 
+### PixCVBench Evaluation
+
+* Similar to PixMMVP run evaluation script where we provide two example inference and bash scripts for RGA and OMG LLaVA for reference.
+
 ### Demo Interpretability Mechanism
 * Run the following standalone script:
 ```
