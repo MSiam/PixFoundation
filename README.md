@@ -88,7 +88,7 @@ Our finding is that grounding can emerge coinciding with output text that descri
 </div>
 
 # Acknowledgements
-These repositories were used as part of our work:
+These repositories were used as part of my work:
 * [OMG-Llava](https://github.com/lxtGH/OMG-Seg)
 * [GLAMM](https://github.com/mbzuai-oryx/groundingLMM)
 * [LISA](https://github.com/dvlab-research/LISA)
@@ -102,10 +102,13 @@ These repositories were used as part of our work:
 Please cite my paper if you find it useful in your research
 
 ```
-@article{siam2025pixfoundation,
+@article{
+  siam2026pixfoundation,
   title={PixFoundation: Are We Heading in the Right Direction with Pixel-level Vision Foundation Models?},
-  author={Siam, Mennatullah},
-  journal={arXiv preprint arXiv:2502.04192},
-  year={2025}
+  author={Mennatullah Siam},
+  journal={Transactions on Machine Learning Research},
+  issn={2835-8856},
+  year={2026},
+  url={https://openreview.net/forum?id=HNtjTTAac1},
 }
 ```
